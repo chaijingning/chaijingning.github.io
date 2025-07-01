@@ -6,25 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Positivus - Home </title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         .menu {
             display: flex;
         }
 
         a {
+            font-family: "Playfair Display", serif;
+            font-size: 20px;
             text-decoration: none;
             color: black;
-            padding: 10px 20px;
+            padding: 10px;
+            margin-right: 15px;
+        }
+
+        .request {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: auto;
+        }
+
+        .banner {
+            display: flex;
+            padding-left: 25px;
+            gap: 100px;
+        }
+
+        .banner div {
+            width: 50%;
         }
     </style>
 </head>
 
 <body>
-    <div class="menu">
-        <div><a href="about.html">About Us</a></div>
-        <div><a href="service.html">Service</a></div>
-        <div><a href="cases.html">Use Cases</a></div>
-        <div><a href="pricing.html">Pricing</a></div>
-        <div><a href="blog.html">Blog</a></div>
+    <div class="container">
+        <div class="header">
+            <div><img src="image/positivus logo.png" alt="positivus" width="220px"></div>
+            <div class="menu">
+                <div><a href="about.html">About Us</a></div>
+                <div><a href="service.html">Service</a></div>
+                <div><a href="cases.html">Use Cases</a></div>
+                <div><a href="pricing.html">Pricing</a></div>
+                <div><a href="blog.html">Blog</a></div>
+                <div><a class="request" href="request.html">Request a quote</a></div>
+            </div>
+        </div>
+        <div class="banner">
+            <div>
+                <h1>Navigating the digital landscape for success</h1>
+                <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+                    including SEO, PPC, social media marketing, and content creation.</p>
+                <button>Book a consultation</button>
+            </div>
+            <div><img src="image/positivus Illustration.png" alt="Call to Action" width="100%"></div>
+        </div>
     </div>
 </body>
 
