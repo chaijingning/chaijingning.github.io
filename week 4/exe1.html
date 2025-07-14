@@ -90,7 +90,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 20px;
+            gap: 20px 0px;
         }
 
         .blearn {
@@ -109,21 +109,32 @@
 
         .c1 {
             background: #F3F3F3;
+            width: 50%;
+            display: flex;
+            padding-left: 25px;
         }
 
-        .c1head {
+        .c1head,
+        .c4head,
+        .c6head {
             font-family: 'Space Grotesk', sans-serif;
             font-size: 30px;
             font-weight: 500;
             color: black;
             background-color: #B9FF66;
+            padding: none;
         }
 
         .c2 {
             background: #B9FF66;
+            width: 50%;
+            display: flex;
+            padding-left: 25px;
         }
 
-        .c2head {
+        .c2head,
+        .c3head,
+        .c5head {
             font-family: 'Space Grotesk', sans-serif;
             font-size: 30px;
             font-weight: 500;
@@ -133,53 +144,46 @@
 
         .c3 {
             background: #191A23;
-        }
-
-        .c3head {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 30px;
-            font-weight: 500;
-            color: black;
-            background-color: #FFFFFF;
+            width: 50%;
+            display: flex;
+            padding-left: 25px;
         }
 
         .c4 {
             background: #F3F3F3;
-        }
-
-        .c4head {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 30px;
-            font-weight: 500;
-            color: black;
-            background: #B9FF66;
+            width: 50%;
+            display: flex;
+            padding-left: 25px;
         }
 
         .c5 {
             background: #B9FF66;
+            width: 50%;
+            display: flex;
+            padding-left: 25px;
         }
-
-        .c5head {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 30px;
-            font-weight: 500;
-            color: black;
-            background-color: #FFFFFF;
-        }
-
 
         .c6 {
             background: #191A23;
+            width: 50%;
+            display: flex;
+            padding-left: 25px;
         }
 
-        .c6head {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 30px;
-            font-weight: 500;
-            color: black;
-            background: #B9FF66;
+        .cimage {
+            width: 50%;
         }
 
+        .banner2 {
+            background-color: #F3F3F3;
+            display: flex;
+            padding-left: 25px;
+            gap: 100px;
+        }
+
+        .banner2 div {
+            width: 50%;
+        }
 
         .cexplain {
             display: flex;
@@ -259,12 +263,96 @@
             justify-content: center;
         }
 
+        .msg {
+            background-color: #F3F3F3;
+            display: flex;
+            padding-left: 25px;
+            gap: 100px;
+        }
+
+        .msg div {
+            width: 50%;
+        }
+
+        .name,
+        .email {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 5px 15px;
+            color: #898989;
+        }
+
+        .message {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 50px 15px;
+            color: #898989;
+        }
+
+        .bsm {
+            background-color: black;
+            border-radius: 8px;
+            padding: 10px 50px;
+            color: white;
+        }
+
         .footer {
             display: flex;
             justify-content: space-between;
             background-color: #191A23;
             border-radius: 15px;
+        }
 
+        .fmenu {
+            display: flex;
+        }
+
+        .fmenu a {
+            font-family: "Playfair Display", serif;
+            font-size: 12px;
+            text-decoration: underline;
+            color: white;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        .sicons {
+            display: flex;
+            gap: 5px;
+            align-content: end;
+        }
+
+        .contact {
+            display: flex;
+            padding-left: 25px;
+        }
+
+        .pf1 {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            background-color: #B9FF66;
+        }
+
+        .cinfo {
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 12px;
+        }
+
+        .cemail {
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 12px;
+            border-color: white;
+            padding: 10px 30px;
+        }
+
+        .copyright {
+            color: white;
+            font-size: 12px;
         }
     </style>
 </head>
@@ -279,7 +367,8 @@
                 <div><a href="cases.html">Use Cases</a></div>
                 <div><a href="pricing.html">Pricing</a></div>
                 <div><a href="blog.html">Blog</a></div>
-                <div><a class="request" href="request.html">Request a quote</a></div>
+                <div><a class="request" href="request.html">Request a font-family: 'Space Grotesk', sans-serif;quote</a>
+                </div>
             </div>
         </div>
         <div class="banner">
@@ -336,8 +425,8 @@
                             <p class="blearn">Learn more</p>
                         </div>
                     </div>
-                    <div class="simage"><img src="image/search engine optimization.png" alt="Search illustration"
-                            width="60%">
+                    <div class="cimage"><img src="image/search engine optimization.png" alt="Search illustration"
+                            width="100%">
                     </div>
                 </div>
                 <div class="c2">
@@ -349,7 +438,7 @@
                             <p class="blearn">Learn more</p>
                         </div>
                     </div>
-                    <div class="pimage"><img src="image/pay per click.png" alt="Pay illustration" width="60%"></div>
+                    <div class="cimage"><img src="image/pay per click.png" alt="Pay illustration" width="100%"></div>
                 </div>
             </div>
             <div class="r2">
@@ -362,8 +451,8 @@
                             <p class="wlearn">Learn more</p>
                         </div>
                     </div>
-                    <div class="pimage"><img src="image/socisal media marketing.png" alt="Social Media illustration"
-                            width="60%"></div>
+                    <div class="cimage"><img src="image/socisal media marketing.png" alt="Social Media illustration"
+                            width="100%"></div>
                 </div>
                 <div class="c4">
                     <div class="email">
@@ -374,8 +463,8 @@
                             <p class="blearn">Learn more</p>
                         </div>
                     </div>
-                    <div class="pimage"><img src="image/email marketing.png" alt="Email Marketing Illustration"
-                            width="60%">
+                    <div class="cimage"><img src="image/email marketing.png" alt="Email Marketing Illustration"
+                            width="100%">
                     </div>
                 </div>
             </div>
@@ -389,19 +478,19 @@
                             <p class="blearn">Learn more</p>
                         </div>
                     </div>
-                    <div class="pimage"><img src="image/content creation.png" alt="Content Creation illustration"
-                            width="60%"></div>
+                    <div class="cimage"><img src="image/content creation.png" alt="Content Creation illustration"
+                            width="100%"></div>
                 </div>
                 <div class="c6">
                     <div class="ant">
-                        <h1 class="c6head">Email</h1>
-                        <h2 class="c6head">Marketing</h2>
+                        <h1 class="c6head">Analytics and</h1>
+                        <h2 class="c6head">Tracking</h2>
                         <br>
                         <div>
                             <p class="wlearn">Learn more</p>
                         </div>
                     </div>
-                    <div class="pimage"><img src="image/analytics.png" alt="Analytics Illustration" width="60%">
+                    <div class="cimage"><img src="image/analytics.png" alt="Analytics Illustration" width="100%">
                     </div>
                 </div>
             </div>
@@ -411,11 +500,14 @@
     <br><br>
     <div class="container">
         <div class="banner2">
-            <h1>Let’s make things happen</h1>
-            <p>Contact us today to learn more about how our digital marketing services can help your business grow and
-                succeed online.</p>
-            <button>Get your free proposal</button>
-            <div><img src="image/Illustration (5).png" alt="Make it happen" width="100%"></div>
+            <div class="b2t">
+                <h1>Let’s make things happen</h1>
+                <p>Contact us today to learn more about how our digital marketing services can help your business grow
+                    and
+                    succeed online.</p>
+                <button>Get your free proposal</button>
+            </div>
+            <div><img src="image/Illustration (5).png" alt="Make it happen" width="75%"></div>
         </div>
     </div>
     <br><br>
@@ -628,21 +720,24 @@
     <br><br>
     <div class="container">
         <div class="msg">
-            <p>Name</p>
-            <p class="name">
-                Name
-            </p>
-            <p>Email*</p>
-            <p class="email">
-                Email
-            </p>
-            <p>Message*</p>
-            <p class="message">
-                Message
-            </p>
-            <button class="bsm">Send Message</button>
+            <div class="msginfo">
+                <p>Name</p>
+                <p class="name">
+                    Name
+                </p>
+                <p>Email*</p>
+                <p class="email">
+                    Email
+                </p>
+                <p>Message*</p>
+                <p class="message">
+                    Message
+                </p>
+                <button class="bsm">Send Message</button>
+            </div>
+            <div><img src="image/contact us.png" alt="stars" width="100%"></div>
         </div>
-        <img src="image/contact us.png" alt="stars">
+
     </div>
     <br><br><br>
     <div class="container">
@@ -654,30 +749,31 @@
                 <div><a href="cases.html">Use Cases</a></div>
                 <div><a href="pricing.html">Pricing</a></div>
                 <div><a href="blog.html">Blog</a></div>
-                <div class="sicons">
-                    <div><img src="image/wins.png" alt=" insta" width="20px"></div>
-                    <div><img src="image/facebook.png" alt=" facebook" width="20px"></div>
-                    <div><img src="image/twitter.png" alt=" twitter" width="20px"></div>
+            </div>
+            <div class="sicons">
+                <div><img src="image/wins.png" alt=" insta" width="20px"></div>
+                <div><img src="image/facebook.png" alt=" facebook" width="20px"></div>
+                <div><img src="image/twitter.png" alt=" twitter" width="20px"></div>
+            </div>
+            <div class="contact">
+                <div class="cinfo">
+                    <p class="pf1">Contact Us</p>
+                    <p>Email: info@positivus.com</p>
+                    <p>Phone: 555-567-8901</p>
+                    <p>Address: 1234 Main St
+                        Moonstone City, Stardust State 12345</p>
                 </div>
-                <div class="contact">
-                    <div class="cinfo">
-                        <p class="pf1">Contact Us</p>
-                        <p>Email: info@positivus.com</p>
-                        <p>Phone: 555-567-8901</p>
-                        <p>Address: 1234 Main St
-                            Moonstone City, Stardust State 12345</p>
-                    </div>
-                    <div class="cemail">
-                        <p>Email</p>
-                        <p>Subscribe to news</p>
-                    </div>
-                </div>
-                <div class="copyright">
-                    <p>© 2023 Positivus. All Rights Reserved.</p>
-                    <p>Privacy Policy</p>
+                <div class="cemail">
+                    <p class="cemail2">Email</p>
+                    <p class="Subscribe">Subscribe to news</p>
                 </div>
             </div>
+            <div class="copyright">
+                <p>© 2023 Positivus. All Rights Reserved.</p>
+                <p>Privacy Policy</p>
+            </div>
         </div>
+    </div>
 
 </body>
 
