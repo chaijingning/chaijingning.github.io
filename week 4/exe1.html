@@ -65,6 +65,7 @@
         .topic {
             display: flex;
             justify-content: left;
+            gap: 20px;
         }
 
         .deco {
@@ -72,7 +73,7 @@
             font-size: 18px;
             font-weight: 700;
             color: black;
-            padding: 0px 5px;
+
             background-color: #B9FF66;
             border-radius: 7px;
         }
@@ -82,6 +83,7 @@
             font-size: 15px;
             color: black;
             padding: 5px 5px;
+            width: 50%;
         }
 
         .r1,
@@ -107,12 +109,19 @@
             color: white;
         }
 
-        .c1 {
-            background: #F3F3F3;
+        .c1,
+        .c2,
+        .c3,
+        .c4,
+        .c5,
+        .c6 {
             width: 50%;
             display: flex;
             padding-left: 25px;
+            gap: 15px;
             border: 1px solid black;
+            border-radius: 15px;
+            box-shadow: 0 5px 0 0;
 
         }
 
@@ -124,7 +133,7 @@
             font-weight: 500;
             color: black;
             background-color: #B9FF66;
-            padding: none;
+            margin: none;
         }
 
         .c2 {
@@ -156,12 +165,10 @@
         }
 
         .c4 {
-            background: #F3F3F3;
+
             width: 50%;
             display: flex;
             padding-left: 25px;
-            border: 1px solid black;
-
         }
 
         .c5 {
@@ -183,12 +190,15 @@
         }
 
         .cimage {
-            width: 50%;
+            width: 100%;
+            align-content: center;
+            justify-content: center;
         }
 
         .banner2 {
             background-color: #F3F3F3;
             display: flex;
+            justify-content: space-between;
             padding-left: 25px;
             gap: 100px;
         }
@@ -222,7 +232,7 @@
         }
 
         .p1 {
-            background: #B9FF66;
+            background: #F3F3F3;
             border-radius: 20px;
             justify-content: center;
             border: solid black 1px;
@@ -231,17 +241,27 @@
 
         }
 
-        .p2,
-        .p3,
-        .p4,
-        .p5,
-        .p6 {
-            background: #F3F3F3;
-            border-radius: 20px;
-            justify-content: center;
-            border: solid black 1px;
-            padding: 0px 40px;
-            margin: 15px 0px;
+        .p1:first-child {
+            background-color: #B9FF66;
+        }
+
+        .p1head {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+        }
+
+        .highlight {
+            font-size: 15px;
+        }
+
+        .icon {
+            font-size: 20px;
+            border: 1px solid black;
+            padding: 10px;
+            width: 20px;
+            border-radius: 40px;
+
         }
 
         .tcsr1,
@@ -271,9 +291,8 @@
             border-radius: 15px;
         }
 
-        .test1,
-        .test2,
-        .test3 {
+        .ttest {
+            display: flex;
             justify-content: center;
             align-content: center;
             padding: 20px 20px;
@@ -281,9 +300,18 @@
             color: white;
         }
 
+        .test1,
+        .test2,
+        .test3 {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 20px;
+            margin: 0px 20px;
+            color: white;
+        }
+
         .navigation {
             width: 50%;
-            display: flex;
             align-content: center;
             justify-content: center;
         }
@@ -291,8 +319,9 @@
         .msg {
             background-color: #F3F3F3;
             display: flex;
+            justify-content: space-between;
             padding-left: 25px;
-            gap: 100px;
+
         }
 
         .msg div {
@@ -319,8 +348,9 @@
         .bsm {
             background-color: black;
             border-radius: 8px;
-            padding: 10px 50px;
+            padding: 10px 0px;
             color: white;
+            width: 100%;
         }
 
         .footer {
@@ -429,29 +459,28 @@
     <div class="container">
         <div class="brand">
             <div><a href="amazon.html" target="blank">
-                    <img src="image/amazon.png" alt="amazon" width="48%"></a></div>
+                    <img src="image/amazon.png" alt="amazon" width="50%"></a></div>
             <div><a href="dribble.html" target="blank">
-                    <img src="image/dribble.png" alt="dribble" width="48%"></a></div>
+                    <img src="image/dribble.png" alt="dribble" width="50%"></a></div>
             <div><a href="hubscript.html" target="blank">
-                    <img src="image/hubscript.png" alt="hubscript" width="48%"></a></div>
+                    <img src="image/hubscript.png" alt="hubscript" width="50%"></a></div>
             <div><a href="notion.html" target="blank">
-                    <img src="image/notion.png" alt="notion" width="48%"></a></div>
+                    <img src="image/notion.png" alt="notion" width="50%"></a></div>
             <div><a href="netflix.html" target="blank">
-                    <img src="image/netflix.png" alt="netflix" width="48%"></a></div>
+                    <img src="image/netflix.png" alt="netflix" width="50%"></a></div>
             <div><a href="zoom.html" target="blank">
-                    <img src="image/zoom.png" alt="zoom" width="48%"></a></div>
+                    <img src="image/zoom.png" alt="zoom" width="50%"></a></div>
         </div>
     </div>
     <br><br><br>
     <div class="container">
         <div class="topic">
             <div class="deco">
-                <p>Service</p>
+                <h1>Service</h1>
             </div>
             <div class="explain">
                 <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed
-                    online.
-                    These services include</p>
+                    online. These services include</p>
             </div>
         </div>
     </div>
@@ -463,13 +492,12 @@
                     <div class="search">
                         <h1 class="c1head">Search engine</h1>
                         <h2 class="c1head">optimization</h2>
-                        <br>
-                        <div>
+                        <div class="learn">
                             <p class="blearn">Learn more</p>
                         </div>
                     </div>
                     <div class="cimage"><img src="image/search engine optimization.png" alt="Search illustration"
-                            width="100%">
+                            width="50%">
                     </div>
                 </div>
                 <div class="c2">
@@ -477,11 +505,11 @@
                         <h1 class="c2head">pay-per-click</h1>
                         <h2 class="c2head">advertising</h2>
                         <br>
-                        <div>
+                        <div class="learn">
                             <p class="blearn">Learn more</p>
                         </div>
                     </div>
-                    <div class="cimage"><img src="image/pay per click.png" alt="Pay illustration" width="100%"></div>
+                    <div class="cimage"><img src="image/pay per click.png" alt="Pay illustration" width="50%"></div>
                 </div>
             </div>
             <div class="r2">
@@ -495,7 +523,7 @@
                         </div>
                     </div>
                     <div class="cimage"><img src="image/socisal media marketing.png" alt="Social Media illustration"
-                            width="100%"></div>
+                            width="50%"></div>
                 </div>
                 <div class="c4">
                     <div class="email">
@@ -507,7 +535,7 @@
                         </div>
                     </div>
                     <div class="cimage"><img src="image/email marketing.png" alt="Email Marketing Illustration"
-                            width="100%">
+                            width="50%">
                     </div>
                 </div>
             </div>
@@ -522,7 +550,7 @@
                         </div>
                     </div>
                     <div class="cimage"><img src="image/content creation.png" alt="Content Creation illustration"
-                            width="100%"></div>
+                            width="50%"></div>
                 </div>
                 <div class="c6">
                     <div class="ant">
@@ -533,7 +561,7 @@
                             <p class="wlearn">Learn more</p>
                         </div>
                     </div>
-                    <div class="cimage"><img src="image/analytics.png" alt="Analytics Illustration" width="100%">
+                    <div class="cimage"><img src="image/analytics.png" alt="Analytics Illustration" width="50%">
                     </div>
                 </div>
             </div>
@@ -557,7 +585,7 @@
     <div class="container">
         <div class="topic">
             <div class="deco">
-                <p>Case Studies</p>
+                <h1>Case Studies</h1>
             </div>
             <div class="explain">
                 <p>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
@@ -591,7 +619,7 @@
     <div class="container">
         <div class="topic">
             <div class="deco">
-                <p>Our Working Progress</p>
+                <h1>Our Working Progress</h1>
             </div>
             <div class="explain">
                 <p>Step-by-Step Guide to Achieving Your Business Goals</p>
@@ -602,29 +630,35 @@
     <div class="container">
         <div class="progress">
             <div class="p1">
-                <h1>01</h1>
-                <p>Consultation</p>
-                <p>During the initial consultation, we will discuss your business goals and objectives, target audience,
-                    and current marketing efforts. This will allow us to understand your needs and tailor our services
-                    to best fit your requirements.</p>
+                <div class="p1head">
+                    <h1>01 <span class="highlight">Consultation</span></h1>
+                    <div class="icon">-</div>
+                </div>
+                <div>
+                    <p>During the initial consultation, we will discuss your business goals and objectives, target
+                        audience,
+                        and current marketing efforts. This will allow us to understand your needs and tailor our
+                        services
+                        to best fit your requirements.</p>
+                </div>
             </div>
-            <div class="p2">
+            <div class="p1">
                 <h1>02</h1>
                 <p>Research and Strategy Development</p>
             </div>
-            <div class="p3">
+            <div class="p1">
                 <h1>03</h1>
                 <p>Implementation</p>
             </div>
-            <div class="p4">
+            <div class="p1">
                 <h1>04</h1>
                 <p>Monitoring and Optimization</p>
             </div>
-            <div class="p5">
+            <div class="p1">
                 <h1>05</h1>
                 <p>Reporting and Communication</p>
             </div>
-            <div class="p6">
+            <div class="p1">
                 <h1>06</h1>
                 <p>Continual Improvement</p>
             </div>
@@ -634,7 +668,7 @@
     <div class="container">
         <div class="topic">
             <div class="deco">
-                <p>Team</p>
+                <h1>Team</h1>
             </div>
             <div class="explain">
                 <p>Meet the skilled and experienced team behind our successful digital marketing strategies</p>
@@ -703,7 +737,7 @@
     <div class="container">
         <div class="topic">
             <div class="deco">
-                <p>Testimonials</p>
+                <h1>Testimonials</h1>
             </div>
             <div class="explain">
                 <p>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing
@@ -753,7 +787,7 @@
     <div class="container">
         <div class="topic">
             <div class="deco">
-                <p>Contact Us</p>
+                <h1>Contact Us</h1>
             </div>
             <div class="explain">
                 <p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
@@ -778,7 +812,7 @@
                 </p>
                 <button class="bsm">Send Message</button>
             </div>
-            <div><img src="image/contact us.png" alt="stars" width="100%"></div>
+            <div><img src="image/contact us.png" alt="stars" width="50%"></div>
         </div>
 
     </div>
@@ -798,7 +832,6 @@
                 <div><img src="image/facebook.png" alt=" facebook" width="20px"></div>
                 <div><img src="image/twitter.png" alt=" twitter" width="20px"></div>
             </div>
-            <br>
             <div class="contact">
                 <div class="cinfo">
                     <p class="pf1">Contact Us</p>
