@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positivus - Home </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        a {
+            font-family: "Playfair Display", serif;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            margin-right: 15px;
+        }
+
+        .request {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: auto;
+        }
+
+        .banner {
+            display: flex;
+            padding-left: 25px;
+            gap: 100px;
+        }
+
+        .banner div {
+            width: 50%;
+        }
+
+        button {
+            color: white;
+            background-color: black;
+            padding: 12px 20px;
+            border-radius: 14px;
+        }
+
+        .brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .topic {
+            display: flex;
+            justify-content: left;
+            gap: 20px;
+        }
+
+        .deco {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: black;
+
+            background-color: #B9FF66;
+            border-radius: 7px;
+        }
+
+        .explain {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 15px;
+            color: black;
+            padding: 5px 5px;
+            width: 50%;
+        }
+
+        .r1,
+        .r2,
+        .r3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px 20px;
+        }
+
+        .blearn {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: black
+        }
+
+        .wlearn {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: white;
+        }
+
+        .c1,
+        .c2,
+        .c3,
+        .c4,
+        .c5,
+        .c6 {
+            width: 50%;
+            display: flex;
+            padding-left: 25px;
+            gap: 15px;
+            border: 1px solid black;
+            border-radius: 15px;
+            box-shadow: 0 5px 0 0;
+
+        }
+
+        .c1head,
+        .c4head,
+        .c6head {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 30px;
+            font-weight: 500;
+            color: black;
+            background-color: #B9FF66;
+            margin: none;
+        }
+
+        .c2 {
+            background: #B9FF66;
+            width: 50%;
+            display: flex;
+            padding-left: 25px;
+            border: 1px solid black;
+
+        }
+
+        .c2head,
+        .c3head,
+        .c5head {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 30px;
+            font-weight: 500;
+            color: black;
+            background-color: #FFFFFF;
+        }
+
+        .c3 {
+            background: #191A23;
+            width: 50%;
+            display: flex;
+            padding-left: 25px;
+            border: 1px solid black;
+
+        }
+
+        .c4 {
+
+            width: 50%;
+            display: flex;
+            padding-left: 25px;
+        }
+
+        .c5 {
+            background: #B9FF66;
+            width: 50%;
+            display: flex;
+            padding-left: 25px;
+            border: 1px solid black;
+
+        }
+
+        .c6 {
+            background: #191A23;
+            width: 50%;
+            display: flex;
+            padding-left: 25px;
+            border: 1px solid black;
+
+        }
+
+        .cimage {
+            width: 100%;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .banner2 {
+            background-color: #F3F3F3;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 25px;
+            gap: 100px;
+        }
+
+        .banner2 div {
+            width: 50%;
+        }
+
+        .cexplain {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            border-radius: 20px;
+            padding: 40px 30px;
+
+        }
+
+        .cexplain1,
+        .cexplain2,
+        .cexplain3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 12px;
+            color: white;
+            padding: 0px 20px;
+            margin-top: none;
+        }
+
+        .glearn a {
+            color: #B9FF66;
+            font-size: 14px;
+        }
+
+        .p1 {
+            background: #F3F3F3;
+            border-radius: 20px;
+            justify-content: center;
+            border: solid black 1px;
+            padding: 0px 40px;
+            margin: 15px 0px;
+
+        }
+
+        .p1:first-child {
+            background-color: #B9FF66;
+        }
+
+        .p1head {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+        }
+
+        .highlight {
+            font-size: 15px;
+        }
+
+        .icon {
+            font-size: 20px;
+            border: 1px solid black;
+            padding: 10px;
+            width: 20px;
+            border-radius: 40px;
+
+        }
+
+        .tcsr1,
+        .tcsr2 {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            padding: 20px 0px
+        }
+
+        .tc1,
+        .tc2,
+        .tc3,
+        .tc4,
+        .tc5,
+        .tc6 {
+            text-align: center;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 18px;
+            border: solid 1px black;
+            border-radius: 15px;
+            margin: 0px 10px;
+        }
+
+        .test {
+            background-color: #191A23;
+            border-radius: 15px;
+        }
+
+        .ttest {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 20px 20px;
+            margin: 0px 20px;
+            color: white;
+        }
+
+        .test1,
+        .test2,
+        .test3 {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 20px;
+            margin: 0px 20px;
+            color: white;
+        }
+
+        .navigation {
+            width: 50%;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .msg {
+            background-color: #F3F3F3;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 25px;
+
+        }
+
+        .msg div {
+            width: 50%;
+        }
+
+        .name,
+        .email {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 5px 15px;
+            color: #898989;
+        }
+
+        .message {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 50px 15px;
+            color: #898989;
+        }
+
+        .bsm {
+            background-color: black;
+            border-radius: 8px;
+            padding: 10px 0px;
+            color: white;
+            width: 100%;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #191A23;
+            border-radius: 15px;
+        }
+
+        .fmenu {
+            display: flex;
+        }
+
+        .fmenu a {
+            font-family: "Playfair Display", serif;
+            font-size: 12px;
+            text-decoration: underline;
+            color: white;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        .sicons {
+            display: flex;
+            gap: 5px;
+            align-content: end;
+        }
+
+        .contact {
+            display: flex;
+            padding-left: 25px;
+            align-items: center;
+        }
+
+        .contact div {
+            width: 50%;
+        }
+
+        .pf1 {
+            display: flex;
+            padding: none;
+            color: black;
+            background-color: #B9FF66;
+        }
+
+        .cinfo {
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 12px;
+        }
+
+        .cemail2 {
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 12px;
+            border: 1px solid white;
+            border-radius: 8px;
+            padding: 10px 15px;
+
+        }
+
+        .subscribe {
+            color: black;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 12px;
+            background-color: #B9FF66;
+            border-radius: 8px;
+            padding: 10px 15px;
+
+        }
+
+        .copyright {
+            color: white;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div><img src="image/positivus logo.png" alt="positivus" width="220px"></div>
+            <div class="menu">
+                <div><a href="about.html">About Us</a></div>
+                <div><a href="service.html">Service</a></div>
+                <div><a href="cases.html">Use Cases</a></div>
+                <div><a href="pricing.html">Pricing</a></div>
+                <div><a href="blog.html">Blog</a></div>
+                <div><a class="request" href="request.html">Request a quote</a>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div>
+                <h1>Navigating the digital landscape for success</h1>
+                <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+                    including SEO, PPC, social media marketing, and content creation.</p>
+                <button>Book a consultation</button>
+            </div>
+            <div><img src="image/positivus Illustration.png" alt="Call to Action" width="100%"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="brand">
+            <div><a href="amazon.html" target="blank">
+                    <img src="image/amazon.png" alt="amazon" width="50%"></a></div>
+            <div><a href="dribble.html" target="blank">
+                    <img src="image/dribble.png" alt="dribble" width="50%"></a></div>
+            <div><a href="hubscript.html" target="blank">
+                    <img src="image/hubscript.png" alt="hubscript" width="50%"></a></div>
+            <div><a href="notion.html" target="blank">
+                    <img src="image/notion.png" alt="notion" width="50%"></a></div>
+            <div><a href="netflix.html" target="blank">
+                    <img src="image/netflix.png" alt="netflix" width="50%"></a></div>
+            <div><a href="zoom.html" target="blank">
+                    <img src="image/zoom.png" alt="zoom" width="50%"></a></div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container">
+        <div class="topic">
+            <div class="deco">
+                <h1>Service</h1>
+            </div>
+            <div class="explain">
+                <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed
+                    online. These services include</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="card">
+            <div class="r1">
+                <div class="c1">
+                    <div class="search">
+                        <h1 class="c1head">Search engine</h1>
+                        <h2 class="c1head">optimization</h2>
+                        <div class="learn">
+                            <p class="blearn">Learn more</p>
+                        </div>
+                    </div>
+                    <div class="cimage"><img src="image/search engine optimization.png" alt="Search illustration"
+                            width="50%">
+                    </div>
+                </div>
+                <div class="c2">
+                    <div class="pay">
+                        <h1 class="c2head">pay-per-click</h1>
+                        <h2 class="c2head">advertising</h2>
+                        <br>
+                        <div class="learn">
+                            <p class="blearn">Learn more</p>
+                        </div>
+                    </div>
+                    <div class="cimage"><img src="image/pay per click.png" alt="Pay illustration" width="50%"></div>
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c3">
+                    <div class="social">
+                        <h1 class="c3head">Social Media</h1>
+                        <h2 class="c3head">Marketing</h2>
+                        <br>
+                        <div>
+                            <p class="wlearn">Learn more</p>
+                        </div>
+                    </div>
+                    <div class="cimage"><img src="image/socisal media marketing.png" alt="Social Media illustration"
+                            width="50%"></div>
+                </div>
+                <div class="c4">
+                    <div class="email">
+                        <h1 class="c4head">Email</h1>
+                        <h2 class="c4head">Marketing</h2>
+                        <br>
+                        <div>
+                            <p class="blearn">Learn more</p>
+                        </div>
+                    </div>
+                    <div class="cimage"><img src="image/email marketing.png" alt="Email Marketing Illustration"
+                            width="50%">
+                    </div>
+                </div>
+            </div>
+            <div class="r3">
+                <div class="c5">
+                    <div class="content">
+                        <h1 class="c5head">Content</h1>
+                        <h2 class="c5head">Creation</h2>
+                        <br>
+                        <div>
+                            <p class="blearn">Learn more</p>
+                        </div>
+                    </div>
+                    <div class="cimage"><img src="image/content creation.png" alt="Content Creation illustration"
+                            width="50%"></div>
+                </div>
+                <div class="c6">
+                    <div class="ant">
+                        <h1 class="c6head">Analytics and</h1>
+                        <h2 class="c6head">Tracking</h2>
+                        <br>
+                        <div>
+                            <p class="wlearn">Learn more</p>
+                        </div>
+                    </div>
+                    <div class="cimage"><img src="image/analytics.png" alt="Analytics Illustration" width="50%">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="banner2">
+            <div class="b2t">
+                <h1>Let’s make things happen</h1>
+                <p>Contact us today to learn more about how our digital marketing services can help your business grow
+                    and
+                    succeed online.</p>
+                <button>Get your free proposal</button>
+            </div>
+            <div><img src="image/Illustration (5).png" alt="Make it happen" width="75%"></div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="topic">
+            <div class="deco">
+                <h1>Case Studies</h1>
+            </div>
+            <div class="explain">
+                <p>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="cexplain">
+            <div class="cexplain1">
+                <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in
+                    website traffic and a 25% increase in sales.</p>
+                <div class="glearn"><a href="learn.html">Learn More</a></div>
+            </div>
+
+            <div class="cexplain2">
+                <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for
+                    key keywords and a 200% increase in organic traffic.</p>
+
+                <div class="glearn"><a href="learn.html">Learn More</a></div>
+            </div>
+            <div class="cexplain3">
+                <p>For a national retail chain, we created a social media marketing campaign that increased
+                    followers by 25% and generated a 20% increase in online sales.</p>
+
+                <div class="glearn"><a href="learn.html">Learn More</a></div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="topic">
+            <div class="deco">
+                <h1>Our Working Progress</h1>
+            </div>
+            <div class="explain">
+                <p>Step-by-Step Guide to Achieving Your Business Goals</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="progress">
+            <div class="p1">
+                <div class="p1head">
+                    <h1>01 <span class="highlight">Consultation</span></h1>
+                    <div class="icon">-</div>
+                </div>
+                <div>
+                    <p>During the initial consultation, we will discuss your business goals and objectives, target
+                        audience,
+                        and current marketing efforts. This will allow us to understand your needs and tailor our
+                        services
+                        to best fit your requirements.</p>
+                </div>
+            </div>
+            <div class="p1">
+                <h1>02</h1>
+                <p>Research and Strategy Development</p>
+            </div>
+            <div class="p1">
+                <h1>03</h1>
+                <p>Implementation</p>
+            </div>
+            <div class="p1">
+                <h1>04</h1>
+                <p>Monitoring and Optimization</p>
+            </div>
+            <div class="p1">
+                <h1>05</h1>
+                <p>Reporting and Communication</p>
+            </div>
+            <div class="p1">
+                <h1>06</h1>
+                <p>Continual Improvement</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="topic">
+            <div class="deco">
+                <h1>Team</h1>
+            </div>
+            <div class="explain">
+                <p>Meet the skilled and experienced team behind our successful digital marketing strategies</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="tcs">
+            <div class="tcsr1">
+                <div class="team">
+                    <div class="profile">
+                        <div><img src="image/john smith.png" alt="Team Member 1" width="30%"></div>
+                        <div>
+                            <h1>John Smith</h1>
+                            <h2>CEO & Founder</h2>
+                        </div>
+                        <div class="icon">In</div>
+                    </div>
+                    <div class="description">10+ years of experience in digital marketing. Expertise in SEO, PPC, and
+                        content
+                        strategy</div>
+                </div>
+                <div class="tc2">
+                    <img src="image/jane doe.png" alt="Team Member 2" width="8%">
+                    <h2>Jane Doe</h2>
+                    <p>Director of Operations</p>
+                    <img src="image/Social icon.png" alt="ins" width="20px">
+                    <p>7+ years of experience in project management and team leadership. Strong organizational and
+                        communication skills</p>
+                </div>
+                <div class="tc3">
+                    <img src="image/micheal brown.png" alt="Team Member 3" width="8%">
+                    <h2>Michael Brown</h2>
+                    <p>Senior SEO Specialist</p>
+                    <img src="image/Social icon.png" alt="ins" width="20px">
+                    <p>5+ years of experience in SEO and content creation. Proficient in keyword research and on-page
+                        optimization</p>
+                </div>
+            </div>
+            <div class="tcsr2">
+                <div class="tc4">
+                    <img src="image/emily johnson.png" alt="Team Member 4" width="8%">
+                    <h2>Emily Johnson</h2>
+                    <p>PPC Manager</p>
+                    <img src="image/Social icon.png" alt="ins" width="20px">
+                    <p>3+ years of experience in paid search advertising. Skilled in campaign management and performance
+                        analysis</p>
+                </div>
+                <div class="tc5">
+                    <img src="image/brian williams.png" alt="Team Member 5" width="8%">
+                    <h2>Brian Williams</h2>
+                    <p>Social Media Specialist</p>
+                    <img src="image/Social icon.png" alt="ins" width="20px">
+                    <p>4+ years of experience in social media marketing. Proficient in creating and scheduling content,
+                        analyzing metrics, and building engagement</p>
+                </div>
+                <div class="tc6">
+                    <img src="image/sarah kim.png" alt="Team Member 6" width="8%">
+                    <h2>Sarah Kim</h2>
+                    <p>Content Creator</p>
+                    <img src="image/Social icon.png" alt="ins" width="20px">
+                    <p>2+ years of experience in writing and editing
+                        Skilled in creating compelling, SEO-optimized content for various industries</p>
+                </div>
+            </div>
+        </div>
+        <button class="team">See all team</button>
+    </div>
+
+    <br><br>
+    <div class="container">
+        <div class="topic">
+            <div class="deco">
+                <h1>Testimonials</h1>
+            </div>
+            <div class="explain">
+                <p>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing
+                    Services</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="footer">
+            <div><img src="image/Logo.png" alt="positivus" width="100px"></div>
+            <div class="fmenu">
+                <div><a href="about.html">About Us</a></div>
+                <div><a href="service.html">Service</a></div>
+                <div><a href="cases.html">Use Cases</a></div>
+                <div><a href="pricing.html">Pricing</a></div>
+                <div><a href="blog.html">Blog</a></div>
+            </div>
+            <div class="sicons">
+                <div><img src="image/wins.png" alt=" insta" width="20px"></div>
+                <div><img src="image/facebook.png" alt=" facebook" width="20px"></div>
+                <div><img src="image/twitter.png" alt=" twitter" width="20px"></div>
+            </div>
+            <div class="contact">
+                <div class="cinfo">
+                    <p class="pf1">Contact Us</p>
+                    <p>Email: info@positivus.com</p>
+                    <p>Phone: 555-567-8901</p>
+                    <p>Address: 1234 Main St
+                        Moonstone City, Stardust State 12345</p>
+                </div>
+                <div class="cemail">
+                    <p class="cemail2">Email</p>
+                    <p class="subscribe">Subscribe to news</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Positivus. All Rights Reserved.</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
