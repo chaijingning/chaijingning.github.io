@@ -73,7 +73,6 @@
             font-size: 18px;
             font-weight: 700;
             color: black;
-
             background-color: #B9FF66;
             border-radius: 7px;
         }
@@ -133,7 +132,6 @@
             font-weight: 500;
             color: black;
             background-color: #B9FF66;
-            margin: none;
         }
 
         .c2 {
@@ -192,7 +190,7 @@
         .cimage {
             width: 100%;
             align-content: center;
-            justify-content: center;
+            justify-content: stretch
         }
 
         .banner2 {
@@ -209,20 +207,23 @@
 
         .cexplain {
             display: flex;
-            justify-content: center;
             background-color: black;
             border-radius: 20px;
-            padding: 40px 30px;
+            padding: 50px 0 50px 0;
 
         }
 
-        .cexplain1,
-        .cexplain2,
-        .cexplain3 {
+        .cexplain div {
+            width: 33.33%;
+            border-right: 1px solid white;
+            padding: 0 50px 0 0px;
+        }
+
+
+        .cexplain1 {
             font-family: 'Space Grotesk', sans-serif;
             font-size: 12px;
             color: white;
-            padding: 0px 20px;
             margin-top: none;
         }
 
@@ -238,6 +239,7 @@
             border: solid black 1px;
             padding: 0px 40px;
             margin: 15px 0px;
+            box-shadow: 0 3px 0 0;
 
         }
 
@@ -251,181 +253,135 @@
             border-bottom: 1px solid black;
         }
 
+
         .highlight {
             font-size: 15px;
         }
 
-        .icon {
-            font-size: 20px;
-            border: 1px solid black;
-            padding: 10px;
-            width: 20px;
-            border-radius: 40px;
-
-        }
-
-        .tcsr1,
-        .tcsr2 {
-            display: flex;
-            justify-content: space-between;
-            align-content: center;
-            padding: 20px 0px
-        }
-
-        .tc1,
-        .tc2,
-        .tc3,
-        .tc4,
-        .tc5,
-        .tc6 {
-            text-align: center;
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 18px;
-            border: solid 1px black;
-            border-radius: 15px;
-            margin: 0px 10px;
-        }
-
-        .test {
-            background-color: #191A23;
-            border-radius: 15px;
-        }
-
-        .ttest {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            padding: 20px 20px;
-            margin: 0px 20px;
-            color: white;
-        }
-
-        .test1,
-        .test2,
-        .test3 {
-            display: flex;
-            flex-direction: column;
-            padding: 20px 20px;
-            margin: 0px 20px;
-            color: white;
-        }
-
-        .navigation {
-            width: 50%;
-            align-content: center;
-            justify-content: center;
-        }
-
-        .msg {
-            background-color: #F3F3F3;
-            display: flex;
-            justify-content: space-between;
-            padding-left: 25px;
-
-        }
-
-        .msg div {
-            width: 50%;
-        }
-
-        .name,
-        .email {
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 8px;
-            padding: 5px 15px;
-            color: #898989;
-        }
-
-        .message {
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 8px;
-            padding: 50px 15px;
-            color: #898989;
-        }
-
-        .bsm {
-            background-color: black;
-            border-radius: 8px;
-            padding: 10px 0px;
-            color: white;
+        .members {
+            display: grid;
+            grid-template-columns: repeat (3, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
             width: 100%;
         }
 
-        .footer {
+
+        .team {
+            width: 33.33%;
+            padding: 30px;
+            border: 1px solid black;
+            border-radius: 20px;
+
+        }
+
+        .profile {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            gap: 5px;
+            border-bottom: 1px solid black;
+        }
+
+        .h1,
+        .h2 {
+            margin: 0;
+        }
+
+        .h2 {
+            font-weight: normal;
+            justify-content: space-between;
+        }
+
+        .icon {
+            position: absolute;
+            top: 20px;
+            right: 25px
+        }
+
+
+        .footer {
+            display: flex;
+            flex-direction: column;
             background-color: #191A23;
             border-radius: 15px;
+            padding: 20px 0;
+            gap: 20px;
+            align-items: stretch;
         }
 
         .fmenu {
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
         }
 
-        .fmenu a {
-            font-family: "Playfair Display", serif;
-            font-size: 12px;
-            text-decoration: underline;
-            color: white;
-            padding: 10px;
-            margin-right: 10px;
-        }
-
-        .sicons {
+        .fitem {
             display: flex;
             gap: 5px;
-            align-content: end;
+            color: #FFFFFF;
+            text-decoration: underline;
+
         }
 
-        .contact {
+        .fitem a {
+            color: #FFFFFF;
+        }
+
+
+        .ficons {
             display: flex;
-            padding-left: 25px;
-            align-items: center;
+            gap: 5px;
         }
 
-        .contact div {
+        .fcontact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+        }
+
+        .fcinfo {
+            background-color: #B9FF66;
+            border-radius: 7px;
             width: 50%;
         }
 
-        .pf1 {
+
+        .fc1 {
+
+            color: #FFFFFF;
+        }
+
+        .cmail {
+            background-color: #292A32;
+            padding: 20px;
             display: flex;
-            padding: none;
-            color: black;
-            background-color: #B9FF66;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
-        .cinfo {
-            color: white;
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 12px;
-        }
+        .cmail1 {
+            border-radius: 10px;
+            padding: 12px 20px;
+            color: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            width: 50%;
 
-        .cemail2 {
-            color: white;
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 12px;
-            border: 1px solid white;
-            border-radius: 8px;
-            padding: 10px 15px;
 
         }
 
         .subscribe {
-            color: black;
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 12px;
             background-color: #B9FF66;
-            border-radius: 8px;
-            padding: 10px 15px;
+            border-radius: 10px;
+            padding: 12px 20px;
+            border-radius: 14px;
 
         }
 
         .copyright {
-            color: white;
-            font-size: 12px;
+            color: #FFFFFF;
         }
     </style>
 </head>
@@ -601,13 +557,13 @@
                 <div class="glearn"><a href="learn.html">Learn More</a></div>
             </div>
 
-            <div class="cexplain2">
+            <div class="cexplain1">
                 <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for
                     key keywords and a 200% increase in organic traffic.</p>
 
                 <div class="glearn"><a href="learn.html">Learn More</a></div>
             </div>
-            <div class="cexplain3">
+            <div class="cexplain1">
                 <p>For a national retail chain, we created a social media marketing campaign that increased
                     followers by 25% and generated a 20% increase in online sales.</p>
 
@@ -643,24 +599,34 @@
                 </div>
             </div>
             <div class="p1">
-                <h1>02</h1>
-                <p>Research and Strategy Development</p>
+                <div class="p1head">
+                    <h1>02 <span class="highlight">Research and Strategy Development</span></h1>
+                    <div class="icon">+</div>
+                </div>
             </div>
             <div class="p1">
-                <h1>03</h1>
-                <p>Implementation</p>
+                <div class="p1head">
+                    <h1>03 <span class="highlight">Implementation</span></h1>
+                    <div class="icon">+</div>
+                </div>
             </div>
             <div class="p1">
-                <h1>04</h1>
-                <p>Monitoring and Optimization</p>
+                <div class="p1head">
+                    <h1>04 <span class="highlight">Monitoring and Optimization</span></h1>
+                    <div class="icon">+</div>
+                </div>
             </div>
             <div class="p1">
-                <h1>05</h1>
-                <p>Reporting and Communication</p>
+                <div class="p1head">
+                    <h1>05 <span class="highlight">Reporting and Communication</span></h1>
+                    <div class="icon">+</div>
+                </div>
             </div>
             <div class="p1">
-                <h1>06</h1>
-                <p>Continual Improvement</p>
+                <div class="p1head">
+                    <h1>06 <span class="highlight">Continual Improvement</span></h1>
+                    <div class="icon">+</div>
+                </div>
             </div>
         </div>
     </div>
@@ -675,108 +641,134 @@
             </div>
         </div>
     </div>
-    <br>
     <div class="container">
-        <div class="tcs">
-            <div class="tcsr1">
-                <div class="team">
-                    <div class="profile">
-                        <div><img src="image/john smith.png" alt="Team Member 1" width="30%"></div>
-                        <div>
-                            <h1>John Smith</h1>
-                            <h2>CEO & Founder</h2>
-                        </div>
-                        <div class="icon">In</div>
+        <div class="members">
+            <div class="team">
+                <div class="profile">
+                    <div><img src="image/john smith.png" alt="m1"></div>
+                    <div>
+                        <h1>John Smith</h1>
+                        <h2>CEO & Founder</h2>
                     </div>
-                    <div class="description">10+ years of experience in digital marketing. Expertise in SEO, PPC, and
-                        content
-                        strategy</div>
+                    <div class="icon">
+                        <img src="image/Social icon.png" alt="ins">
+                    </div>
                 </div>
-                <div class="tc2">
-                    <img src="image/jane doe.png" alt="Team Member 2" width="8%">
-                    <h2>Jane Doe</h2>
-                    <p>Director of Operations</p>
-                    <img src="image/Social icon.png" alt="ins" width="20px">
-                    <p>7+ years of experience in project management and team leadership. Strong organizational and
-                        communication skills</p>
-                </div>
-                <div class="tc3">
-                    <img src="image/micheal brown.png" alt="Team Member 3" width="8%">
-                    <h2>Michael Brown</h2>
-                    <p>Senior SEO Specialist</p>
-                    <img src="image/Social icon.png" alt="ins" width="20px">
-                    <p>5+ years of experience in SEO and content creation. Proficient in keyword research and on-page
-                        optimization</p>
-                </div>
+                <div class="description">10+ years of experience in digital marketing. Expertise in SEO, PPC, and
+                    content
+                    strategy</div>
             </div>
-            <div class="tcsr2">
-                <div class="tc4">
-                    <img src="image/emily johnson.png" alt="Team Member 4" width="8%">
-                    <h2>Emily Johnson</h2>
-                    <p>PPC Manager</p>
-                    <img src="image/Social icon.png" alt="ins" width="20px">
-                    <p>3+ years of experience in paid search advertising. Skilled in campaign management and performance
-                        analysis</p>
+            <div class="team">
+                <div class="profile">
+                    <div><img src="image/jane doe.png" alt="m2"></div>
+                    <div>
+                        <h1>Jane Doe</h1>
+                        <h2>Director of Operations</h2>
+                    </div>
+                    <div class="icon">
+                        <img src="image/Social icon.png" alt="ins">
+                    </div>
                 </div>
-                <div class="tc5">
-                    <img src="image/brian williams.png" alt="Team Member 5" width="8%">
-                    <h2>Brian Williams</h2>
-                    <p>Social Media Specialist</p>
-                    <img src="image/Social icon.png" alt="ins" width="20px">
-                    <p>4+ years of experience in social media marketing. Proficient in creating and scheduling content,
-                        analyzing metrics, and building engagement</p>
-                </div>
-                <div class="tc6">
-                    <img src="image/sarah kim.png" alt="Team Member 6" width="8%">
-                    <h2>Sarah Kim</h2>
-                    <p>Content Creator</p>
-                    <img src="image/Social icon.png" alt="ins" width="20px">
-                    <p>2+ years of experience in writing and editing
-                        Skilled in creating compelling, SEO-optimized content for various industries</p>
-                </div>
+                <div class="description">7+ years of experience in project management and team leadership. Strong
+                    organizational and communication skills</div>
             </div>
-        </div>
-        <button class="team">See all team</button>
-    </div>
+            <div class="team">
+                <div class="profile">
+                    <div><img src="image/micheal brown.png" alt="m3"></div>
+                    <div>
+                        <h1>Michael Brown</h1>
+                        <h2>Senior SEO Specialist</h2>
+                    </div>
+                    <div class="icon">
+                        <img src="image/Social icon.png" alt="ins">
+                    </div>
+                </div>
+                <div class="description">5+ years of experience in SEO and content creation. Proficient in keyword
+                    research
+                    and on-page optimization</div>
+            </div>
+            <div class="team">
+                <div class="profile">
+                    <div><img src="image/emily johnson.png" alt="m4"></div>
+                    <div>
+                        <h1>Emily Johnson</h1>
+                        <h2>PPC Manager</h2>
+                    </div>
+                    <div class="icon">
+                        <img src="image/Social icon.png" alt="ins">
+                    </div>
+                </div>
+                <div class="description">3+ years of experience in paid search advertising. Skilled in campaign
+                    management
+                    and performance analysis</div>
+            </div>
+            <div class="team">
+                <div class="profile">
+                    <div><img src="image/brian williams.png" alt="m5"></div>
+                    <div>
+                        <h1>Brian Williams</h1>
+                        <h2>Social Media Specialist</h2>
+                    </div>
+                    <div class="icon">
+                        <img src="image/Social icon.png" alt="ins">
+                    </div>
+                </div>
+                <div class="description">4+ years of experience in social media marketing. Proficient in creating and
+                    scheduling content, analyzing metrics, and building engagement</div>
+            </div>
+            <div class="team">
+                <div class="profile">
+                    <div><img src="image/sarah kim.png" alt="m6"></div>
+                    <div>
+                        <h1>Sarah Kim</h1>
+                        <h2>Content Creator</h2>
+                    </div>
+                    <div class="icon">
+                        <img src="image/Social icon.png" alt="ins">
+                    </div>
+                </div>
+                <div class="description">2+ years of experience in writing and editing
+                    Skilled in creating compelling, SEO-optimized content for various industries</div>
+            </div>
 
-    <br><br>
-    <div class="container">
-        <div class="topic">
-            <div class="deco">
-                <h1>Testimonials</h1>
-            </div>
-            <div class="explain">
-                <p>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing
-                    Services</p>
-            </div>
         </div>
+        <button>See all team</button>
     </div>
 
     <div class="container">
         <div class="footer">
-            <div><img src="image/Logo.png" alt="positivus" width="100px"></div>
+
             <div class="fmenu">
-                <div><a href="about.html">About Us</a></div>
-                <div><a href="service.html">Service</a></div>
-                <div><a href="cases.html">Use Cases</a></div>
-                <div><a href="pricing.html">Pricing</a></div>
-                <div><a href="blog.html">Blog</a></div>
+                <div class="flogo">
+                    <img src="image/Logo.png" alt="positivus" width="100px">
+                </div>
+                <div class="fitem">
+                    <a href="about.html">About Us</a>
+                    <a href="service.html">Service</a>
+                    <a href="cases.html">Use Cases</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="ficons">
+                    <img src="image/wins.png" alt=" insta" width="20px">
+                    <img src="image/facebook.png" alt=" facebook" width="20px">
+                    <img src="image/twitter.png" alt=" twitter" width="20px">
+                </div>
             </div>
-            <div class="sicons">
-                <div><img src="image/wins.png" alt=" insta" width="20px"></div>
-                <div><img src="image/facebook.png" alt=" facebook" width="20px"></div>
-                <div><img src="image/twitter.png" alt=" twitter" width="20px"></div>
-            </div>
-            <div class="contact">
-                <div class="cinfo">
-                    <p class="pf1">Contact Us</p>
-                    <p>Email: info@positivus.com</p>
-                    <p>Phone: 555-567-8901</p>
-                    <p>Address: 1234 Main St
-                        Moonstone City, Stardust State 12345</p>
+            <div class="fcontact">
+                <div class="contact">
+                    <div class="cinfo">
+                        <p class="fcinfo">Contact Us</p>
+                        <div class="fc1">
+                            <p>Email: info@positivus.com</p>
+                            <p>Phone: 555-567-8901</p>
+                            <p>Address: 1234 Main St
+                                Moonstone City, Stardust State 12345</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="cemail">
-                    <p class="cemail2">Email</p>
+                    <p class="cmail1">Email</p>
                     <p class="subscribe">Subscribe to news</p>
                 </div>
             </div>
