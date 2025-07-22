@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+a {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.request {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.banner {
+    display: flex;
+    padding-left: 25px;
+    gap: 100px;
+}
+
+.banner div {
+    width: 50%;
+}
+
+button {
+    color: white;
+    background-color: black;
+    padding: 12px 20px;
+    border-radius: 14px;
+}
+
+.brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topic {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.deco {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    background-color: #B9FF66;
+    border-radius: 7px;
+}
+
+.explain {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    color: black;
+    padding: 5px 5px;
+    width: 50%;
+}
+
+.r1,
+.r2,
+.r3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px 20px;
+}
+
+.blearn {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: black
+}
+
+.wlearn {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6 {
+    width: 50%;
+    display: flex;
+    padding-left: 25px;
+    gap: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 5px 0 0;
+
+}
+
+.c1head,
+.c4head,
+.c6head {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    background-color: #B9FF66;
+}
+
+.c2 {
+    background: #B9FF66;
+    width: 50%;
+    display: flex;
+    padding-left: 25px;
+    border: 1px solid black;
+
+}
+
+.c2head,
+.c3head,
+.c5head {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.c3 {
+    background: #191A23;
+    width: 50%;
+    display: flex;
+    padding-left: 25px;
+    border: 1px solid black;
+
+}
+
+.c4 {
+
+    width: 50%;
+    display: flex;
+    padding-left: 25px;
+}
+
+.c5 {
+    background: #B9FF66;
+    width: 50%;
+    display: flex;
+    padding-left: 25px;
+    border: 1px solid black;
+
+}
+
+.c6 {
+    background: #191A23;
+    width: 50%;
+    display: flex;
+    padding-left: 25px;
+    border: 1px solid black;
+
+}
+
+.cimage {
+    width: 100%;
+    align-content: center;
+    justify-content: stretch
+}
+
+.banner2 {
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    gap: 100px;
+}
+
+.banner2 div {
+    width: 50%;
+}
+
+.cexplain {
+    display: flex;
+    background-color: black;
+    border-radius: 20px;
+    padding: 50px 0 50px 0;
+
+}
+
+.cexplain div {
+    width: 33.33%;
+    border-right: 1px solid white;
+    padding: 0 50px 0 0px;
+}
+
+
+.cexplain1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    color: white;
+    margin-top: none;
+}
+
+.glearn a {
+    color: #B9FF66;
+    font-size: 14px;
+}
+
+.p1 {
+    background: #F3F3F3;
+    border-radius: 20px;
+    justify-content: center;
+    border: solid black 1px;
+    padding: 0px 40px;
+    margin: 15px 0px;
+    box-shadow: 0 3px 0 0;
+
+}
+
+.p1:first-child {
+    background-color: #B9FF66;
+}
+
+.p1head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+
+.highlight {
+    font-size: 15px;
+}
+
+.members {
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    border-bottom: 1px solid black;
+}
+
+.h1,
+.h2 {
+    margin: 0;
+}
+
+.h2 {
+    font-weight: normal;
+    justify-content: space-between;
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #191A23;
+    border-radius: 15px;
+    padding: 20px 0;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.fmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.fitem {
+    display: flex;
+    gap: 5px;
+    color: #FFFFFF;
+    text-decoration: underline;
+
+}
+
+.fitem a {
+    color: #FFFFFF;
+}
+
+
+.ficons {
+    display: flex;
+    gap: 5px;
+}
+
+.fcontact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.fcinfo {
+    background-color: #B9FF66;
+    border-radius: 7px;
+    width: 50%;
+}
+
+
+.fc1 {
+
+    color: #FFFFFF;
+}
+
+.cemail {
+    background-color: #292A32;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cmail1 {
+    border-radius: 10px;
+    padding: 12px 20px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    width: 50%;
+
+
+}
+
+.subscribe {
+    background-color: #B9FF66;
+    border-radius: 10px;
+    padding: 12px 20px;
+    border-radius: 14px;
+
+}
+
+.copyright {
+    color: #FFFFFF;
+    display: flex;
+}
+
+/*tablet*/
+@media screen and (max-width: 1080px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .request {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .banner div {
+        width: 80%;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: row;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+
+    }
+
+    .banner div {}
+
+
+    .booking {
+        width: 100%;
+    }
+}
