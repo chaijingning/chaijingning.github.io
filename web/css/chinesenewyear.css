@@ -1,0 +1,97 @@
+        /*banner*/
+        .banner {
+            background-color: #193060;
+            height: 910px;
+            color: white
+        }
+
+
+        /*chinese new year*/
+        .content {
+            background-color: #FBE8BD;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            gap: 40px;
+            padding: 60px 120px;
+        }
+
+        .cny h2 {
+            font-size: 48px;
+            color: #1C0A0A;
+            margin-bottom: 15px;
+        }
+
+        .cny p {
+            font-size: 20px;
+            color: #1C0A0A;
+        }
+
+        /*history,mythology title*/
+        .title {
+            font-size: 38px;
+            background-color: #AB141C;
+            padding: 30px 0;
+        }
+
+        .title h3 {
+            color: #FFCE48;
+            text-align: center;
+        }
+
+        /*history content*/
+        .history {
+            background-color: #193060;
+            color: #FBE8BD;
+            padding: 60px 200px 115px 200px;
+            font-size: 20px;
+            background-image: url(images/cloud.png);
+            height: 385px;
+        }
+
+        /*legend*/
+        .nian,
+        .zodiac {
+            display: flex;
+            background-color: #FBE8BD;
+        }
+
+        .nian .subtitle {
+            font-size: 40px;
+            background-color: #193060;
+            color: #FFCE48;
+            border-radius: 0 50px 50px 0;
+            padding: 10px 20px;
+        }
+
+        .nian {
+            padding: 60px 0 115px 85px;
+        }
+
+        .nian .story {
+            font-size: 20px;
+            line-height: 1.8;
+            max-width: 520px;
+            margin: 60px 65px 0 155px;
+        }
+
+        .zodiac .subtitle {
+            font-size: 40px;
+            background-color: #193060;
+            color: #FFCE48;
+            border-radius: 50px 0 0 50px;
+            padding: 10px 20px;
+
+        }
+
+        .zodiac {
+            padding: 0 110px 115px 0;
+        }
+
+        .zodiac .story {
+            font-size: 20px;
+            line-height: 1.8;
+            max-width: 520px;
+            margin: 60px 70px 0 250px;
+        }

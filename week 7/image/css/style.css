@@ -434,6 +434,15 @@ button {
 
     .cexplain {}
 
+    .p1 {
+        background-color: #F3F3F3;
+
+    }
+
+    .members {
+        align-content: center;
+        width: 100%;
+    }
 }
 
 /*mobile*/
@@ -503,6 +512,10 @@ button {
 
     .banner2 img {
         display: none;
+    }
+
+    .p1 {
+        background-color: #F3F3F3;
     }
 
 
