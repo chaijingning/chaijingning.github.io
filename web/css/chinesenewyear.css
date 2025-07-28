@@ -1,10 +1,23 @@
         /*banner*/
         .banner {
             background-color: #193060;
-            height: 910px;
-            color: white
         }
 
+        .banner h1 {
+            color: white;
+        }
+
+        .banner p {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            width: 230px;
+        }
+
+        .cloud {
+            display: flex;
+            justify-content: space-between;
+        }
 
         /*chinese new year*/
         .content {
@@ -46,8 +59,8 @@
             color: #FBE8BD;
             padding: 60px 200px 115px 200px;
             font-size: 20px;
-            background-image: url(images/cloud.png);
             height: 385px;
+            text
         }
 
         /*legend*/
