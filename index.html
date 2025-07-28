@@ -9,7 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
 
         body {
-            background-color: #123458;
+            background-image: linear-gradient(to bottom right, #756AB6, #AC87C5, #E0AED0, #FFE5E5);
         }
 
         /*.container {
@@ -29,7 +29,7 @@
         }
 
         .header {
-            background: #F1EFEC;
+            background: #433D8B;
             margin: none;
             justify-content: space-between;
             display: flex;
@@ -37,11 +37,11 @@
 
         .hr {
             width: 1px;
-            color: black;
+            color: #FFE5E5;
         }
 
         .hh1 {
-            color: #030303;
+            color: #FFE5E5;
             font-size: 20px;
             padding: 0px 10px;
         }
@@ -68,65 +68,55 @@
             border-radius: 50%;
         }
 
-        .r1 {
-            display: flex;
-            gap: 20px;
-        }
-
-        .r1 div {
-            width: 30%;
-        }
-
-        .r2 {
-            display: flex;
-            justify-content: center;
-            padding: 10px 0px;
-        }
-
         .intro {
             justify-content: center;
             align-content: center;
             margin: 0px 50px;
             font-size: 15px;
-            color: #F1EFEC;
+            color: #17153B;
             font-family: "Playfair Display", serif;
         }
 
-        .w1,
-        .w2,
-        .w3,
-        .w4,
-        .w5 {
-            background-color: #F1EFEC;
-            opacity: 0.7;
-            border-radius: 10px;
-            text-align: center;
+        .r1 {
+            display: flex;
+            gap: 20px;
+            padding-bottom: 20px;
         }
 
-
-        .w1,
-        .w2,
-        .w3,
-        .w4 {
+        .r2 {
             display: flex;
-            flex-direction: column;
-            gap: 10px;
-            padding: 10px 10px;
-
-            border-radius: 10px;
-        }
-
-        .w5 {
-            display: flex;
-            padding: 10px 0px;
             justify-content: center;
-            align-content: center;
-
-            border-radius: 10px;
+            gap: 20px;
+            padding-top: 20px;
         }
+
+        .checklist {
+            border-bottom: 1px solid #FFE5E5;
+            margin-bottom: 15px;
+        }
+
+        .exercise {
+            margin-top: 40px;
+        }
+
+        .exe {
+            background-color: #433D8B;
+            opacity: 0.7;
+            border-radius: 25px;
+            text-align: center;
+            width: 33.33%;
+            height: 130px;
+            align-content: center;
+        }
+
+        .exe a {
+            color: #FFE5E5;
+        }
+
 
         .footer {
-            background: #F1EFEC;
+            margin-top: 110px;
+            background: #433D8B;
             margin: none;
             text-align: center;
             justify-content: space-between;
@@ -180,48 +170,58 @@
             </div>
         </div>
     </div>
+
     <div class="exercise">
         <div class="r1">
-            <div class="w2">
+            <div class="exe">
                 <div class="checklist">
                     <div><img src="image/calendar-check.png" alt="checklist" width="20px"></div>
                     <div>Week 2</div>
                 </div>
-                <hr>
-                <div><a href="http://127.0.0.1:5500/week%202/exe1.html">Exercise 1</a></div>
-                <div><a href="http://127.0.0.1:5500/week%202/exe2.html">Exercise 2</a></div>
+                <div class="week">
+                    <div><a href="http://127.0.0.1:5500/week%202/exe1.html">Exercise 1</a></div>
+                    <div><a href="http://127.0.0.1:5500/week%202/exe2.html">Exercise 2</a></div>
+                </div>
             </div>
-            <div class="w3">
+            <div class="exe">
                 <div class="checklist">
                     <div><img src="image/calendar-check.png" alt="checklist" width="20px"></div>
                     <div>Week 3</div>
                 </div>
-                <hr>
-                <div><a href="http://127.0.0.1:5500/week%203/exe1.html">Exercise 1</a></div>
-                <div><a href="http://127.0.0.1:5500/week%203/exe2.html">Exercise 2</a></div>
+                <div class="week">
+                    <div><a href="http://127.0.0.1:5500/week%203/exe1.html">Exercise 1</a></div>
+                    <div><a href="http://127.0.0.1:5500/week%203/exe2.html">Exercise 2</a></div>
+                </div>
             </div>
-            <div class="w4">
+            <div class="exe">
                 <div class="checklist">
                     <img src="image/calendar-check.png" alt="checklist" width="20px">
                     <div>Week 4</div>
                 </div>
-                <hr>
+                <div class="week"></div>
                 <div><a href="http://127.0.0.1:5500/week%204/exe1.html">Exercise 1</a></div>
-                <div><a href="">Exercise 2</a></div>
             </div>
         </div>
         <div class="r2">
-            <div class="w5">
+            <div class="exe">
                 <div class="checklist">
                     <div><img src="image/calendar-check.png" alt="checklist" width="20px"></div>
-                    <div>Week 5</div>
+                    <div>Week 6</div>
                 </div>
-                <hr>
-                <div><a href="">Exercise 1</a></div>
-                <div><a href="">Exercise 2</a></div>
+                <div class="week">
+                    <div><a href="http://127.0.0.1:5500/week%204/exe1.html">Exercise 1</a></div>
+                </div>
+            </div>
+            <div class="exe">
+                <div class="checklist">
+                    <div><img src="image/calendar-check.png" alt="checklist" width="20px"></div>
+                    <div>Week 7</div>
+                </div>
+                <div class="week">
+                    <div><a href="http://127.0.0.1:5500/week%207/image/exe1.html">Exercise 1</a></div>
+                </div>
             </div>
         </div>
-        <div class="checklist"></div>
     </div>
     </div>
     <br><br>
