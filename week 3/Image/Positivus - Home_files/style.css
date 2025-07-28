@@ -402,38 +402,6 @@ button {
     .brand {
         flex-direction: column;
     }
-
-
-    .topic {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .explain {
-        width: 80%;
-    }
-
-    .card {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .banner2 {
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    .bt2 {
-        width: 80%;
-    }
-
-    .banner2 img {
-        display: none;
-    }
-
-    .cexplain {}
-
 }
 
 /*mobile*/
@@ -463,47 +431,4 @@ button {
     .booking {
         width: 100%;
     }
-
-    .brand {
-        flex-direction: column;
-    }
-
-    .topic {
-        flex-direction: column;
-        align-items: center
-    }
-
-    .explain {
-        width: 80%;
-    }
-
-    .card {
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .r1,
-    .r2,
-    .r3 {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .banner2 {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .bt2 {
-        width: 80%;
-    }
-
-    .banner2 img {
-        display: none;
-    }
-
-
 }
