@@ -5,15 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;
+
+        }
+
+        .menu div a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .call {
+            display: flex;
+            align-items: center;
+        }
+
+        .call p {
+            margin: 0px 20px 0px 10px;
+        }
+
+        .call button {
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="header">
-        <div class="logo"></div>
+        <div class="logo">
+            <div><img src="image/elementra logo.png" alt="logo" width="200px"></div>
+        </div>
 
-        <div class="menu"></div>
+        <div class="menu">
+            <div><a href="home.html">Home</a></div>
+            <div><a href="service.html">Services</a></div>
+            <div><a href="work.html">Work</a></div>
+            <div><a href="project.html">Project Details</a></div>
+            <div><a href="contact.html">Contact</a></div>
+        </div>
 
-        <div class="contact"></div>
+        <div class="call">
+            <div><img src="image/svgviewer-png-output.png" alt="icon" width="20px"></div>
+            <div>
+                <p>555-123-4567</p>
+            </div>
+            <button>Contact</button>
+        </div>
     </div>
 </body>
 
