@@ -14,7 +14,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: auto;
+            margin: 20px auto;
         }
 
         .menu {
@@ -59,9 +59,26 @@
             display: none;
         }
 
-        @media screen and (max-width: 780px) {}
+        @media screen and (max-width: 1080px) {
+            .header {
+                align-items: center;
+                margin: 20px 10px;
+            }
 
-        @media screen and (max-width: 480px) {}
+            .menu {
+                display: none;
+            }
+
+            .call button {
+                display: none;
+            }
+        }
+
+        .mobile {
+            display: block;
+        }
+
+        @media screen and (max-width: 600px) {}
     </style>
 </head>
 
@@ -85,11 +102,10 @@
                 <p>555-123-4567</p>
             </div>
             <button>Contact</button>
+            <div class="mobile"><img src="image/menu.png" alt="hamburger menu" width="20px"></div>
         </div>
 
-        <div class="mobile">
-            <img src="image/menu.png" alt="hamburger menu" width="20px">
-        </div>
+
     </div>
 </body>
 
