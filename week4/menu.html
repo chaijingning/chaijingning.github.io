@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4- Exercise 1</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+        .header {
+            max-width: 1280px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;
+            font-family: 'archivo', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .menu .service a {
+            color: #F9612B;
+        }
+
+        .call {
+            display: flex;
+            align-items: center;
+        }
+
+        .call p {
+            margin: 0px 20px 0px 10px;
+            font-family: 'archivo', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .call button {
+            background-color: #F9612B;
+            color: white;
+            font-size: 14px;
+            padding: 12px 17px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        @media screen and (max-width: 780px) {}
+
+        @media screen and (max-width: 480px) {}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <div><img src="image/elementra logo.png" alt="logo" width="200px"></div>
+        </div>
+
+        <div class="menu">
+            <div><a href="home.html">Home</a></div>
+            <div class="service"><a href="service.html">Services</a></div>
+            <div><a href="work.html">Work</a></div>
+            <div><a href="project.html">Project Details</a></div>
+            <div><a href="contact.html">Contact</a></div>
+        </div>
+
+        <div class="call">
+            <div><img src="image/phone.png" alt="icon" width="20px"></div>
+            <div>
+                <p>555-123-4567</p>
+            </div>
+            <button>Contact</button>
+        </div>
+
+        <div class="mobile">
+            <img src="image/menu.png" alt="hamburger menu" width="20px">
+        </div>
+    </div>
+</body>
+
+</html>

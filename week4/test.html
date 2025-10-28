@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3- Exercise 3</title>
+
+    <style>
+        .container {
+            max-width: 1280px;
+            margin: auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 40px;
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .request {
+            border: 1px black solid;
+            border-radius: 8px;
+            padding: 20px 35px;
+        }
+
+        .banner {
+            display: flex;
+            gap: 90px;
+            margin-top: 50px;
+            justify-content: space-between;
+        }
+
+        .banner div {
+            width: 50%;
+        }
+
+        .banner h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 500;
+            font-style: medium;
+            font-size: 60px;
+            padding-right: 100px;
+        }
+
+        .banner p {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            margin-top: 0px;
+            padding-right: 125px;
+        }
+
+        .banner button {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: white;
+            background-color: black;
+            padding: 20px 35px;
+            border-radius: 14px;
+            margin-top: 20px;
+        }
+
+        .company {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="image/Logo.png" alt="Positivus Logo" width="220px">
+            </div>
+            <div class="menu">
+                <div><a href="about.html">About Us</a></div>
+                <div><a href="service.html">Services</a></div>
+                <div><a href="cases.html">Use Cases</a></div>
+                <div><a href="pricing.html">Pricing</a></div>
+                <div><a href="blog.html">Blog</a></div>
+                <div><a class="request" href="request.html">Request a quote</a></div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="intro">
+                <h1>Navigating the digital landscape for success</h1>
+                <p>Our digital marketing agency helps businesses grow and succeed online through a range of services
+                    including SEO, PPC, social media marketing, and content creation.</p>
+                <button>Book a consultation</button>
+            </div>
+            <div>
+                <img src="image/speaker.png" alt="Speaker Image" width="100%">
+            </div>
+        </div>
+
+        <div class="company">
+            <div><img src="image/amazon.png" alt="amazon"></div>
+            <div><img src="image/dribble.png" alt="dribble"></div>
+            <div><img src="image/hubscript.png" alt="hubscript"></div>
+            <div><img src="image/notion.png" alt="notion"></div>
+            <div><img src="image/netflix.png" alt="netflix"></div>
+            <div><img src="image/zoom.png" alt="zoom"></div>
+        </div>
+    </div>
+</body>
+
+</html>
