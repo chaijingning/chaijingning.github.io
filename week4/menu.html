@@ -14,7 +14,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 20px auto;
+            margin: auto;
         }
 
         .menu {
@@ -53,6 +53,7 @@
             padding: 12px 17px;
             border: none;
             border-radius: 5px;
+            margin-left: 5px;
         }
 
         .mobile {
@@ -72,13 +73,21 @@
             .call button {
                 display: none;
             }
+
+            .mobile {
+                display: block;
+                margin-left: 10px;
+            }
         }
 
-        .mobile {
-            display: block;
-        }
+        @media screen and (max-width: 600px) {
 
-        @media screen and (max-width: 600px) {}
+            .call .desktop,
+            .call p,
+            .call button {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -97,13 +106,15 @@
         </div>
 
         <div class="call">
-            <div><img src="image/phone.png" alt="icon" width="20px"></div>
+            <div class="desktop"><img src="image/phone.png" alt="icon" width="20px"></div>
             <div>
                 <p>555-123-4567</p>
             </div>
             <button>Contact</button>
             <div class="mobile"><img src="image/menu.png" alt="hamburger menu" width="20px"></div>
         </div>
+
+
 
 
     </div>
