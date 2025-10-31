@@ -46,7 +46,7 @@
 
     .banner {
         display: flex;
-        gap: 90px;
+        gap: 70px;
         margin-top: 50px;
         justify-content: space-between;
         background-color: #F3F3F3;
@@ -57,28 +57,38 @@
         width: 50%;
     }
 
+    .banner img {
+        margin-left: 90px;
+    }
+
+    .intro {
+        margin-left: 60px;
+    }
+
     .banner h1 {
         font-family: 'Space Grotesk', sans-serif;
         font-weight: 500;
         font-style: medium;
         font-size: 60px;
-        margin-top: 0px;
+        margin-top: 30px;
     }
 
     .banner p {
         font-family: 'Space Grotesk', sans-serif;
         font-weight: 400;
         font-size: 20px;
-        margin-right: 180px;
+        padding-right: 120px;
+        margin-top: 20px;
     }
 
     .feature {
         display: flex;
-        gap: 100px;
+        gap: 50px;
         margin-top: 120px;
         margin-bottom: 50px;
         justify-content: space-between;
         background-color: #191A23;
+        border-radius: 40px;
         color: #FFFFFF;
         padding: 60px 0px;
     }
@@ -87,19 +97,92 @@
         width: 50%;
     }
 
-    .subtitle h2 {
+    .feature h2 {
         background-color: #B9FF66;
+        border-radius: 7px;
         color: black;
         margin-top: 0px;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+        font-style: medium;
+        font-size: 40px;
+        margin-right: 135px;
+        padding: 0px 4px;
+    }
+
+    .feature h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+        font-style: medium;
+        font-size: 30px;
+        margin-right: 170px;
+    }
+
+    .feature p {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin-right: 80px;
+    }
+
+    .story {
+        margin-left: 60px;
     }
 
     .read {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+    }
+
+    .read p {
         color: #B9FF66;
     }
 
     .count {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 25px;
+        margin-right: 25px;
+    }
+
+    .count div {
+        width: 40%;
+        justify-content: space-between;
+        border-radius: 30px;
         background-color: #FFFFFF;
         color: black;
+        margin: 0px;
+    }
+
+    .count h1 {
+        text-align: center;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 30px;
+        margin: auto;
+        padding: 30px 0 10px 0;
+    }
+
+    .count p {
+        text-align: center;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+
+    .b1 p,
+    .b2 p,
+    .b3 p {
+        width: 50%;
+    }
+
+    .b4 p {
+        width: 60%;
     }
 </style>
 
@@ -120,7 +203,7 @@
         </div>
 
         <div class="banner">
-            <div><img src="" alt=""></div>
+            <div><img src="image/usercase.png" alt="usercase"></div>
             <div class="intro">
                 <h1>Proven Sucess Stories</h1>
                 <p>See how our innovative digital marketing strategies have transformed buisnesses. Whether through SEO,
@@ -131,17 +214,13 @@
 
         <div class="feature">
             <div class="story">
-                <div class="subtitle">
-                    <h2>Featured Success Story</h2>
-                </div>
+                <h2>Featured Success Story</h2>
                 <h3>Scaling Success for a Leading E-Commerce Brand</h3>
                 <p>Through a comprehensive SEO and PPC strategy, we helped this e-commerce brand increase visibility,
-                    drive traffic,and boost sales.</p>
+                    drive traffic, and boost sales.</p>
                 <div class="read">
-                    <div><img src="" alt=""></div>
-                    <div>
-                        <p>Read</p>
-                    </div>
+                    <img src="image/arrow.png" alt="arrow" width="40px" height="40px">
+                    <p>Read</p>
                 </div>
             </div>
 
