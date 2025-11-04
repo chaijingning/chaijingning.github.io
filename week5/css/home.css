@@ -1,0 +1,81 @@
+.banner {
+    display: flex;
+    gap: 90px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.mobile {
+    display: none;
+}
+
+.banner div {
+    width: 50%;
+}
+
+.banner h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 60px;
+    padding-right: 100px;
+}
+
+.banner p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 0px;
+    padding-right: 125px;
+}
+
+.banner button {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 20px 35px;
+    border-radius: 14px;
+    margin-top: 20px;
+}
+
+.company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 1080px) {
+    .logo img {
+        width: 180px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+    .request {
+        display: none;
+    }
+
+    .banner {
+        justify-content: center;
+        margin-top: 50px;
+        padding: 30px 0px;
+    }
+
+    .banner div {
+        width: 80%;
+    }
+
+    .company {}
+}
+
+@media screen and (max-width: 600px) {}
