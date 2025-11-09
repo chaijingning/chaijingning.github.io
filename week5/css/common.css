@@ -23,9 +23,43 @@
     font-weight: 400;
 }
 
-
 .request {
     border: 1px black solid;
     border-radius: 8px;
     padding: 20px 35px;
 }
+
+.mobile {
+    display: none;
+}
+
+.banner2 {
+    display: none;
+}
+
+.banner div {
+    width: 50%;
+}
+
+.banner {
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+.banner h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 60px;
+}
+
+.banner p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1080px) {}
+
+@media screen and (max-width: 600px) {}

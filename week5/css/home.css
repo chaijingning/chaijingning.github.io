@@ -1,34 +1,12 @@
 .banner {
-    display: flex;
     gap: 90px;
-    margin-top: 50px;
-    justify-content: space-between;
-}
-
-.mobile {
-    display: none;
-}
-
-.banner2 {
-    display: none;
-}
-
-.banner div {
-    width: 50%;
 }
 
 .banner h1 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
-    font-style: medium;
-    font-size: 60px;
     padding-right: 100px;
 }
 
 .banner p {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
     margin-top: 0px;
     padding-right: 125px;
 }
