@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 - Exercise 1</title>
+
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .container div {
+            padding: 15px;
+            margin: 15px;
+            border-radius: 20px;
+        }
+
+        h1 {
+            font-family: 'Archivo', sans-serif;
+            font-size: 28px;
+            padding: 0px 20px;
+        }
+
+        p {
+            font-family: 'Oxygen', sans-serif;
+            font-size: 16px;
+            padding: 0px 20px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .info {
+            position: relative;
+            top: -100px;
+            background-color: #F6F5EF;
+        }
+
+        .green {
+            color: green;
+            justify-self: center;
+        }
+
+        @media screen and (max-width: 1080px) {}
+
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .container div {
+                padding: 10px;
+                margin: auto;
+                width: 95%;
+            }
+
+            .info {
+                top: -80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="b1">
+            <img src="image/project.jpg" alt="projects">
+            <div class="info">
+                <h1>Residential Projects</h1>
+                <p>We build sustainable and morden homes for comfortable living.</p>
+                <p class="green">Read More</p>
+            </div>
+        </div>
+
+
+        <div class="b2">
+            <img src="image/space.jpg" alt="space">
+            <div class="info">
+                <h1>Commercial spaces</h1>
+                <p>We create efficient, inspiring workspace for businesses of all sizes.</p>
+                <p class="green">Read More</p>
+            </div>
+        </div>
+
+        <div class="b3">
+            <img src="image/works.jpg" alt="works">
+            <div class="info">
+                <h1>Infrastructure works</h1>
+                <p>We develop strong, reliable infrastructure for growing communities.</p>
+                <p class="green">Read More</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

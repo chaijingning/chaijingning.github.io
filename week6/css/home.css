@@ -1,0 +1,50 @@
+.banner {
+    gap: 90px;
+}
+
+.banner h1 {
+    padding-right: 100px;
+}
+
+.banner p {
+    margin-top: 0px;
+    padding-right: 125px;
+}
+
+.banner button {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 20px 35px;
+    border-radius: 14px;
+    margin-top: 20px;
+}
+
+.company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 20px;
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 1080px) {
+    .banner button {
+        width: 80%;
+    }
+
+    .company {
+        margin-top: 30px;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner button {
+        width: 100%;
+    }
+}
