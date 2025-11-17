@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.travel {
+    width: 30%;
+    padding: 25px;
+    margin: auto;
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.icon {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0 10px 0;
+}
+
+.icon img {
+    width: 30px;
+}
+
+.people {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.person img {
+    width: 30px;
+}
+
+.heart {
+    width: 30px;
+}
+
+.ongoing {
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    right: -80px;
+    background-color: white;
+    box-shadow: 0 0 20px black;
+    border-radius: 10px;
+    padding: 10px 25px 10px 0px;
+}
+
+.heart:hover .ongoing {
+    display: block;
+}
+
+.hover {
+    display: flex;
+}
+
+.user img {
+    clip-path: circle(30%);
+    width: 100px;
+}
+
+.progress img {
+    width: 180px;
+}
+
+@media screen and (max-width: 1080px) {
+    .travel {
+        width: 30%;
+        margin: 20px auto;
+    }
+
+
+    .heart:hover .ongoing {
+        display: block;
+        position: absolute;
+        right: -20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .travel {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+
+    .heart:hover .ongoing {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+}
