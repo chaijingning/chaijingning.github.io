@@ -2,7 +2,7 @@
     background-color: lavender;
     width: 40%;
     border-radius: 8px;
-    padding: 20px;
+    padding: 5px 20px 20px 20px;
     justify-self: center;
 }
 
@@ -12,17 +12,22 @@
 
 .form {
     font-size: 18px;
-    font-weight: medium;
+    width: 95%;
+    justify-content: space-between;
+    margin: auto;
 }
 
 .info {
     display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
 
 .info div {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
+    width: 40%;
 }
 
 .link div {
@@ -34,9 +39,15 @@
 }
 
 .color p {
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 8px;
 }
 
 .bio p {
     margin-bottom: 5px;
+}
+
+.bio textarea {
+    width: 100%;
+    margin-bottom: 20px;
 }
