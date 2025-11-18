@@ -1,0 +1,42 @@
+.container {
+    background-color: lavender;
+    width: 40%;
+    border-radius: 8px;
+    padding: 20px;
+    justify-self: center;
+}
+
+.h1 {
+    margin-top: 0px;
+}
+
+.form {
+    font-size: 18px;
+    font-weight: medium;
+}
+
+.info {
+    display: flex;
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.link div {
+    row-gap: 5px;
+}
+
+.color {
+    font-size: 16px;
+}
+
+.color p {
+    font-size: 24px;
+}
+
+.bio p {
+    margin-bottom: 5px;
+}
