@@ -1,9 +1,15 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 .container {
     background-color: lavender;
     width: 40%;
     border-radius: 8px;
     padding: 5px 20px 20px 20px;
-    justify-self: center;
 }
 
 .h1 {
@@ -21,6 +27,12 @@
     display: flex;
     justify-content: space-between;
     margin: auto;
+}
+
+.info input,
+.link input {
+    border-radius: 10px;
+    padding: 8px;
 }
 
 .info div {
