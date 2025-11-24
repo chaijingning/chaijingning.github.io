@@ -63,7 +63,8 @@
  }
 
  .r1,
- .r2 {
+ .r2,
+ .r3 {
      display: flex;
      gap: 30px;
      justify-content: center;
@@ -137,7 +138,8 @@
      }
 
      .r1,
-     .r2 {
+     .r2,
+     .r3 {
          display: flex;
          flex-wrap: wrap;
          gap: 30px;
