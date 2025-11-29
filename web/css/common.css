@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 /* colors*/
 .white {
     color: #ffffff;
@@ -149,4 +153,45 @@
 .largeicon {
     width: 35px;
     height: 35px;
+}
+
+/*header*/
+.header {
+    background-color: #FFF9F3;
+    color: #151B2B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.menu {
+    display: flex;
+}
+
+/*footer*/
+.footer {
+    background-color: #151B2B;
+    color: #ffffff;
+    display: flex;
+}
+
+.footerinfo {
+    display: flex;
+}
+
+.footerlogo img {
+    width: 240px;
+    height: 240px;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+    padding-left: 15px;
 }
