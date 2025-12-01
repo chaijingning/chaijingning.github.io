@@ -88,6 +88,13 @@ body {
     line-height: 1.5;
 }
 
+.smallregular {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
 .smallbold {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
@@ -159,10 +166,15 @@ body {
 .header {
     background-color: #FFF9F3;
     color: #151B2B;
+
+}
+
+.headerinfo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    max-width: 1280px;
 }
 
 .logo img {
@@ -172,17 +184,62 @@ body {
 
 .menu {
     display: flex;
+    gap: 15px;
 }
+
+.menu a {
+    text-decoration: none;
+    padding-right: 8px;
+}
+
+.menu-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: 160px;
+    z-index: 1;
+    background-color: #FFF9F3;
+}
+
+.submenu div:hover a {
+    background-color: #FF6F61;
+}
+
+.submenu a {
+    display: block;
+    padding: 5px;
+}
+
 
 /*footer*/
 .footer {
     background-color: #151B2B;
     color: #ffffff;
+    padding-top: 40px;
+}
+
+.footer-info {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .footerinfo {
     display: flex;
+    align-items: center;
+}
+
+.footerlogo {
+    margin-left: 65px;
+    margin-right: 70px;
 }
 
 .footerlogo img {
@@ -190,8 +247,60 @@ body {
     height: 240px;
 }
 
+.navigation {
+    display: flex;
+    gap: 35px;
+}
+
+.footer-menu div {
+    padding-bottom: 10px;
+}
+
+.footer-menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-menu :hover {
+    color: #FF6F61;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.contact-info .h5 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0px;
+    width: 280px;
+}
+
 .social {
     display: flex;
     gap: 15px;
     padding-left: 15px;
 }
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-top: 1px solid #ffffff;
+    padding: 15px 0px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1080px) {}
+
+@media screen and (max-width: 786px) {}
+
+@media screen and (max-width: 400px) {}
