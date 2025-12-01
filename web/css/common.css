@@ -140,6 +140,11 @@ body {
     border-radius: 3px;
 }
 
+.medium:hover {
+    background-color: #FFF9F3;
+    color: #151B2B;
+}
+
 .large {
     color: #ffffff;
     background-color: #FF6F61;
@@ -150,6 +155,12 @@ body {
     border: none;
     text-align: center;
     border-radius: 10px;
+}
+
+.large:hover {
+    background-color: none;
+    border: 1px solid #FF6F61;
+    color: #151B2B;
 }
 
 /*icons size*/

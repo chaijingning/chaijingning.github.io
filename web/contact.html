@@ -69,7 +69,7 @@
         </div>
 
         <div class="content">
-            <div class="info">
+            <div class="content-info">
                 <div class="contact-cat">
                     <img src="image/contactcat.png" alt="cat">
                 </div>
@@ -82,20 +82,20 @@
                         care and well-being.</p>
 
                     <div class="information">
-                        <div>
+                        <div class="infotext">
                             <div class="icon"><img class="largeicon" src="image/Address.png" alt="address icon"></div>
                             <p class="darkblue normalregular">30, Jalan Sulaiman 1, Taman Putra Sulaiman, 68000 Ampang,
                                 Selangor
                             </p>
                         </div>
 
-                        <div>
+                        <div class="infotext">
                             <div class="icon"><img class="largeicon" src="image/Letter.png" alt="email icon"></div>
                             <p class="darkblue normalregular">paws_whiskers@gmail.com
                             </p>
                         </div>
 
-                        <div>
+                        <div class="infotext">
                             <div class="icon"><img class="largeicon" src="image/Phone.png" alt="phone icon"></div>
                             <p class="darkblue normalregular">+1 800 123 456 789
                             </p>
@@ -105,26 +105,29 @@
             </div>
 
             <div class="form">
-                <div class="input">
-                    <div>
-                        <input type="text" id="Name" name="Name*" placeholder="Name" required><br>
-                    </div>
-                    <div>
-                        <input type="email" id="email" name="email" placeholder="Email*" required><br>
-                    </div>
-                </div>
+                <h3 class="darkblue">Send Us A Friendly Message</h3>
 
-                <div class="input">
+                <div class="input1">
                     <div>
-                        <input type="number" id="number" name="number" placeholder="Phone no*" required><br>
+                        <input class="smallbold" type="text" id="Name" name="Name*" placeholder="Name" required><br>
+                    </div>
+                    <div>
+                        <input class="smallbold" type="email" id="email" name="email" placeholder="Email*" required><br>
                     </div>
                 </div>
 
-                <div class="input">
-                    <textarea id="Message" name="Message" rows="6" cols="50"></textarea>
+                <div class="input2">
+                    <div>
+                        <input class="smallbold" type="number" id="number" name="number" placeholder="Phone no*"
+                            required><br>
+                    </div>
                 </div>
 
-                <button type="button" onclick="alert('Your response has been submitted')">Submit</button>
+                <div class="input3">
+                    <textarea class="smallbold" id="Message" name="Message" rows="6" cols="50"></textarea>
+                </div>
+
+                <button class="medium" type="button" onclick="alert('Your Message has been submitted')">Submit</button>
             </div>
         </div>
 
