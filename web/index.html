@@ -25,7 +25,6 @@
         height: 382px;
         margin-left: 40px;
         margin-top: 72px;
-        margin-bottom: 74px;
     }
 
     .headline .medium {
@@ -44,7 +43,13 @@
 
     .categories {
         display: flex;
-        justify-content: space-evenly
+        flex-wrap: wrap;
+        gap: 54px;
+        justify-content: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 160px;
+        min-height: 245px;
     }
 
     .categories img {
@@ -55,16 +60,21 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 43%;
     }
 
     .categories .service {
         display: flex;
         align-items: center;
         gap: 29px;
-        width: 415px;
-        height: 245px;
+        width: calc(33.33% - 36px);
+        justify-content: center;
         background-color: #C2E2FA;
         border-radius: 10px;
+    }
+
+    .servicedescription .h5 {
+        color: #FF6F61;
     }
 </style>
 
