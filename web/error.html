@@ -21,7 +21,7 @@
         max-width: 80%;
         height: auto;
         display: block;
-        margin: 0 auto 20px auto;
+        margin: 163px auto 20px auto;
     }
 
     .error-section h2 {
@@ -42,28 +42,50 @@
         overflow: hidden;
     }
 
+    .search-container {
+        width: 100%;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
     .search-bar {
-        display: inline-flex;
+        display: flex;
         align-items: center;
         width: 710px;
-        height: 55;
-        margin-bottom: 20px;
+        height: 55px;
+        background: #ffffff;
+        border-radius: 10px;
+        margin: 0 auto;
+        overflow: hidden;
     }
 
     .search-bar input {
-        width: 260px;
-        padding: 10px 15px;
-        border: 1px solid #aaa;
-        border-right: none;
-        border-radius: 8px 0 0 8px;
+        flex: 1;
+        height: 100%;
+        border: none;
+        outline: none;
+        padding: 0 15px;
+        font-size: 16px;
+        background: white;
     }
 
     .search-btn {
-        padding: 10px 15px;
-        border: 1px solid #aaa;
-        border-radius: 0 8px 8px 0;
+        width: 55px;
+        height: 100%;
+        border: none;
+        background: transparent;
         cursor: pointer;
-        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .search-btn img {
+        width: 22px;
+        height: 22px;
     }
 
     .home-btn {
