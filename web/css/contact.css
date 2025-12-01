@@ -1,0 +1,59 @@
+.banner {
+    background-image: url(../image/contact-banner.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 70vh;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*contact information*/
+.content {
+    max-width: 1280px;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.content-info div {
+    width: 50%;
+}
+
+.content-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infotext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 0px;
+    width: 460px;
+}
+
+.form {
+    background-color: #C2E2FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.input1 {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+@media screen and (max-width: 1080px) {}
+
+@media screen and (max-width: 786px) {}
+
+@media screen and (max-width: 500px) {}
