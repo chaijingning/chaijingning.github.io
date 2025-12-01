@@ -25,7 +25,6 @@
         height: 382px;
         margin-left: 40px;
         margin-top: 72px;
-        margin-bottom: 74px;
     }
 
     .headline .medium {
@@ -41,6 +40,42 @@
     .headline .h2 {
         color: #FFF9F3;
     }
+
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 54px;
+        justify-content: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 160px;
+        min-height: 245px;
+    }
+
+    .categories img {
+        width: 140px;
+    }
+
+    .categories .servicedescription {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 43%;
+    }
+
+    .categories .service {
+        display: flex;
+        align-items: center;
+        gap: 29px;
+        width: calc(33.33% - 36px);
+        justify-content: center;
+        background-color: #C2E2FA;
+        border-radius: 10px;
+    }
+
+    .servicedescription .h5 {
+        color: #FF6F61;
+    }
 </style>
 
 <body>
@@ -50,6 +85,35 @@
             Delivered with Love</p>
         <a class="medium" href="shop.html">Explore</a>
     </div>
+    <div class="categories">
+        <div class="service">
+            <img src="image/petbowl.png" alt="Pet Bowl">
+            <div class="servicedescription">
+                <p class="h5">Pet Food</p>
+                <p class="smallbold">High-quality pet food made with natural ingredients to support healthy digestion,
+                    strong
+                    muscles, and overall wellness.</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="image/petgrooming.png" alt="Pet Grooming">
+            <div class="servicedescription">
+                <p class="h5">Pet Grooming</p>
+                <p class="smallbold">Gentle, full-service grooming for a healthier coat and happier pet. All at one
+                    place!
+                </p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="image/petsupply.png" alt="Pet Supply">
+            <div class="servicedescription">
+                <p class="h5">Pet Supplies</p>
+                <p class="smallbold">Quality pet products designed to keep your furry friend happy and healthy.
+                    Explore now!</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
