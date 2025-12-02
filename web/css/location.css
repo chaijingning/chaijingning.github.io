@@ -1,14 +1,25 @@
-.headimg img {
+.head {
+    background-image: url(../image/location.png);
+    background-size: cover;
     width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .head h1 {
     font-size: 60px;
     color: white;
     text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 .subhead {
+    padding-top: 75px;
+    padding-bottom: 50px;
     gap: 20px;
 }
 
