@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
@@ -68,41 +69,43 @@
             </div>
         </div>
 
-        <div class="content">
-            <div class="content-info">
-                <div class="contact-cat">
+        <div class="content-container">
+            <div class="content">
+                <div class="catimage">
                     <img src="image/contactcat.png" alt="cat">
                 </div>
 
-                <div class="information-section">
+
+                <div class="information">
                     <p class="coral normalbold">Our Info</p>
                     <h2 class="darkblue">Contact Us</h2>
-                    <p class="darkblue normalregular">We’re here to assist with any questions or needs regarding your
+                    <p class="darkblue normalregular">We’re here to assist with any questions or needs regarding
+                        your
                         pet’s
                         care and well-being.</p>
 
-                    <div class="information">
-                        <div class="infotext">
-                            <div class="icon"><img class="largeicon" src="image/Address.png" alt="address icon"></div>
-                            <p class="darkblue normalregular">30, Jalan Sulaiman 1, Taman Putra Sulaiman, 68000 Ampang,
-                                Selangor
-                            </p>
-                        </div>
 
-                        <div class="infotext">
-                            <div class="icon"><img class="largeicon" src="image/Letter.png" alt="email icon"></div>
-                            <p class="darkblue normalregular">paws_whiskers@gmail.com
-                            </p>
-                        </div>
+                    <div class="infotext">
+                        <img class="largeicon" src="image/Address.png" alt="address icon">
+                        <p class="darkblue normalregular">30, Jalan Sulaiman 1, Taman Putra Sulaiman, 68000 Ampang,
+                            Selangor
+                        </p>
+                    </div>
 
-                        <div class="infotext">
-                            <div class="icon"><img class="largeicon" src="image/Phone.png" alt="phone icon"></div>
-                            <p class="darkblue normalregular">+1 800 123 456 789
-                            </p>
-                        </div>
+                    <div class="infotext">
+                        <img class="largeicon" src="image/Letter.png" alt="email icon">
+                        <p class="darkblue normalregular">paws_whiskers@gmail.com
+                        </p>
+                    </div>
+
+                    <div class="infotext">
+                        <img class="largeicon" src="image/Phone.png" alt="phone icon">
+                        <p class="darkblue normalregular">+1 800 123 456 789
+                        </p>
                     </div>
                 </div>
             </div>
+
 
             <div class="form">
                 <h3 class="darkblue">Send Us A Friendly Message</h3>
@@ -116,79 +119,79 @@
                     </div>
                 </div>
 
-                <div class="input2">
+                <div class="input">
                     <div>
                         <input class="smallbold" type="number" id="number" name="number" placeholder="Phone no*"
                             required><br>
                     </div>
                 </div>
 
-                <div class="input3">
+                <div class="message">
                     <textarea class="smallbold" id="Message" name="Message" rows="6" cols="50"></textarea>
                 </div>
 
                 <button class="medium" type="button" onclick="alert('Your Message has been submitted')">Submit</button>
             </div>
         </div>
+    </div>
 
-        <div class="footer">
-            <div class="footer-info">
-                <div class="footerinfo">
-                    <div class="footerlogo">
-                        <img src="image/footer.png" alt="logoimage">
-                    </div>
-
-                    <div class="navigation">
-                        <div class="footer-menu">
-                            <div><a class="smallregular" href="index.html">Home</a></div>
-                            <div><a class="smallregular" href="about.html">About Us </a></div>
-                            <div><a class="smallregular" href="service.html">Our Service</a></div>
-                            <div><a class="smallregular" href="shop.html">Shop</a></div>
-                            <div><a class="smallregular" href="contact.html">Contact Us</a></div>
-                        </div>
-
-                        <div class="footer-menu">
-                            <div><a class="smallregular" href="team.html">Our Team</a></div>
-                            <div><a class="smallregular" href="location.html">Location</a></div>
-                            <div><a class="smallregular" href="faq.html">Faq</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-info">
-                    <h5 class="white">Contact Us</h5>
-
-                    <div class="info">
-                        <div class="icon"><img class="smallicon" src="image/Address.png" alt="address icon"></div>
-                        <p class="white smallregular">30, Jalan Sulaiman 1, Taman Putra Sulaiman, 68000 Ampang, Selangor
-                        </p>
-                    </div>
-
-                    <div class="info">
-                        <div><img class="smallicon" src="image/Letter.png" alt="email"></div>
-                        <p class="white smallregular">paws_whiskers@gmail.com</p>
-                    </div>
-
-                    <div class="info">
-                        <div><img class="smallicon" src="image/Phone.png" alt="phone icon"></div>
-                        <p class="white smallregular">+1 800 123 456 789</p>
-                    </div>
-
-                    <div class="social">
-                        <div><img src="image/Facebook Circled.png" alt="facebook icon"></div>
-                        <div><img src="image/Twitter Circled.png" alt="twitter icon"></div>
-                        <div><img src="image/instagram.png" alt="instagram icon"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="copyright">
-                <div class="footerlogomobile">
+    <div class="footer">
+        <div class="footer-info">
+            <div class="footerinfo">
+                <div class="footerlogo">
                     <img src="image/footer.png" alt="logoimage">
                 </div>
-                <p class="smallregular">Copyright © PawsWhiskers. All Right Reserved.</p>
 
+                <div class="navigation">
+                    <div class="footer-menu">
+                        <div><a class="smallregular" href="index.html">Home</a></div>
+                        <div><a class="smallregular" href="about.html">About Us </a></div>
+                        <div><a class="smallregular" href="service.html">Our Service</a></div>
+                        <div><a class="smallregular" href="shop.html">Shop</a></div>
+                        <div><a class="smallregular" href="contact.html">Contact Us</a></div>
+                    </div>
+
+                    <div class="footer-menu">
+                        <div><a class="smallregular" href="team.html">Our Team</a></div>
+                        <div><a class="smallregular" href="location.html">Location</a></div>
+                        <div><a class="smallregular" href="faq.html">Faq</a></div>
+                    </div>
+                </div>
             </div>
+
+            <div class="contact-info">
+                <h5 class="white">Contact Us</h5>
+
+                <div class="info">
+                    <div class="icon"><img class="smallicon" src="image/Address.png" alt="address icon"></div>
+                    <p class="white smallregular">30, Jalan Sulaiman 1, Taman Putra Sulaiman, 68000 Ampang, Selangor
+                    </p>
+                </div>
+
+                <div class="info">
+                    <div><img class="smallicon" src="image/Letter.png" alt="email"></div>
+                    <p class="white smallregular">paws_whiskers@gmail.com</p>
+                </div>
+
+                <div class="info">
+                    <div><img class="smallicon" src="image/Phone.png" alt="phone icon"></div>
+                    <p class="white smallregular">+1 800 123 456 789</p>
+                </div>
+
+                <div class="social">
+                    <div><img src="image/Facebook Circled.png" alt="facebook icon"></div>
+                    <div><img src="image/Twitter Circled.png" alt="twitter icon"></div>
+                    <div><img src="image/instagram.png" alt="instagram icon"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="footerlogomobile">
+                <img src="image/footer.png" alt="logoimage">
+            </div>
+            <p class="smallregular">Copyright © PawsWhiskers. All Right Reserved.</p>
+
         </div>
     </div>
 

@@ -5,10 +5,312 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/common.css">
+
+
+    <style>
+        body {
+            background: #FFF9F3;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            filter: brightness(85%);
+        }
+
+        .hero h1 {
+            font-family: 'Nunito Sans', sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 650px;
+            font-size: 60px;
+            color: white;
+            margin: 0;
+        }
+
+
+        .blog-section {
+            padding: 115px 80px;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 59px 54px;
+        }
+
+        .photo {
+            width: 565px;
+            height: 645px;
+            background: #FFFFFF;
+            margin-left: 60px;
+            padding: 18px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .photo img {
+            width: 100%;
+            border-radius: 20px;
+            width: 500px;
+            height: 333px;
+            object-fit: cover;
+            margin: 15px auto;
+        }
+
+        .photo h3 {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 36px;
+            margin-left: 15px;
+        }
+
+        .photo a {
+            color: #FF6F61;
+            text-decoration: none;
+            font-size: 22px;
+            margin-left: 15px;
+            margin-top: 30px;
+        }
+
+
+        .card {
+            width: 565px;
+            height: 645px;
+            background: #FFFFFF;
+            margin-left: 60px;
+            padding: 18px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 36px;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+
+        .card a {
+            color: #FF6F61;
+            text-decoration: none;
+            font-size: 22px;
+            margin-left: 15px;
+            margin-top: 30px;
+        }
+
+        .pagination span {
+            padding: 8px 14px;
+            align-items: center;
+            border-radius: 8px;
+            background: #ddd;
+            cursor: pointer;
+        }
+
+        .pagination .active {
+            background: #151B2B;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="header">
+        <div class="headerinfo">
+            <div class="logo">
+                <a href="index.html"><img src="image/logo.png" alt="Paws&Whiskers" width="220px"></a>
+            </div>
 
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+            <nav class="menu" id="mobile-menu">
+                <div class="menu-item">
+                    <div class="item">
+                        <a class="darkblue largemedium" href="about.html">About Us</a>
+                        <img src="image/arrowdown.png" alt="downarrow">
+                    </div>
+                    <div class="submenu">
+                        <div><a class="darkblue largemedium" href="team.html">Our Team</a></div>
+                        <div><a class="darkblue largemedium" href="location.html">Location</a></div>
+                        <div><a class="darkblue largemedium" href="faq.html">FAQ</a></div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item">
+                        <a class="darkblue largemedium" href="service.html">Our Service</a>
+                        <img src="image/arrowdown.png" alt="downarrow">
+                    </div>
+                    <div class="submenu">
+                        <div><a class="darkblue largemedium" href="nutrition.html">Pet Nutrition</a></div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div><a class="darkblue largemedium" href="blog.html">Blog</a></div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item">
+                        <a class="darkblue largemedium" href="shop.html">Shop</a>
+                        <img src="image/arrowdown.png" alt="downarrow">
+                    </div>
+                    <div class="submenu">
+                        <div><a class="darkblue largemedium" href="food.html">Pet Food</a></div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div><a class="darkblue largemedium" href="contact.html">Contact Us</a></div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <img src="image/petinfo1.png" alt="pets">
+        <h1>Pet's Info</h1>
+    </section>
+    <section class="blog-section">
+        <div class="blog-grid">
+
+            <div class="photo">
+                <img src="image/travelingwithPets .png" alt="pets">
+                <h3>Traveling with Pets: Tips for Stress-Free Trips</h3>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="card">
+                <img src="image/petparentneeds.png">
+                <h3>Top 5 Pet Essentials Every New Pet Parent Needs</h3>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="card">
+                <img src="image/dogshampoo .png ">
+                <h3>How to Pick the Dog Shampoo for Sensitive Skin</h3>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="card">
+                <img src="image/seasonalpet.png">
+                <h3>Seasonal Pet Grooming Tips</h3>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="card">
+                <img src="image/catfood .png">
+                <h3>Best Cat Food in Malaysia: Affordable & Healthy Options</h3>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="card">
+                <img src="image/pettravel .png">
+                <h3>Pet Travel Requirement: Rabies Certificate</h3>
+                <a href="#">Read more</a>
+            </div>
+
+        </div>
+
+        <div class="pagination">
+            <span class="active">1</span>
+            <span>2</span>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="footer-info">
+            <div class="footerinfo">
+                <div class="footerlogo">
+                    <img src="image/footer.png" alt="logoimage">
+                </div>
+
+                <div class="navigation">
+                    <div class="footer-menu">
+                        <div><a class="smallregular" href="index.html">Home</a></div>
+                        <div><a class="smallregular" href="about.html">About Us </a></div>
+                        <div><a class="smallregular" href="service.html">Our Service</a></div>
+                        <div><a class="smallregular" href="shop.html">Shop</a></div>
+                        <div><a class="smallregular" href="contact.html">Contact Us</a></div>
+                    </div>
+
+                    <div class="footer-menu">
+                        <div><a class="smallregular" href="team.html">Our Team</a></div>
+                        <div><a class="smallregular" href="location.html">Location</a></div>
+                        <div><a class="smallregular" href="faq.html">Faq</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <h5 class="white">Contact Us</h5>
+
+                <div class="info">
+                    <div class="icon"><img class="smallicon" src="image/Address.png" alt="address icon"></div>
+                    <p class="white smallregular">30, Jalan Sulaiman 1, Taman Putra Sulaiman, 68000 Ampang, Selangor
+                    </p>
+                </div>
+
+                <div class="info">
+                    <div><img class="smallicon" src="image/Letter.png" alt="email"></div>
+                    <p class="white smallregular">paws_whiskers@gmail.com</p>
+                </div>
+
+                <div class="info">
+                    <div><img class="smallicon" src="image/Phone.png" alt="phone icon"></div>
+                    <p class="white smallregular">+1 800 123 456 789</p>
+                </div>
+
+                <div class="social">
+                    <div><img src="image/Facebook Circled.png" alt="facebook icon"></div>
+                    <div><img src="image/Twitter Circled.png" alt="twitter icon"></div>
+                    <div><img src="image/instagram.png" alt="instagram icon"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="footerlogomobile">
+                <img src="image/footer.png" alt="logoimage">
+            </div>
+            <p class="smallregular">Copyright © PawsWhiskers. All Right Reserved.</p>
+
+        </div>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
+
+        toggleButton.addEventListener("click", () => {
+            menu.classList.toggle("active");
+
+            // Change icon
+            if (menu.classList.contains("active")) {
+                toggleButton.innerHTML = "&times;"; // × (cross)
+            } else {
+                toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
+            }
+        });
+    </script>
 </body>
 
 </html>
