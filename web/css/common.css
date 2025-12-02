@@ -37,39 +37,45 @@ body {
     box-sizing: border-box;
 }
 
-.h1 {
+/* === ROOT VARIABLES === */
+:root {
+    --primarycolor: #FF6F61;
+    --secondarycolor: #C2E2FA;
+    --footercolor: #151B2B;
+    --bgcolor: #FFF9F3;
+    --radius: 10px;
+    --font-base: 'Nunito Sans', sans-serif;
+}
+
+/*headings*/
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Amiri', serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h1 {
     font-size: 60px;
-    font-weight: bold;
-    line-height: 1.5;
 }
 
-.h2 {
-    font-family: 'Amiri', serif;
+h2 {
     font-size: 48px;
-    font-weight: bold;
-    line-height: 1.5;
 }
 
-.h3 {
-    font-family: 'Amiri', serif;
+h3 {
     font-size: 36px;
-    font-weight: bold;
-    line-height: 1.5;
 }
 
-.h4 {
-    font-family: 'Amiri', serif;
+h4 {
     font-size: 30px;
-    font-weight: bold;
-    line-height: 1.5;
 }
 
-.h5 {
-    font-family: 'Amiri', serif;
+h5 {
     font-size: 24px;
-    font-weight: bold;
-    line-height: 1.5;
 }
 
 .largemedium {
