@@ -1,32 +1,3 @@
-body {
-    margin: 0px;
-}
-
-/* colors*/
-.white {
-    color: #ffffff;
-}
-
-.yellow {
-    color: #FFF9F3;
-}
-
-.coral {
-    color: #FF6F61;
-}
-
-.lightblue {
-    color: #C2E2FA;
-}
-
-.darkblue {
-    color: #151B2B;
-}
-
-.gray {
-    color: #616161;
-}
-
 /*fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Lugrasimo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oxygen:wght@300;400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quintessential&family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Lugrasimo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oxygen:wght@300;400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quintessential&family=Space+Grotesk:wght@300..700&display=swap');
@@ -39,12 +10,20 @@ body {
 
 /* === ROOT VARIABLES === */
 :root {
-    --primarycolor: #FF6F61;
-    --secondarycolor: #C2E2FA;
-    --footercolor: #151B2B;
-    --bgcolor: #FFF9F3;
+    --coral: #FF6F61;
+    --lightblue: #C2E2FA;
+    --darkblue: #151B2B;
+    --gray: #616161;
+    --text-dark: #151B2B;
+    --text-light: #FFFFFF;
+    --bg-light: #FFF9F3;
     --radius: 10px;
     --font-base: 'Nunito Sans', sans-serif;
+    --font-heading: 'Amiri', serif;
+}
+
+body {
+    background-color: var(--bg-light);
 }
 
 /*headings*/
@@ -53,7 +32,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Amiri', serif;
+    font-family: var(--font-heading);
     font-weight: bold;
     line-height: 1.5;
 }
@@ -78,54 +57,51 @@ h5 {
     font-size: 24px;
 }
 
-.largemedium {
-    font-family: 'Nunito Sans', sans-serif;
+p {
+    font-family: var(--font-base);
+    line-height: 1.5;
+}
+
+p.largemedium {
     font-size: 22px;
     font-weight: 500;
-    line-height: 1.5;
 }
 
-.normalregular {
-    font-family: 'Nunito Sans', sans-serif;
+p.normalregular {
     font-size: 18px;
     font-weight: normal;
-    line-height: 1.5;
 }
 
-.normalbold {
-    font-family: 'Nunito Sans', sans-serif;
+p.normalbold {
     font-size: 16px;
     font-weight: bold;
-    line-height: 1.5;
 }
 
-.smallregular {
-    font-family: 'Nunito Sans', sans-serif;
+p.smallregular {
     font-size: 16px;
     font-weight: bold;
-    line-height: 1.5;
 }
 
-.smallbold {
-    font-family: 'Nunito Sans', sans-serif;
+p.smallbold {
     font-size: 14px;
     font-weight: bold;
-    line-height: 1.5;
 }
 
-.smallregular {
-    font-family: 'Nunito Sans', sans-serif;
+p.smallregular {
     font-size: 12px;
     font-weight: normal;
-    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*buttons*/
-.small {
-    color: #616161;
-    background-color: #C2E2FA;
+.smallbtn {
+    color: var(--gray);
+    background-color: var(--lightblue);
     padding: 8px 15px;
-    font-family: 'Amiri', serif;
+    font-family: var(--font-base);
     font-size: 12px;
     font-weight: bold;
     border: none;
@@ -133,11 +109,11 @@ h5 {
     border-radius: 3px;
 }
 
-.medium {
-    color: #ffffff;
-    background-color: #FF6F61;
+.mediumbtn {
+    color: var(--text-light);
+    background-color: var(--coral);
     padding: 10px 17px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--font-base);
     font-size: 16px;
     font-weight: 500;
     border: none;
@@ -146,11 +122,11 @@ h5 {
 }
 
 
-.large {
-    color: #ffffff;
-    background-color: #FF6F61;
+.largebtn {
+    color: var(--text-light);
+    background-color: var(--coral);
     padding: 19px 60px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--font-base);
     font-size: 16px;
     font-weight: 500;
     border: none;
@@ -158,10 +134,10 @@ h5 {
     border-radius: 10px;
 }
 
-.large:hover {
+.largebtn:hover {
     background-color: none;
-    border: 1px solid #FF6F61;
-    color: #151B2B;
+    border: 1px solid var(--coral);
+    color: var(--darkblue);
 }
 
 /*icons size*/
@@ -182,8 +158,8 @@ h5 {
 
 /*header*/
 .header {
-    background-color: #FFF9F3;
-    color: #151B2B;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
 
 }
 
@@ -213,7 +189,6 @@ h5 {
 }
 
 .menu a {
-    text-decoration: none;
     padding-right: 8px;
 }
 
@@ -231,11 +206,11 @@ h5 {
     position: absolute;
     width: 160px;
     z-index: 1;
-    background-color: #FFF9F3;
+    background-color: var(--bg-light);
 }
 
 .submenu div:hover a {
-    background-color: #FF6F61;
+    background-color: var(--coral);
 }
 
 .submenu a {
@@ -256,8 +231,8 @@ h5 {
 
 /*footer*/
 .footer {
-    background-color: #151B2B;
-    color: #ffffff;
+    background-color: var(--darkblue);
+    color: var(--text-light);
     padding-top: 40px;
 }
 
@@ -298,12 +273,11 @@ h5 {
 }
 
 .footer-menu a {
-    color: #ffffff;
-    text-decoration: none;
+    color: var(--text-light);
 }
 
 .footer-menu :hover {
-    color: #FF6F61;
+    color: var(--coral);
 }
 
 .contact-info {
@@ -336,7 +310,7 @@ h5 {
     display: flex;
     justify-content: center;
     margin: auto;
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid var(--text-light);
     padding: 15px 0px;
     margin-top: 40px;
 }
@@ -406,7 +380,7 @@ h5 {
     .menu {
         display: none;
         flex-direction: column;
-        background-color: #FFF9F3;
+        background-color: var(--bg-light);
         position: fixed;
         top: 0;
         left: 0;
