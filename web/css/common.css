@@ -291,6 +291,13 @@ textarea {
 
 .intro-text {
     font-family: var(--font-base);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.content-text {
+    font-family: var(--font-base);
     font-size: 18px;
     font-weight: normal;
     color: var(--text-dark);
