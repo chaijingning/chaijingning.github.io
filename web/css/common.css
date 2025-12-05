@@ -18,29 +18,8 @@
     --text-light: #FFFFFF;
     --bg-light: #FFF9F3;
     --radius: 10px;
-}
-
-:root {
     --font-heading: 'Amiri', serif;
     --font-base: 'Nunito Sans', sans-serif;
-}
-
-:root {
-    --h1-size: 60px;
-    --h2-size: 48px;
-    --h3-size: 36px;
-    --h4-size: 30px;
-    --h5-size: 24px;
-}
-
-:root {
-    --p-largemedium-size: 22px;
-    --p-largeregular-size: 18px;
-    --p-normalbold-size: 16px;
-    --p-normalregular-size: 16px;
-    --p-smallbold-size: 14px;
-    --p-smallregular-size: 14px;
-    --p-extrasmall-size: 12px;
 }
 
 body {
