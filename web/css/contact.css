@@ -32,18 +32,8 @@ body {
     align-items: center;
 }
 
-.information {
-    width: 45%;
-}
+.information p:nth-of-type(2) {}
 
-.information p:nth-of-type(2) {
-    width: 80%;
-    max-width: 480px;
-}
-
-.information h2 {
-    padding: 15px 0px;
-}
 
 .catimage img {
     width: 90%;
@@ -56,8 +46,9 @@ body {
 
 .infotext {
     display: flex;
-    margin: 15px 0px;
+    margin: 20px 0px;
     gap: 15px;
+    width: 90%;
 }
 
 

@@ -1,32 +1,3 @@
-body {
-    margin: 0px;
-}
-
-/* colors*/
-.white {
-    color: #ffffff;
-}
-
-.yellow {
-    color: #FFF9F3;
-}
-
-.coral {
-    color: #FF6F61;
-}
-
-.lightblue {
-    color: #C2E2FA;
-}
-
-.darkblue {
-    color: #151B2B;
-}
-
-.gray {
-    color: #616161;
-}
-
 /*fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Lugrasimo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oxygen:wght@300;400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quintessential&family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Lugrasimo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oxygen:wght@300;400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quintessential&family=Space+Grotesk:wght@300..700&display=swap');
@@ -37,89 +8,107 @@ body {
     box-sizing: border-box;
 }
 
-.h1 {
-    font-family: 'Amiri', serif;
+/* === ROOT VARIABLES === */
+:root {
+    --coral: #FF6F61;
+    --lightblue: #C2E2FA;
+    --darkblue: #151B2B;
+    --gray: #616161;
+    --text-dark: #151B2B;
+    --text-light: #FFFFFF;
+    --bg-light: #FFF9F3;
+    --radius: 10px;
+    --font-heading: 'Amiri', serif;
+    --font-base: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+}
+
+/*headings*/
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--font-heading);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/*h1 is used at banner except index page*/
+h1 {
     font-size: 60px;
-    font-weight: bold;
-    line-height: 1.5;
+    color: var(--text-light);
 }
 
-.h2 {
-    font-family: 'Amiri', serif;
+h2 {
     font-size: 48px;
-    font-weight: bold;
-    line-height: 1.5;
 }
 
-.h3 {
-    font-family: 'Amiri', serif;
+h3 {
     font-size: 36px;
-    font-weight: bold;
-    line-height: 1.5;
 }
 
-.h4 {
-    font-family: 'Amiri', serif;
+h4 {
     font-size: 30px;
-    font-weight: bold;
-    line-height: 1.5;
 }
 
-.h5 {
-    font-family: 'Amiri', serif;
+h5 {
     font-size: 24px;
-    font-weight: bold;
+}
+
+p {
+    font-family: var(--font-base);
     line-height: 1.5;
 }
 
-.largemedium {
-    font-family: 'Nunito Sans', sans-serif;
+p.largemedium {
     font-size: 22px;
     font-weight: 500;
-    line-height: 1.5;
 }
 
-.normalregular {
-    font-family: 'Nunito Sans', sans-serif;
+p.largeregular {
     font-size: 18px;
     font-weight: normal;
-    line-height: 1.5;
 }
 
-.normalbold {
-    font-family: 'Nunito Sans', sans-serif;
+p.normalbold {
     font-size: 16px;
     font-weight: bold;
-    line-height: 1.5;
 }
 
-.smallregular {
-    font-family: 'Nunito Sans', sans-serif;
+p.normalregular {
     font-size: 16px;
-    font-weight: bold;
-    line-height: 1.5;
+    font-weight: normal;
 }
 
-.smallbold {
-    font-family: 'Nunito Sans', sans-serif;
+p.smallbold {
     font-size: 14px;
     font-weight: bold;
-    line-height: 1.5;
 }
 
-.smallregular {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 12px;
+p.smallregular {
+    font-size: 14px;
     font-weight: normal;
-    line-height: 1.5;
+}
+
+p .extrasmall {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*buttons*/
-.small {
-    color: #616161;
-    background-color: #C2E2FA;
+.smallbtn {
+    color: var(--gray);
+    background-color: var(--lightblue);
     padding: 8px 15px;
-    font-family: 'Amiri', serif;
+    font-family: var(--font-base);
     font-size: 12px;
     font-weight: bold;
     border: none;
@@ -127,11 +116,11 @@ body {
     border-radius: 3px;
 }
 
-.medium {
-    color: #ffffff;
-    background-color: #FF6F61;
+.mediumbtn {
+    color: var(--text-light);
+    background-color: var(--coral);
     padding: 10px 17px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--font-base);
     font-size: 16px;
     font-weight: 500;
     border: none;
@@ -139,12 +128,17 @@ body {
     border-radius: 3px;
 }
 
+.mediumbtn:hover {
+    background-color: var(--darkblue);
+    border: none;
+    color: var(--text-light);
+}
 
-.large {
-    color: #ffffff;
-    background-color: #FF6F61;
+.largebtn {
+    color: var(--text-light);
+    background-color: var(--coral);
     padding: 19px 60px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: var(--font-base);
     font-size: 16px;
     font-weight: 500;
     border: none;
@@ -152,10 +146,10 @@ body {
     border-radius: 10px;
 }
 
-.large:hover {
+.largebtn:hover {
     background-color: none;
-    border: 1px solid #FF6F61;
-    color: #151B2B;
+    border: 1px solid var(--coral);
+    color: var(--darkblue);
 }
 
 /*icons size*/
@@ -174,10 +168,19 @@ body {
     height: 35px;
 }
 
+/*input*/
+input,
+textarea {
+    padding: 10px 18px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 /*header*/
 .header {
-    background-color: #FFF9F3;
-    color: #151B2B;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
 
 }
 
@@ -207,7 +210,10 @@ body {
 }
 
 .menu a {
-    text-decoration: none;
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-dark);
     padding-right: 8px;
 }
 
@@ -225,11 +231,11 @@ body {
     position: absolute;
     width: 160px;
     z-index: 1;
-    background-color: #FFF9F3;
+    background-color: var(--bg-light);
 }
 
 .submenu div:hover a {
-    background-color: #FF6F61;
+    background-color: var(--coral);
 }
 
 .submenu a {
@@ -247,12 +253,40 @@ body {
     text-align: center;
 }
 
+/*introduction*/
+.subtitle {
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--coral);
+}
+
+.title {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.intro-text {
+    font-family: var(--font-base);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.content-text {
+    font-family: var(--font-base);
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--text-dark);
+}
 
 /*footer*/
 .footer {
-    background-color: #151B2B;
-    color: #ffffff;
-    padding-top: 40px;
+    background-color: var(--darkblue);
+    color: var(--text-light);
+    padding-top: 80px;
 }
 
 .footer-info {
@@ -267,8 +301,8 @@ body {
 }
 
 .footerlogo {
-    margin-left: 65px;
-    margin-right: 70px;
+    margin-right: 110px;
+    margin-left: 100px;
 }
 
 .footerlogomobile {
@@ -288,35 +322,46 @@ body {
 }
 
 .footer-menu div {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    padding-right: 10px;
 }
 
 .footer-menu a {
-    color: #ffffff;
-    text-decoration: none;
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--text-light);
 }
 
 .footer-menu :hover {
-    color: #FF6F61;
+    color: var(--coral);
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
-    margin-right: 60px;
     margin-bottom: 15px;
+    margin-right: 80px;
 }
 
 .contact-info h5 {
     margin-bottom: 15px;
+    color: var(--text-light);
 }
 
 .info {
     display: flex;
-    align-items: center;
+    align-items: top;
     gap: 15px;
-    margin: 0px;
-    width: 280px;
+    margin: 8px 0px;
+    width: 320px;
+}
+
+.info p {
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--text-light);
 }
 
 .social {
@@ -330,9 +375,12 @@ body {
     display: flex;
     justify-content: center;
     margin: auto;
-    border-top: 1px solid #ffffff;
-    padding: 15px 0px;
-    margin-top: 40px;
+    font-family: var(--font-base);
+    font-size: 14px;
+    font-weight: normal;
+    border-top: 1px solid var(--text-light);
+    padding: 30px 0px;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -345,13 +393,13 @@ body {
 
     /*footer*/
     .footerlogo {
-        margin-left: 50px;
+        margin-left: 40px;
         margin-right: 50px;
     }
 
     .footerlogo img {
-        width: 190px;
-        height: 190px;
+        width: 180px;
+        height: 180px;
     }
 
     .contact-info {
@@ -361,26 +409,25 @@ body {
 
     .info {
         gap: 15px;
-        margin: 0px;
+        margin: 5px;
         width: 280px;
     }
 
     .copyright {
-        padding: px 300px;
         margin-top: 40px;
     }
 }
 
 @media screen and (max-width: 786px) {
-    .h1 {
+    h1 {
         font-size: 48px;
     }
 
-    .h2 {
+    h2 {
         font-size: 36px;
     }
 
-    .h3 {
+    h3 {
         font-size: 30px;
     }
 
@@ -400,7 +447,7 @@ body {
     .menu {
         display: none;
         flex-direction: column;
-        background-color: #FFF9F3;
+        background-color: var(--bg-light);
         position: fixed;
         top: 0;
         left: 0;
@@ -436,7 +483,15 @@ body {
         height: 50vh;
     }
 
+    .title {
+        font-size: 36px;
+    }
+
     /*footer*/
+    .footer {
+        padding-top: 50px;
+    }
+
     .footerlogo {
         display: none;
     }
@@ -444,18 +499,18 @@ body {
     .footerinfo {
         display: flex;
         justify-content: space-between;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
         flex-direction: column;
         align-items: center;
     }
 
     .navigation {
         display: flex;
-        gap: 35px;
+        gap: 25px;
         margin-top: 25px;
         margin-bottom: 25px;
-        padding-left: 25px;
+        padding-left: 0px;
     }
 
     .footer-menu div {
@@ -465,27 +520,40 @@ body {
     .contact-info {
         display: flex;
         flex-direction: column;
-        margin-right: 30px;
+        margin-right: 0px;
         margin-bottom: 15px;
     }
 
     .info {
         display: flex;
-        align-items: center;
+        align-items: top;
         gap: 15px;
         margin: 0px;
         width: 240px;
     }
 
+    .info p {
+        font-size: 14px;
+    }
+
     .copyright {
         display: flex;
         justify-content: space-between;
-        margin-top: 20px;
-        padding: 20px 30px 0px 30px;
+        margin-top: 0px;
+        padding: 0px;
+        border: none;
     }
 
     .footerlogomobile {
         display: block;
+    }
+
+    .mobile {
+        border-top: 1px solid var(--text-light);
+        margin-top: 10px;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
     }
 
     .footerlogomobile img {
@@ -501,6 +569,10 @@ body {
     .banner {
         width: 100%;
         height: 30vh;
+    }
+
+    h1 {
+        font-size: 36px;
     }
 
     /*footer*/
