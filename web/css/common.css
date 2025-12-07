@@ -94,7 +94,7 @@ p.smallregular {
     font-weight: normal;
 }
 
-p .extrasmall {
+p.extrasmall {
     font-size: 12px;
     font-weight: bold;
 }
