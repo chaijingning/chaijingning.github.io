@@ -40,7 +40,6 @@ h5 {
 /*h1 is used at banner except index page*/
 h1 {
     font-size: 60px;
-    color: var(--text-light);
 }
 
 h2 {
