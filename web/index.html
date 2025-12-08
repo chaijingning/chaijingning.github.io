@@ -117,6 +117,40 @@
         line-height: 1.5;
         padding-left: 20px;
     }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 115px;
+        margin-left: 71px;
+        margin-right: 71px;
+    }
+
+    .featuretext {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 26px;
+        gap: 10px;
+    }
+
+    .featuretext p.subtitle {
+        color: var(--coral);
+    }
+
+    .featureimage {
+        width: 100%;
+    }
+
+    .paginationimage {
+        width: 10%;
+        margin-top: 30px;
+    }
+
+    .highlight {
+        color: var(--coral);
+    }
 </style>
 
 <body>
@@ -229,13 +263,16 @@
             </ul>
         </div>
     </div>
-
-    <p class="subtitle">
-        FEATURES
-    </p>
-    <p class="title">Check out our latest Promotion NOW</p>
-    <img src="image/feature.png" alt="feature">
-    <img src="image/pagination.png" alt="pagination">
+    <div class="features">
+        <div class="featuretext">
+            <p class="subtitle">
+                FEATURES
+            </p>
+            <p class="title">Check out our latest <span class="highlight">Promotion</span> NOW</p>
+        </div>
+        <img class="featureimage" src="image/feature.png" alt="feature">
+        <img class="paginationimage" src="image/pagination.png" alt="pagination">
+    </div>
 
     <script>
         const toggleButton = document.getElementById("menu-toggle");
