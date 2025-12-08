@@ -13,15 +13,6 @@
         }
 
 
-        .hero h1 {
-            text-align: center;
-        }
-
-        .hero p.largemedium {
-            text-decoration: none;
-            margin-left: 15px;
-            margin-top: 30px;
-        }
 
 
         .blog-section {
@@ -40,6 +31,19 @@
 
         }
 
+        .vector-divider {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .vector-divider img {
+            width: 80%;
+            max-width: 900px;
+            height: auto;
+        }
+
         .photo {
             width: 565px;
             height: 645px;
@@ -56,13 +60,20 @@
             width: 100%;
             border-radius: 20px;
             width: 500px;
-            height: 333px;
+            height: 334px;
             object-fit: cover;
             margin: 15px auto;
         }
 
         .photo h3 {
+            margin-top: 15px;
             margin-left: 15px;
+        }
+
+        .photo p.largemedium {
+            text-decoration: none;
+            margin-left: 15px;
+            margin-top: 30px;
         }
 
         .card {
@@ -79,8 +90,11 @@
 
         .card img {
             width: 100%;
-            border-radius: 12px;
+            border-radius: 20px;
+            width: 500px;
+            height: 334px;
             object-fit: cover;
+            margin: 15px auto;
         }
 
         .card h3 {
@@ -94,23 +108,21 @@
             margin-top: 30px;
         }
 
-        .pagination span {
-            padding: 8px 14px;
-            align-items: center;
-            border-radius: 8px;
-            background: #ddd;
-            cursor: pointer;
+        .vector-divider {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            margin: 0 0 20px 0;
+            padding-left: 30px;
         }
 
-        .pagination .active {
-            background: #151B2B;
-            color: white;
+        .vector-divider img {
+            width: 100%;
+            max-width: 1280px;
+            height: auto;
         }
 
-        p.largemedium a {
-            text-decoration: none;
-            color: var(--coral);
-        }
+
 
         @media screen and (max-width: 786px) {
             .hero {
