@@ -149,12 +149,18 @@
                 height: auto;
                 padding: 10px;
                 border-radius: 15px;
+                align-items: flex-start;
+                margin-left: 15px;
             }
 
             .photo img,
             .card img {
-                height: 150px;
+                width: 90%;
+                height: 280px;
+                object-fit: cover;
+                align-self: center;
             }
+
 
             .card h3,
             .photo h3 {
@@ -164,7 +170,8 @@
 
             .card p.largemedium,
             .photo p.largemedium {
-                margin-left: 0;
+                font-size: 12px;
                 margin-top: 10px;
+                margin-left: 15px;
             }
         }
