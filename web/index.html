@@ -27,20 +27,20 @@
         height: 382px;
         margin-left: 40px;
         margin-top: 72px;
+        gap: 5px;
     }
 
-    .headline .medium {
-        text-decoration: none;
+    .headline .mediumbtn {
         width: 121px;
         margin-top: auto;
     }
 
-    .headline .h5 {
-        color: #FF6F61;
+    .headline h5 {
+        color: var(--coral);
     }
 
-    .headline .h2 {
-        color: #FFF9F3;
+    .headline h2 {
+        color: var(--text-light);
     }
 
     .categories {
@@ -51,7 +51,7 @@
         margin-left: 40px;
         margin-right: 40px;
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 52px;
         min-height: 245px;
     }
 
@@ -63,7 +63,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 43%;
+        width: 42%;
     }
 
     .categories .service {
@@ -72,12 +72,84 @@
         gap: 29px;
         width: calc(33.33% - 36px);
         justify-content: center;
-        background-color: #C2E2FA;
-        border-radius: 10px;
+        background-color: var(--lightblue);
+        border-radius: var(--radius);
     }
 
-    .servicedescription .h5 {
-        color: #FF6F61;
+    .servicedescription h5 {
+        color: var(--coral);
+    }
+
+    .perkssection {
+        display: flex;
+        margin-bottom: 115px;
+    }
+
+    .perkimage img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .perktext {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--lightblue);
+        padding-left: 94px;
+        padding-right: 94px;
+        padding-top: 75px;
+        padding-bottom: 159px;
+        width: 130%;
+        gap: 24px;
+    }
+
+    .perktext p.normalbold {
+        color: var(--coral);
+    }
+
+    .perktext p.largeregular {
+        color: var(--coral);
+    }
+
+    ul.largeregular {
+        font-size: 18px;
+        font-weight: normal;
+        font-family: var(--font-base);
+        line-height: 1.5;
+        padding-left: 20px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 115px;
+        margin-left: 71px;
+        margin-right: 71px;
+    }
+
+    .featuretext {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 26px;
+        gap: 10px;
+    }
+
+    .featuretext p.subtitle {
+        color: var(--coral);
+    }
+
+    .featureimage {
+        width: 100%;
+    }
+
+    .paginationimage {
+        width: 10%;
+        margin-top: 30px;
+    }
+
+    .highlight {
+        color: var(--coral);
     }
 </style>
 
@@ -133,19 +205,21 @@
             </nav>
         </div>
     </div>
+
     <div class="headline">
         <div class="headline-info">
-            <p class="h5">PERFECT SHOP JUST FOR YOUR PET</p>
-            <p class="h2">Everything Your Pet Needs,<br>
-                Delivered with Love</p>
-            <a class="medium" href="shop.html">Explore</a>
+            <h5>PERFECT SHOP JUST FOR YOUR PET</h5>
+            <h2>Everything Your Pet Needs,<br>
+                Delivered with Love</h2>
+            <a class="mediumbtn" href="shop.html">Explore</a>
         </div>
     </div>
+
     <div class="categories">
         <div class="service">
             <img src="image/petbowl.png" alt="Pet Bowl">
             <div class="servicedescription">
-                <p class="h5">Pet Food</p>
+                <h5>Pet Food</h5>
                 <p class="smallbold">High-quality pet food made with natural ingredients to support healthy digestion,
                     strong
                     muscles, and overall wellness.</p>
@@ -154,7 +228,7 @@
         <div class="service">
             <img src="image/petgrooming.png" alt="Pet Grooming">
             <div class="servicedescription">
-                <p class="h5">Pet Grooming</p>
+                <h5>Pet Grooming</h5>
                 <p class="smallbold">Gentle, full-service grooming for a healthier coat and happier pet. All at one
                     place!
                 </p>
@@ -163,7 +237,7 @@
         <div class="service">
             <img src="image/petsupply.png" alt="Pet Supply">
             <div class="servicedescription">
-                <p class="h5">Pet Supplies</p>
+                <h5>Pet Supplies</h5>
                 <p class="smallbold">Quality pet products designed to keep your furry friend happy and healthy.
                     Explore now!</p>
             </div>
@@ -179,38 +253,38 @@
 
                 <div class="navigation">
                     <div class="footer-menu">
-                        <div><a href="index.html">Home</a></div>
-                        <div><a href="about.html">About Us </a></div>
-                        <div><a href="service.html">Our Service</a></div>
-                        <div><a href="shop.html">Shop</a></div>
-                        <div><a href="contact.html">Contact Us</a></div>
+                        <div><a class="smallregular" href="index.html">Home</a></div>
+                        <div><a class="smallregular" href="about.html">About Us </a></div>
+                        <div><a class="smallregular" href="service.html">Our Service</a></div>
+                        <div><a class="smallregular" href="shop.html">Shop</a></div>
+                        <div><a class="smallregular" href="contact.html">Contact Us</a></div>
                     </div>
 
                     <div class="footer-menu">
-                        <div><a href="team.html">Our Team</a></div>
-                        <div><a href="location.html">Location</a></div>
-                        <div><a href="faq.html">Faq</a></div>
+                        <div><a class="smallregular" href="team.html">Our Team</a></div>
+                        <div><a class="smallregular" href="location.html">Location</a></div>
+                        <div><a class="smallregular" href="faq.html">Faq</a></div>
                     </div>
                 </div>
             </div>
 
             <div class="contact-info">
-                <h5>Contact Us</h5>
+                <h5 class="white">Contact Us</h5>
 
                 <div class="info">
                     <div class="icon"><img class="smallicon" src="image/Address.png" alt="address icon"></div>
-                    <p class="white normalregular">30, Jalan Sulaiman 1, Taman Putra Sulaiman, 68000 Ampang, Selangor
+                    <p class="white smallregular">30, Jalan Sulaiman 1, Taman Putra Sulaiman, 68000 Ampang, Selangor
                     </p>
                 </div>
 
                 <div class="info">
                     <div><img class="smallicon" src="image/Letter.png" alt="email"></div>
-                    <p class="white normalregular">paws_whiskers@gmail.com</p>
+                    <p class="white smallregular">paws_whiskers@gmail.com</p>
                 </div>
 
                 <div class="info">
                     <div><img class="smallicon" src="image/Phone.png" alt="phone icon"></div>
-                    <p class="white normalregular">+1 800 123 456 789</p>
+                    <p class="white smallregular">+1 800 123 456 789</p>
                 </div>
 
                 <div class="social">
@@ -221,11 +295,11 @@
             </div>
         </div>
 
-        <div class="mobile">
+        <div class="copyright">
             <div class="footerlogomobile">
                 <img src="image/footer.png" alt="logoimage">
             </div>
-            <p class="copyright">Copyright © PawsWhiskers. All Right Reserved.</p>
+            <p class="smallregular">Copyright © PawsWhiskers. All Right Reserved.</p>
 
         </div>
     </div>

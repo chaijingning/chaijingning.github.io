@@ -1,0 +1,247 @@
+.error-page {
+    background-color: #C2E2FA;
+}
+
+.error-img {
+    width: 850px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 150px auto 20px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+
+.search-container {
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 710px;
+    height: 55px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.search-bar input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 16px;
+    background: white;
+}
+
+.search-btn {
+    width: 55px;
+    height: 100%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.home-btn {
+    display: block;
+    width: 270px;
+    height: 57px;
+    line-height: 57px;
+    background: var(--coral);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: var(--font-base);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 40px auto 30px auto;
+}
+
+
+.home-btn:hover {
+    background: var(--bg-light);
+    color: var(--darkblue);
+}
+
+@media (max-width: 500px) {
+    .error-img {
+        margin-top: 100px;
+    }
+
+    .error-title {
+        font-size: 36px;
+    }
+
+    .error-subtitle {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .home-btn {
+        width: 220px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+    }
+}
+
+body {
+    background-color: var(--lightblue);
+}
+
+.error-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+}
+
+.error-img {
+    width: 850px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.error-title {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--coral);
+    margin-top: 10px;
+}
+
+.error-subtitle {
+    font-family: var(--font-base);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--darkblue);
+    max-width: 700px;
+    margin: 10px auto 30px auto;
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 55px;
+    background: #ffffff;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 16px;
+    background: white;
+    font-family: var(--font-base);
+}
+
+.search-btn {
+    width: 55px;
+    height: 100%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn img {
+    width: 28px;
+    height: 28px;
+}
+
+.search-btn:hover {
+    background: #f0f0f0;
+}
+
+.home-btn {
+    display: block;
+    width: 270px;
+    height: 57px;
+    line-height: 57px;
+    background: var(--coral);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: var(--font-base);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 40px auto 30px auto;
+}
+
+.home-btn:hover {
+    background: var(--bg-light);
+    color: var(--darkblue);
+}
+
+@media (max-width: 768px) {
+    .error-title {
+        font-size: 36px;
+    }
+
+    .error-subtitle {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .home-btn {
+        width: 220px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+    }
+}

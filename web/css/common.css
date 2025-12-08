@@ -1,6 +1,6 @@
 /*fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Lugrasimo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oxygen:wght@300;400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quintessential&family=Space+Grotesk:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Lugrasimo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oxygen:wght@300;400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quintessential&family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
     margin: 0;
@@ -18,29 +18,8 @@
     --text-light: #FFFFFF;
     --bg-light: #FFF9F3;
     --radius: 10px;
-}
-
-:root {
     --font-heading: 'Amiri', serif;
     --font-base: 'Nunito Sans', sans-serif;
-}
-
-:root {
-    --h1-size: 60px;
-    --h2-size: 48px;
-    --h3-size: 36px;
-    --h4-size: 30px;
-    --h5-size: 24px;
-}
-
-:root {
-    --p-largemedium-size: 22px;
-    --p-largeregular-size: 18px;
-    --p-normalbold-size: 16px;
-    --p-normalregular-size: 16px;
-    --p-smallbold-size: 14px;
-    --p-smallregular-size: 14px;
-    --p-extrasmall-size: 12px;
 }
 
 body {
@@ -61,7 +40,6 @@ h5 {
 /*h1 is used at banner except index page*/
 h1 {
     font-size: 60px;
-    color: var(--text-light);
 }
 
 h2 {
@@ -115,7 +93,7 @@ p.smallregular {
     font-weight: normal;
 }
 
-p .extrasmall {
+p.extrasmall {
     font-size: 12px;
     font-weight: bold;
 }

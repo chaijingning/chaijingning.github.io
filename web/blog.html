@@ -8,135 +8,6 @@
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/common.css">
 
-
-    <style>
-        body {
-            background: #FFF9F3;
-        }
-
-        .hero {
-            position: relative;
-            text-align: center;
-
-        }
-
-        .hero img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            display: block;
-            filter: brightness(85%);
-            padding-bottom: 115px;
-        }
-
-        .hero h1 {
-            font-family: 'Nunito Sans', sans-serif;
-            position: absolute;
-            top: 50%;
-            left: 600px;
-            font-size: 60px;
-            color: white;
-            margin: 0;
-        }
-
-
-        .blog-section {
-            max-width: 1280px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin: 80px auto;
-        }
-
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 60px;
-            row-gap: 40px;
-        }
-
-        .photo {
-            width: 565px;
-            height: 645px;
-            background: #FFFFFF;
-            margin-left: 30px;
-            padding: 18px;
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-
-        .photo img {
-            width: 100%;
-            border-radius: 20px;
-            width: 500px;
-            height: 333px;
-            object-fit: cover;
-            margin: 15px auto;
-        }
-
-        .photo h3 {
-            font-family: 'Nunito Sans', sans-serif;
-            font-size: 36px;
-            margin-left: 15px;
-        }
-
-        .photo a {
-            color: #FF6F61;
-            text-decoration: none;
-            font-size: 22px;
-            margin-left: 15px;
-            margin-top: 30px;
-        }
-
-
-        .card {
-            width: 565px;
-            height: 645px;
-            background: #FFFFFF;
-            margin-left: 30px;
-            padding: 18px;
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 12px;
-            object-fit: cover;
-        }
-
-        .card h3 {
-            font-family: 'Nunito Sans', sans-serif;
-            font-size: 36px;
-            margin-top: 15px;
-            margin-left: 15px;
-        }
-
-        .card a {
-            color: #FF6F61;
-            text-decoration: none;
-            font-size: 22px;
-            margin-left: 15px;
-            margin-top: 30px;
-        }
-
-        .pagination span {
-            padding: 8px 14px;
-            align-items: center;
-            border-radius: 8px;
-            background: #ddd;
-            cursor: pointer;
-        }
-
-        .pagination .active {
-            background: #151B2B;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
@@ -191,47 +62,65 @@
             </nav>
         </div>
     </div>
-    <section class="hero">
-        <img src="image/petinfo1.png" alt="pets">
-        <h1 class="h1 coral">Pet's Info </h1>
-    </section>
+    <div class="hero">
+        <h1 class="h1 white">Pet's Info</h1>
+    </div>
+
     <section class="blog-section">
         <div class="blog-grid">
 
             <div class="photo">
                 <img src="image/travelingwithPets .png" alt="pets">
                 <h3>Traveling with Pets: Tips for Stress-Free Trips</h3>
-                <a href="#">Read more</a>
+                <p class="largemedium">
+                    <a href="#" style="color: var(--coral);">Read more</a>
+                </p>
+
             </div>
 
             <div class="card">
                 <img src="image/petparentneeds.png">
                 <h3>Top 5 Pet Essentials Every New Pet Parent Needs</h3>
-                <a href="#">Read more</a>
+                <p class="largemedium">
+                    <a href="#" style="color: var(--coral);">Read more</a>
+                </p>
+
             </div>
 
             <div class="card">
                 <img src="image/dogshampoo .png ">
                 <h3>How to Pick the Dog Shampoo for Sensitive Skin</h3>
-                <a href="#">Read more</a>
+                <p class="largemedium">
+                    <a href="#" style="color: var(--coral);">Read more</a>
+                </p>
+
             </div>
 
             <div class="card">
                 <img src="image/seasonalpet.png">
-                <h3>Seasonal Pet Grooming Tips</h3>
-                <a href="#">Read more</a>
+                <h3>Essential Seasonal Grooming Tips to Keep Your Pet Healthy</h3>
+                <p class="largemedium">
+                    <a href="#" style="color: var(--coral);">Read more</a>
+                </p>
+
             </div>
 
             <div class="card">
                 <img src="image/catfood .png">
                 <h3>Best Cat Food in Malaysia: Affordable & Healthy Options</h3>
-                <a href="#">Read more</a>
+                <p class="largemedium">
+                    <a href="#" style="color: var(--coral);">Read more</a>
+                </p>
+
             </div>
 
             <div class="card">
                 <img src="image/pettravel .png">
                 <h3>Pet Travel Requirement: Rabies Certificate</h3>
-                <a href="#">Read more</a>
+                <p class="largemedium">
+                    <a href="#" style="color: var(--coral);">Read more</a>
+                </p>
+
             </div>
 
         </div>
