@@ -34,16 +34,16 @@ body {
 
 .information p:nth-of-type(2) {
     width: 90%;
-
 }
 
 .catimage img {
     width: 90%;
 }
 
-.infotext p:first-of-type {
-    width: 180%;
+.infotext p {
+    width: 100%;
     max-width: 500px;
+
 }
 
 .infotext {
@@ -112,7 +112,7 @@ body {
 
     .infotext p:first-of-type {
         width: 100%;
-        max-width: 490px;
+        max-width: 500px;
     }
 }
 
