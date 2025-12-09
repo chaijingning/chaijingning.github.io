@@ -154,7 +154,7 @@
     width: 237px;
     padding: 10px 40px 30px 40px;
     border-radius: 5px;
-    border: 2px solid black;
+    border: 2px solid var(--darkblue);
 }
 
 .teams .infoyh {
@@ -166,7 +166,7 @@
     width: 237px;
     padding: 10px 40px 30px 40px;
     border-radius: 5px;
-    border: 2px solid black;
+    border: 2px solid var(--darkblue);
 }
 
 .teams .infobl {
@@ -178,7 +178,7 @@
     width: 237px;
     padding: 10px 40px 30px 40px;
     border-radius: 5px;
-    border: 2px solid black;
+    border: 2px solid var(--darkblue);
 }
 
 .teams .infomq {
@@ -190,7 +190,7 @@
     width: 237px;
     padding: 10px 40px 30px 40px;
     border-radius: 5px;
-    border: 2px solid black;
+    border: 2px solid var(--darkblue);
 }
 
 .maptext {
