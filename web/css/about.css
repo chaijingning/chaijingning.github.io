@@ -1,17 +1,14 @@
-.head {
+.banner {
     background-image: url(../image/aboutus.png);
     background-size: cover;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
 }
 
-.head h1 {
-    text-align: center;
-    color: var(--text-light);
+.main-title h1 {
+    margin: 0px;
+    padding: 0px;
+    color: var(--text-light)
 }
+
 
 .subhead {
     display: flex;
@@ -229,10 +226,6 @@
 }
 
 @media screen and (max-width: 1080px) {
-    .head {
-        height: 300px;
-    }
-
     .subhead {
         flex-direction: column;
         align-items: center;
@@ -253,10 +246,6 @@
 }
 
 @media screen and (max-width: 786px) {
-    .head {
-        height: 200px;
-    }
-
     .ours {
         flex-direction: column;
         align-items: center;
