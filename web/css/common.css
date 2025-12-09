@@ -252,6 +252,10 @@ textarea {
     text-align: center;
 }
 
+.banner .title h1 {
+    color: var(--bg-light);
+}
+
 /*introduction*/
 .subtitle {
     font-family: var(--font-base);
