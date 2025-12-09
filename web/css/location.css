@@ -19,7 +19,7 @@
     gap: 20px;
 }
 
-.subhead h5 {
+.subhead p.normalbold {
     text-align: center;
     color: var(--coral);
 }
@@ -91,7 +91,7 @@
 .mid h3 {
     text-align: center;
     padding-top: 39px;
-    color: var(--darkblue);
+    color: var(--coral);
 }
 
 .mid p {
@@ -110,7 +110,7 @@
 .bot h3 {
     text-align: center;
     padding-top: 39px;
-    color: var(--darkblue);
+    color: var(--coral);
 }
 
 .bot p {
