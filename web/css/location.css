@@ -19,7 +19,7 @@
     gap: 20px;
 }
 
-.subhead h5 {
+.subhead p.normalbold {
     text-align: center;
     color: var(--coral);
 }
