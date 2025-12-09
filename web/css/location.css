@@ -1,6 +1,7 @@
 .banner {
     background-image: url(../image/location.png);
     background-size: cover;
+    background-position: center;
 }
 
 .main-title h1 {
