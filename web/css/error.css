@@ -2,12 +2,20 @@
     background-color: #C2E2FA;
 }
 
+
+
 .error-img {
-    width: 850px;
-    max-width: 80%;
-    height: auto;
+    width: 1200px;
+    height: 600px;
     display: block;
-    margin: 150px auto 20px auto;
+}
+
+.error-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 h1 {
