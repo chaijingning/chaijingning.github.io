@@ -151,6 +151,58 @@
     .highlight {
         color: var(--coral);
     }
+
+    .reviews {
+        background-image: url("image/reviewbg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 696px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviewtext {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 48px;
+    }
+
+    .reviewbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: var(--bg-light);
+        width: 994px;
+        height: 443px;
+        border-radius: var(--radius);
+    }
+
+    .reviewprof {
+        width: 165px;
+        margin-top: 56px;
+    }
+
+    .reviewbox p.largeregular {
+        width: 53%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: var(--text-dark);
+    }
+
+    .arrows img {
+        width: 64px;
+    }
+
+    .arrows {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 25px;
+    }
 </style>
 
 <body>
@@ -244,6 +296,62 @@
         </div>
     </div>
 
+    <div class="perkssection">
+        <div class="perkimage">
+            <img src="image/perks.png" alt="Perks">
+        </div>
+        <div class="perktext">
+            <p class="normalbold">OUR PERKS</p>
+            <h3>Love and Care Services Provided To All Lovely Pets</h3>
+
+            <p class="largeregular">Whether you are a new pet parent or a lifelong animal lover, we are here to support
+                your
+                every step of the way:</p>
+
+            <ul class="largeregular">
+                <li>Your one-stop shop for quality pet food, supplies, and grooming essentials.</li>
+                <li>A trusted pet store offering everything your furry friends need to stay happy and healthy.</li>
+                <li>From treats to toys, we provide safe, reliable products for pets of all kinds.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="features">
+        <div class="featuretext">
+            <p class="subtitle">
+                FEATURES
+            </p>
+            <p class="title">Check out our latest <span class="highlight">Promotion</span> NOW</p>
+        </div>
+        <img class="featureimage" src="image/feature.png" alt="feature">
+        <img class="paginationimage" src="image/pagination.png" alt="pagination">
+    </div>
+
+    <div class="reviews">
+        <div class="reviewtext">
+            <p class="subtitle">
+                REVIEWS
+            </p>
+            <h2>
+                What People Say
+            </h2>
+        </div>
+        <div class="reviewbox">
+            <img class="reviewprof" src="image/reviewpic.png" alt="reviewpic">
+            <div class="arrows">
+                <a href="#"><img src="image/arrowleft.png" alt="arrowleft"></a>
+                <a href="#"><img src="image/arrowright.png" alt="arrowright"></a>
+            </div>
+            <p class="largeregular">
+                "I have been buying from Paws and Whiskers for months now, and I am always impressed. The food is
+                high-quality,
+                the toys are durable, and the prices are reasonable. My dog gets excited every time a package arrives!
+                Fantastic
+                store."
+            </p>
+            <h5>-Rick Sphere</h5>
+        </div>
+    </div>
+
     <div class="footer">
         <div class="footer-info">
             <div class="footerinfo">
@@ -253,38 +361,38 @@
 
                 <div class="navigation">
                     <div class="footer-menu">
-                        <div><a class="smallregular" href="index.html">Home</a></div>
-                        <div><a class="smallregular" href="about.html">About Us </a></div>
-                        <div><a class="smallregular" href="service.html">Our Service</a></div>
-                        <div><a class="smallregular" href="shop.html">Shop</a></div>
-                        <div><a class="smallregular" href="contact.html">Contact Us</a></div>
+                        <div><a href="index.html">Home</a></div>
+                        <div><a href="about.html">About Us </a></div>
+                        <div><a href="service.html">Our Service</a></div>
+                        <div><a href="shop.html">Shop</a></div>
+                        <div><a href="contact.html">Contact Us</a></div>
                     </div>
 
                     <div class="footer-menu">
-                        <div><a class="smallregular" href="team.html">Our Team</a></div>
-                        <div><a class="smallregular" href="location.html">Location</a></div>
-                        <div><a class="smallregular" href="faq.html">Faq</a></div>
+                        <div><a href="team.html">Our Team</a></div>
+                        <div><a href="location.html">Location</a></div>
+                        <div><a href="faq.html">Faq</a></div>
                     </div>
                 </div>
             </div>
 
             <div class="contact-info">
-                <h5 class="white">Contact Us</h5>
+                <h5>Contact Us</h5>
 
                 <div class="info">
                     <div class="icon"><img class="smallicon" src="image/Address.png" alt="address icon"></div>
-                    <p class="white smallregular">30, Jalan Sulaiman 1, Taman Putra Sulaiman, 68000 Ampang, Selangor
+                    <p class="white normalregular">30, Jalan Sulaiman 1, Taman Putra Sulaiman, 68000 Ampang, Selangor
                     </p>
                 </div>
 
                 <div class="info">
                     <div><img class="smallicon" src="image/Letter.png" alt="email"></div>
-                    <p class="white smallregular">paws_whiskers@gmail.com</p>
+                    <p class="white normalregular">paws_whiskers@gmail.com</p>
                 </div>
 
                 <div class="info">
                     <div><img class="smallicon" src="image/Phone.png" alt="phone icon"></div>
-                    <p class="white smallregular">+1 800 123 456 789</p>
+                    <p class="white normalregular">+1 800 123 456 789</p>
                 </div>
 
                 <div class="social">
@@ -295,11 +403,11 @@
             </div>
         </div>
 
-        <div class="copyright">
+        <div class="mobile">
             <div class="footerlogomobile">
                 <img src="image/footer.png" alt="logoimage">
             </div>
-            <p class="smallregular">Copyright © PawsWhiskers. All Right Reserved.</p>
+            <p class="copyright">Copyright © PawsWhiskers. All Right Reserved.</p>
 
         </div>
     </div>
