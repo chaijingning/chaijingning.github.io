@@ -12,8 +12,9 @@
             background-position: center;
         }
 
-
-
+        .hero h1 {
+            color: var(--bg-light);
+        }
 
         .blog-section {
             max-width: 1280px;
