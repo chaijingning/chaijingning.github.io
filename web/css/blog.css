@@ -147,11 +147,11 @@
 
             .photo,
             .card {
-                margin-left: 15px;
-                margin-right: 15px;
+                width: 465px;
+                height: 545px;
+                margin-left: 10px;
+                margin-right: 10px;
                 margin-top: 15px;
-                width: 100%;
-                height: auto;
                 padding: 10px;
                 border-radius: 15px;
                 align-items: flex-start;
@@ -161,7 +161,8 @@
 
             .photo img,
             .card img {
-                height: 200px;
+                width: 400px;
+                height: 234px;
             }
         }
 
@@ -183,8 +184,11 @@
 
             .photo,
             .card {
-                width: 100%;
-                height: auto;
+                width: 435px;
+                height: 400px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 15px;
                 padding: 10px;
                 border-radius: 15px;
                 align-items: flex-start;
