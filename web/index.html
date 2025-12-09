@@ -151,6 +151,58 @@
     .highlight {
         color: var(--coral);
     }
+
+    .reviews {
+        background-image: url("image/reviewbg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 696px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviewtext {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 48px;
+    }
+
+    .reviewbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: var(--bg-light);
+        width: 994px;
+        height: 443px;
+        border-radius: var(--radius);
+    }
+
+    .reviewprof {
+        width: 165px;
+        margin-top: 56px;
+    }
+
+    .reviewbox p.largeregular {
+        width: 53%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: var(--text-dark);
+    }
+
+    .arrows img {
+        width: 64px;
+    }
+
+    .arrows {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 25px;
+    }
 </style>
 
 <body>
@@ -273,17 +325,22 @@
         <img class="featureimage" src="image/feature.png" alt="feature">
         <img class="paginationimage" src="image/pagination.png" alt="pagination">
     </div>
+
     <div class="reviews">
-        <p class="subtitle">
-            REVIEWS
-        </p>
-        <p class="title">
-            What People Say
-        </p>
+        <div class="reviewtext">
+            <p class="subtitle">
+                REVIEWS
+            </p>
+            <h2>
+                What People Say
+            </h2>
+        </div>
         <div class="reviewbox">
             <img class="reviewprof" src="image/reviewpic.png" alt="reviewpic">
-            <a href="#"><img src="image/arrowleft.png" alt="arrowleft"></a>
-            <a href="#"><img src="image/arrowright.png" alt="arrowright"></a>
+            <div class="arrows">
+                <a href="#"><img src="image/arrowleft.png" alt="arrowleft"></a>
+                <a href="#"><img src="image/arrowright.png" alt="arrowright"></a>
+            </div>
             <p class="largeregular">
                 "I have been buying from Paws and Whiskers for months now, and I am always impressed. The food is
                 high-quality,
