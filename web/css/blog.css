@@ -5,7 +5,8 @@
         .hero {
             background-image: url(../image/petinfo1.png);
             background-size: cover;
-            height: 70vh;
+            width: 740px;
+            height: 294px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -139,7 +140,7 @@
             }
 
             .blog-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 2fr;
                 gap: 20px;
                 width: 95%;
                 margin: 0 auto;
