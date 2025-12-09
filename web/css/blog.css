@@ -5,7 +5,6 @@
         .hero {
             background-image: url(../image/petinfo1.png);
             background-size: cover;
-            width: 740px;
             height: 294px;
             display: flex;
             align-items: center;
