@@ -32,16 +32,18 @@ body {
     align-items: center;
 }
 
-.information p:nth-of-type(2) {}
-
+.information p:nth-of-type(2) {
+    width: 90%;
+}
 
 .catimage img {
     width: 90%;
 }
 
-.infotext p:first-of-type {
-    width: 180%;
+.infotext p {
+    width: 100%;
     max-width: 500px;
+
 }
 
 .infotext {
@@ -49,6 +51,10 @@ body {
     margin: 20px 0px;
     gap: 15px;
     width: 90%;
+}
+
+.infotext div {
+    width: 100%;
 }
 
 
@@ -68,7 +74,7 @@ body {
 }
 
 .form div {
-    margin: 10px 0px;
+    margin: 8px 0px;
     width: 100%;
 }
 
@@ -78,13 +84,13 @@ body {
 }
 
 .input input {
-    width: 47%;
+    width: 49%;
 }
 
 .input1 {
     display: flex;
     justify-content: space-between;
-    gap: 60px;
+    gap: 20px;
 }
 
 .input1 input {
@@ -103,6 +109,11 @@ body {
         width: 100%;
         height: 80vh;
     }
+
+    .infotext p:first-of-type {
+        width: 100%;
+        max-width: 500px;
+    }
 }
 
 @media screen and (max-width: 786px) {
@@ -116,27 +127,22 @@ body {
         row-gap: 20px;
     }
 
-    .catimage {
-        display: flex;
-        justify-content: center;
-    }
-
     .catimage img {
         width: 80%;
         align-self: center;
     }
 
-    .information {
-        width: 100%;
+    .catimage {
+        display: flex;
+        justify-content: center;
     }
 
     .information p:nth-of-type(2) {
         width: 90%;
-        max-width: 500px;
     }
 
     .infotext p:first-of-type {
-        width: 180%;
+        width: 100%;
         max-width: 500px;
     }
 
@@ -167,6 +173,10 @@ body {
         padding: 30px 30px 30px 30px;
     }
 
+    .form div {
+        margin: 5px 0px;
+    }
+
     .input1 {
         flex-direction: column;
         row-gap: 0px;
@@ -174,7 +184,7 @@ body {
 
     .input1 input {
         flex-direction: column;
-        row-gap: 0px;
+        row-gap: 5px;
         width: 100%;
     }
 }
