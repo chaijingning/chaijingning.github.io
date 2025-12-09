@@ -40,6 +40,7 @@
 .subtext {
     padding-top: 112px;
     padding-bottom: 70px;
+    line-height: 150%;
 }
 
 .ours {
@@ -86,9 +87,6 @@
     display: flex;
     padding-bottom: 175px;
     padding-left: 120px;
-}
-
-.subtext2 {
     padding-bottom: 73px;
 }
 
@@ -103,6 +101,11 @@
 
 .subhead2 p.largeregular {
     color: var(--darkblue);
+}
+
+.subtext2 {
+    width: 585px;
+    line-height: 150%;
 }
 
 .ourteam {
