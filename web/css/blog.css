@@ -13,8 +13,22 @@
     max-width: 1280px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin: 80px auto;
+    row-gap: 40px;
+    width: 50%;
+
+}
+
+.vector-divider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.vector-divider img {
+    width: 80%;
+    max-width: 900px;
+    height: auto;
 }
 
 .card {
@@ -49,17 +63,52 @@
     margin-top: 30px;
 }
 
+.vector-divider {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 20px 0;
+    padding-left: 30px;
+}
+
+.vector-divider img {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+}
+
+
+
 @media screen and (max-width: 786px) {
     .hero {
         height: 50vh;
     }
 
-    .hero h1 {
-        font-size: 36px;
+    .photo,
+    .card {
+        width: 465px;
+        height: 545px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 15px;
+        align-items: flex-start;
+        margin-left: 15px;
     }
 
+
+    .photo img,
+    .card img {
+        width: 400px;
+        height: 234px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+
     .blog-grid {
-        grid-template-columns: fr;
+        grid-template-columns: 1fr;
         gap: 20px;
         width: 95%;
         margin: 0 auto;
@@ -87,13 +136,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    .hero {
-        height: 35vh;
-    }
-
-    .hero h1 {
-        font-size: 24px;
-    }
 
     .blog-grid {
         grid-template-columns: 1fr;
