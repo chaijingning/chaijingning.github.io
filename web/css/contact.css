@@ -20,10 +20,6 @@ body {
     margin: 60px auto;
 }
 
-.content div {
-    width: 50%;
-}
-
 /*content*/
 .content {
     display: flex;
@@ -32,29 +28,31 @@ body {
     align-items: center;
 }
 
+.content>div {
+    width: 50%;
+}
+
 .information p:nth-of-type(2) {
-    width: 90%;
+    width: 80%;
 }
 
 .catimage img {
-    width: 90%;
+    width: 100%;
 }
 
 .infotext p {
-    width: 100%;
     max-width: 500px;
-
 }
 
 .infotext {
     display: flex;
     margin: 20px 0px;
     gap: 15px;
-    width: 90%;
+    width: 100%;
 }
 
 .infotext div {
-    width: 100%;
+    width: 90%;
 }
 
 
