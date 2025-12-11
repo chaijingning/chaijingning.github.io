@@ -181,6 +181,9 @@ textarea {
     background-color: var(--bg-light);
     color: var(--text-dark);
     padding: 15px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .headerinfo {
@@ -473,7 +476,7 @@ textarea {
         position: fixed;
         top: 0;
         left: 0;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         padding-top: 5rem;
         text-align: center;
@@ -481,11 +484,7 @@ textarea {
     }
 
     .menu a {
-        color: #151B2B;
-    }
-
-    .submenu a {
-        color: #151B2B;
+        color: var(--text-dark);
     }
 
     .menu.active {
@@ -493,11 +492,18 @@ textarea {
     }
 
     .menu-item {
-        margin: 1.5rem 0;
+        margin: 1rem 0;
     }
 
     .menu-item a {
         font-size: 1.5rem;
+    }
+
+    .menu-item:hover .submenu {
+        display: block;
+        position: static;
+        width: auto;
+        padding: 5px 0px;
     }
 
     .banner {
