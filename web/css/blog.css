@@ -1,16 +1,14 @@
+        .hero {
+            background-image: url(../image/petinfo1.png);
+            background-size: cover;
+            background-position: center;
+        }
+
         body {
             background: #FFF9F3;
         }
 
-        .hero {
-            background-image: url(../image/petinfo1.png);
-            background-size: cover;
-            height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-position: center;
-        }
+
 
         .hero h1 {
             color: var(--bg-light);
