@@ -103,11 +103,6 @@ body {
 }
 
 @media screen and (max-width: 1080px) {
-    .banner {
-        width: 100%;
-        height: 80vh;
-    }
-
     .infotext p:first-of-type {
         width: 100%;
         max-width: 500px;
@@ -161,11 +156,6 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    .banner {
-        width: 100%;
-        height: 30vh;
-    }
-
     .form {
         margin: 30px;
         padding: 30px 30px 30px 30px;

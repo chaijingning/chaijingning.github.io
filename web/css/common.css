@@ -239,7 +239,7 @@ textarea {
 
 .submenu a {
     display: block;
-    padding: 5px;
+    padding: 15px;
 }
 
 /*banner*/
@@ -390,7 +390,11 @@ textarea {
 
     /*banner*/
     .banner {
-        min-height: 340px;
+        min-height: 420px;
+    }
+
+    .banner .title h1 {
+        font-size: 48px;
     }
 
     /*footer*/
@@ -421,10 +425,6 @@ textarea {
 }
 
 @media screen and (max-width: 786px) {
-    h1 {
-        font-size: 48px;
-    }
-
     h2 {
         font-size: 36px;
     }
@@ -454,7 +454,7 @@ textarea {
         top: 0;
         left: 0;
         height: 100vh;
-        width: 90%;
+        width: 100%;
         padding-top: 5rem;
         text-align: center;
         z-index: 1000;
@@ -481,8 +481,7 @@ textarea {
     }
 
     .banner {
-        width: 100%;
-        height: 50vh;
+        min-height: 300px;
     }
 
     .title {
@@ -569,10 +568,10 @@ textarea {
 
     /*banner*/
     .banner {
-        min-height: 180px;
+        min-height: 220px;
     }
 
-    h1 {
+    .banner .title h1 {
         font-size: 36px;
     }
 
