@@ -180,6 +180,7 @@ textarea {
 .header {
     background-color: var(--bg-light);
     color: var(--text-dark);
+    padding: 15px 0px;
 
 }
 
@@ -188,12 +189,12 @@ textarea {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    max-width: 1280px;
+    padding: 0px 100px 0px 60px;
 }
 
 .logo img {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: auto;
 }
 
 .menu {
@@ -210,7 +211,7 @@ textarea {
 
 .menu a {
     font-family: var(--font-heading);
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     color: var(--text-dark);
     padding-right: 8px;
@@ -239,7 +240,7 @@ textarea {
 
 .submenu a {
     display: block;
-    padding: 15px;
+    padding: 3px 12px;
 }
 
 /*banner*/
@@ -574,6 +575,7 @@ textarea {
     .banner .title h1 {
         font-size: 36px;
     }
+
 
     /*footer*/
     .footerinfo {
