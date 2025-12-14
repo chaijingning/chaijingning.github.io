@@ -56,7 +56,7 @@
     }
 
     .categories img {
-        width: 140px;
+        width: 30%;
     }
 
     .categories .servicedescription {
@@ -215,13 +215,49 @@
     }
 
     @media screen and (max-width: 1080px) {
+
+        .headline {
+            height: auto;
+        }
+
+        .headline-info {
+            width: 100%;
+            height: auto;
+            margin: 40px;
+            padding: 40px;
+        }
+
+        .headline h5 {
+            font-size: 20px;
+        }
+
+        .headline h2 {
+            font-size: 44px;
+        }
+
         .perktext {
             width: 100%;
         }
 
+        .categories {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 24px;
+
+        }
+
         .categories .service {
             width: 100%;
-            min-height: 25%;
+            padding: 30px;
+
+        }
+
+        .categories img {
+            width: 120px;
+        }
+
+        .categories .servicedescription {
+            width: 100%;
         }
 
         .perkssection {
