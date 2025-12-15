@@ -267,6 +267,7 @@ textarea {
 
 .submenu div:hover a {
     background-color: var(--coral);
+    color: var(--bg-light);
 }
 
 .submenu a {
@@ -287,8 +288,6 @@ textarea {
 .banner .title h1 {
     color: var(--bg-light);
 }
-
-
 
 /*footer*/
 .footer {
