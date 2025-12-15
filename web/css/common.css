@@ -248,7 +248,7 @@ textarea {
 /*banner*/
 .banner {
     width: 100%;
-    min-height: 520px;
+    min-height: 528px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -393,7 +393,7 @@ textarea {
 
     /*menu*/
     .headerinfo {
-        padding: 0px 40px 0px 35px;
+        padding: 0px 40px;
     }
 
     .menu {
@@ -503,7 +503,7 @@ textarea {
 
     /*header*/
     .headerinfo {
-        padding: 0px 30px 0px 35px;
+        padding: 0px 30px;
     }
 
     .menu-toggle {

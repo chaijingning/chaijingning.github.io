@@ -3,8 +3,7 @@
 }
 
 .error-img {
-    width: 1200px;
-    height: 600px;
+    max-width: 1200px;
     display: block;
 }
 
@@ -50,8 +49,6 @@ p {
     border: none;
     outline: none;
     padding: 15px;
-    font-size: 16px;
-    background: white;
 }
 
 .search-btn {
@@ -65,7 +62,7 @@ p {
     justify-content: center;
 }
 
-.search-btn img {
+.search-barmediumicon {
     width: 30px;
     height: 30px;
 }
@@ -99,14 +96,7 @@ p {
         margin-top: 100px;
     }
 
-    .error-title {
-        font-size: 24px;
-    }
 
-    .error-subtitle {
-        font-size: 12px;
-        padding: 0 20px;
-    }
 
     .search-bar {
         width: 90%;
@@ -230,15 +220,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .error-title {
-        font-size: 36px;
-    }
-
-    .error-subtitle {
-        font-size: 18px;
-        padding: 0 20px;
-    }
-
     .search-bar {
         width: 90%;
     }
