@@ -233,14 +233,10 @@ textarea {
     position: absolute;
     width: 160px;
     z-index: 1;
-    background-color: var(--bg-light);
+    background-color: var(--text-light);
 }
 
 .submenu div:hover a {
-    background-color: var(--coral);
-}
-
-.submenu div:active a {
     background-color: var(--coral);
 }
 
