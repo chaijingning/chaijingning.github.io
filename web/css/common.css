@@ -240,6 +240,10 @@ textarea {
     background-color: var(--coral);
 }
 
+.submenu div:active a {
+    background-color: var(--coral);
+}
+
 .submenu a {
     display: block;
     padding: 3px 12px;
