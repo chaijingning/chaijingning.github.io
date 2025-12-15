@@ -63,7 +63,7 @@
 @media screen and (max-width: 786px) {
 
     .blog-grid {
-        max-width: 700px;
+        max-width: 680px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -91,8 +91,9 @@
 
 @media screen and (max-width: 500px) {
 
+
     .blog-grid {
-        max-width: 460px;
+        max-width: 400px;
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -114,9 +115,5 @@
         align-items: center;
     }
 
-    .card h3,
-    .card p.largemedium {
-        margin-left: 10px;
-        margin-top: 10px;
-    }
+
 }
