@@ -38,6 +38,12 @@
     margin: 15px 0 0;
 }
 
+h3 {
+    min-height: 35px;
+
+}
+
+
 .card p.largemedium {
     margin: 15px 0 0;
 }
