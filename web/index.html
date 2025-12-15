@@ -139,11 +139,11 @@
     }
 
     .featureimage {
-        width: 90%;
+        width: 85%;
     }
 
     .paginationimage {
-        width: 8%;
+        width: 6%;
         margin-top: 30px;
     }
 
@@ -249,7 +249,6 @@
         .categories .service {
             width: 100%;
             padding: 30px;
-
         }
 
         .categories img {
@@ -353,11 +352,18 @@
         .headline-info {
             padding: 25px;
             margin: 25px;
-            width: calc(100% - 50px);
+        }
+
+        .headline h5 {
+            font-size: 16px;
         }
 
         .headline h2 {
             font-size: 32px;
+        }
+
+        .headline .mediumbtn {
+            width: 100px;
         }
 
         .categories {
@@ -370,22 +376,30 @@
             gap: 15px;
         }
 
-        .categories img {
-            width: 80px;
+        .categories .servicedescription {
+            text-align: center;
         }
 
         .perkssection {
-            flex-direction: column;
+            flex-wrap: wrap;
             margin-bottom: 80px;
         }
 
         .perkimage,
         .perktext {
-            width: 100%;
+            min-width: 100%;
         }
 
         .perktext {
             padding: 25px;
+        }
+
+        .perktext h3 {
+            font-size: 24px;
+        }
+
+        .perktext .largeregular {
+            font-size: 14px;
         }
 
         .featureimage {
@@ -416,12 +430,98 @@
     }
 
     @media screen and (max-width: 500px) {
-        .arrows img {
-            width: 40px;
+        .headline-info {
+            padding: 18px;
+            margin: 16px;
         }
 
-        .title {
-            font-size: 24px;
+        .headline h5 {
+            font-size: 14px;
+        }
+
+        .headline h2 {
+            font-size: 26px;
+        }
+
+        .categories {
+            margin: 20px 12px;
+            gap: 12px;
+        }
+
+        .categories .service {
+            padding: 18px;
+        }
+
+        .categories img {
+            width: 70px;
+        }
+
+        .perkssection {
+            margin-bottom: 60px;
+        }
+
+        .perktext {
+            padding: 18px;
+        }
+
+        .perktext h3 {
+            font-size: 20px;
+        }
+
+        .perktext .largeregular,
+        ul.largeregular {
+            font-size: 13px;
+        }
+
+        .featuretext .title {
+            font-size: 22px;
+        }
+
+        .featuretext .subtitle {
+            font-size: 12px;
+        }
+
+        .featureimage {
+            width: 100%;
+        }
+
+        .reviews {
+            padding-bottom: 28px;
+        }
+
+        .reviewtext {
+            padding-top: 20px;
+            padding-bottom: 12px;
+            gap: 6px;
+        }
+
+        .reviewtext h2 {
+            font-size: 26px;
+        }
+
+        .reviewbox {
+            width: 96%;
+            min-height: auto;
+            padding: 16px 0;
+        }
+
+        .reviewprof {
+            width: 100px;
+            margin-top: 24px;
+        }
+
+        .reviewbox p.largeregular {
+            width: 90%;
+            font-size: 13px;
+        }
+
+        .arrows {
+            padding: 0 12px;
+            margin-top: 10px;
+        }
+
+        .arrows img {
+            width: 38px;
         }
     }
 </style>
