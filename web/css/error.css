@@ -1,9 +1,8 @@
 .error-page {
-    background-color: #C2E2FA;
+    background-color: var(--lightblue);
 }
 
-.error-img {
-    max-width: 1200px;
+.searchmediumicon {
     display: block;
 }
 

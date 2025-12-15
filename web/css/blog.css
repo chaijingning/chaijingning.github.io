@@ -40,6 +40,10 @@
 
 .card p.largemedium {
     margin: 15px 0 0;
+}
+
+.card a.largemedium {
+    color: var(--coral);
 
 }
 
@@ -47,7 +51,7 @@
 @media screen and (max-width:1080px) {
     .blog-grid {
         max-width: 1280px;
-        margin: 30px auto;
+        margin: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -55,7 +59,7 @@
 
     .card img {
         width: 100%;
-        height: 200px;
+        height: 300px;
     }
 
     .card h3 {
@@ -72,6 +76,7 @@
 @media screen and (max-width: 786px) {
 
     .blog-grid {
+        max-width: 1080px;
         display: flex;
         flex-direction: column;
         padding: 0 16px;
@@ -79,13 +84,22 @@
     }
 
     .card {
+        background: var(--text-light);
+        border-radius: 20px;
         padding: 20px;
     }
 
+    .card div {
+        padding: 10px;
+        width: 50%;
+        border-radius: 15px;
+    }
+
     .card img {
+        display: block;
+        margin: 0 auto;
         width: 100%;
         height: auto;
-
     }
 
     .card h3 {
