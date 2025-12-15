@@ -66,10 +66,17 @@
     display: flex;
 }
 
+.bangsa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .top h3 {
     text-align: center;
     padding-top: 39px;
     color: var(--coral);
+    white-space: nowrap;
 }
 
 .top p {
@@ -89,6 +96,7 @@
     text-align: center;
     padding-top: 39px;
     color: var(--coral);
+    white-space: nowrap;
 }
 
 .mid p {
@@ -108,6 +116,7 @@
     text-align: center;
     padding-top: 39px;
     color: var(--coral);
+    white-space: nowrap;
 }
 
 .bot p {
