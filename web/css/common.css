@@ -240,6 +240,10 @@ textarea {
     background-color: var(--coral);
 }
 
+.submenu div:active a {
+    background-color: var(--coral);
+}
+
 .submenu a {
     display: block;
     padding: 3px 12px;
@@ -292,7 +296,7 @@ textarea {
 .footer {
     background-color: var(--darkblue);
     color: var(--text-light);
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
 .footer-info {
@@ -303,16 +307,12 @@ textarea {
 
 .footerinfo {
     display: flex;
-    align-items: center;
+    align-items: top;
 }
 
 .footerlogo {
-    margin-right: 110px;
+    margin-right: 90px;
     margin-left: 100px;
-}
-
-.footerlogomobile {
-    display: none;
 }
 
 .footerlogo img {
@@ -329,7 +329,11 @@ textarea {
 
 .footer-menu div {
     padding-bottom: 15px;
-    padding-right: 10px;
+    padding-right: 0px;
+}
+
+.footer-menu .mobile-navigation {
+    display: none;
 }
 
 .footer-menu a {
@@ -374,7 +378,7 @@ textarea {
     display: flex;
     gap: 15px;
     padding-left: 15px;
-    margin-top: 15px;
+    margin-top: 8px;
 }
 
 .copyright {
@@ -425,29 +429,70 @@ textarea {
     }
 
     /*footer*/
+    .footer {
+        padding-top: 60px;
+    }
+
+    .footerinfo {
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .footer-menu div {
+        padding-bottom: 10px;
+        padding-right: 0px;
+    }
+
+    .footer-menu .website {
+        display: none;
+    }
+
+    .footer-menu .mobile-navigation {
+        display: block;
+    }
+
+    .footer-info {
+        padding-right: 8px;
+    }
+
     .footerlogo {
-        margin-left: 40px;
-        margin-right: 50px;
+        margin-right: 0px;
+        margin-left: 60px;
     }
 
     .footerlogo img {
-        width: 180px;
-        height: 180px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 25px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        padding-left: 0px;
     }
 
     .contact-info {
-        margin-right: 40px;
-        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
+        margin-top: 30px;
     }
 
     .info {
+        display: flex;
+        align-items: top;
         gap: 15px;
         margin: 5px;
         width: 280px;
     }
 
     .copyright {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 }
 
@@ -496,7 +541,7 @@ textarea {
     }
 
     .menu-item a {
-        font-size: 1.5rem;
+        font-size: 22px;
     }
 
     .menu-item:hover .submenu {
@@ -504,6 +549,7 @@ textarea {
         position: static;
         width: auto;
         padding: 5px 0px;
+        margin-bottom: 0px;
     }
 
     .banner {
@@ -519,43 +565,51 @@ textarea {
         padding-top: 50px;
     }
 
-    .footerlogo {
-        display: none;
-    }
-
     .footerinfo {
         display: flex;
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 8px;
+        padding-right: 15px;
+        margin-bottom: 30px;
         flex-direction: column;
-        align-items: center;
+        align-items: baseline;
+    }
+
+    .footer-menu div {
+        padding-bottom: 10px;
+        padding-right: 0px;
+    }
+
+    .footerlogo {
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+
+    .footerlogo img {
+        width: 80px;
+        height: 80px;
     }
 
     .navigation {
         display: flex;
         gap: 25px;
         margin-top: 25px;
-        margin-bottom: 25px;
+        margin-bottom: 8px;
         padding-left: 0px;
-    }
-
-    .footer-menu div {
-        padding-bottom: 10px;
     }
 
     .contact-info {
         display: flex;
         flex-direction: column;
         margin-right: 0px;
-        margin-bottom: 15px;
+        margin-top: 40px;
+        margin-bottom: 10px;
     }
 
     .info {
         display: flex;
         align-items: top;
         gap: 15px;
-        margin: 0px;
+        margin: 5px;
         width: 240px;
     }
 
@@ -564,29 +618,7 @@ textarea {
     }
 
     .copyright {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 0px;
-        padding: 0px;
-        border: none;
-    }
-
-    .footerlogomobile {
-        display: block;
-    }
-
-    .mobile {
-        border-top: 1px solid var(--text-light);
         margin-top: 10px;
-        padding-top: 20px;
-        display: flex;
-        align-items: center;
-    }
-
-    .footerlogomobile img {
-        width: 50px;
-        height: 50px;
-        margin-bottom: 20px;
     }
 }
 
@@ -603,21 +635,58 @@ textarea {
 
 
     /*footer*/
+    .footer {
+        padding-top: 35px;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 0px;
+    }
+
     .footerinfo {
-        padding-left: 10px;
-        padding-right: 20px;
+        display: flex;
+        padding: 0px;
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        gap: 10px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        width: 50%;
     }
 
     .contact-info {
-        margin-right: 20px;
-        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
+        margin-top: 15px;
+        align-items: center;
     }
 
     .info {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: center;
         gap: 15px;
-        margin: 0px;
-        width: 200px;
+        margin: 5px;
+        width: 60%;
+    }
+
+    .info p {
+        text-align: center;
+    }
+
+    .footerlogo {
+        margin-right: 0px;
+        margin-left: 10px;
     }
 }
