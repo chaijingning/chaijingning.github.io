@@ -5,12 +5,15 @@
 }
 
 .blog-grid {
-    max-width: 1280px;
-    margin: 30px auto;
+    max-width: 1680px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     gap: 30px;
-
+    margin: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -29,29 +32,30 @@
 }
 
 .card img {
+    display: block;
+    margin: 0 auto;
     width: 100%;
     max-width: 520px;
-    height: 330px;
+    max-height: 330px;
 }
 
 .card h3 {
     margin: 15px 0 0;
+    margin-left: 28px;
 }
 
-h3 {
+.card h3 {
     min-height: 35px;
 
 }
 
 
 .card p.largemedium {
-    margin: 15px 0 0;
-}
-
-.card a.largemedium {
     color: var(--coral);
-
+    margin: 15px 0 0;
+    margin-left: 28px;
 }
+
 
 
 @media screen and (max-width:1080px) {
@@ -70,10 +74,12 @@ h3 {
 
     .card h3 {
         font-size: 30px;
+        margin-left: -0px;
     }
 
     .card p.largemedium {
         font-size: 16px;
+        margin-left: -0px;
     }
 }
 
@@ -110,11 +116,19 @@ h3 {
 
     .card h3 {
         font-size: 30px;
+        margin-left: 25px;
     }
 
     .card p.largemedium {
         font-size: 14px;
+        margin-left: 25px;
     }
+
+    .h3 {
+        min-height: 20px;
+
+    }
+
 }
 
 
@@ -142,10 +156,12 @@ h3 {
 
     .card h3 {
         font-size: 24px;
+        margin-left: -0px;
     }
 
     .card p.largemedium {
         font-size: 12px;
+        margin-left: -0px;
     }
 
     .card img {
@@ -153,4 +169,7 @@ h3 {
         height: auto;
     }
 
+    .h3 {
+        min-height: 15px;
+    }
 }
