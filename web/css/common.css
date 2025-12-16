@@ -180,6 +180,37 @@ a {
     color: var(--darkblue);
 }
 
+/*link buttons*/
+.sbtnlink {
+    font-size: 16px;
+    font-family: var(--font-base);
+    color: var(--text-light);
+}
+
+.sbtnlink:hover {
+    color: var(--coral);
+}
+
+.mbtnlink {
+    font-size: 18px;
+    font-family: var(--font-base);
+    color: var(--text-dark);
+}
+
+.mbtnlink:hover {
+    color: var(--coral);
+}
+
+.lbtnlink {
+    font-size: 22px;
+    font-family: var(--font-base);
+    color: var(--coral);
+}
+
+.lbtnlink:hover {
+    color: var(--darkblue);
+}
+
 /*icons size*/
 .smallicon {
     width: 25px;
@@ -277,12 +308,10 @@ textarea {
 
 /*banner*/
 .banner {
-    width: 100%;
     min-height: 528px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 .banner .title h1 {
@@ -294,6 +323,7 @@ textarea {
     background-color: var(--darkblue);
     color: var(--text-light);
     padding-top: 70px;
+    margin-top: 50px;
 }
 
 .footer-info {
@@ -510,6 +540,11 @@ textarea {
         font-size: 30px;
     }
 
+    /*link buttons*/
+    .sbtnlink {
+        font-size: 14px;
+    }
+
     /*header*/
     .headerinfo {
         padding: 0px 30px;
@@ -674,7 +709,7 @@ textarea {
     }
 
     .contact-info h5 {
-        margin-left: 20px;
+        margin-left: 15px;
     }
 
     .contact-info {
@@ -686,15 +721,9 @@ textarea {
     }
 
     .info {
-        display: flex;
-        text-align: center;
         gap: 15px;
         width: 60%;
-    }
-
-    .info p {
-        min-width: 250px;
-        text-align: center;
+        margin-left: 45px;
     }
 
     .footerlogo {
