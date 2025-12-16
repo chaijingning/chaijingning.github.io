@@ -473,6 +473,14 @@ textarea {
         padding-left: 0px;
     }
 
+    .navigation .desktop {
+        display: none;
+    }
+
+    .mobile-navigation {
+        display: block;
+    }
+
     .contact-info {
         display: flex;
         flex-direction: column;
