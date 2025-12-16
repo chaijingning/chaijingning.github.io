@@ -43,6 +43,11 @@
     margin-left: 28px;
 }
 
+.card cardhead {
+    min-height: 20px;
+
+}
+
 .card h3 {
     min-height: 35px;
 
