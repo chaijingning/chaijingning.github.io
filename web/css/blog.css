@@ -119,6 +119,15 @@
         min-height: 35px;
     }
 
+    .card a {
+        color: var(--coral);
+    }
+
+    .card a:hover {
+        color: var(--darkbluel);
+
+    }
+
     .card p.largemedium {
         font-size: 14px;
         margin-left: 25px;
