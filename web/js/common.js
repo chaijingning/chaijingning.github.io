@@ -7,8 +7,10 @@ toggleButton.addEventListener("click", () => {
     // Change icon
     if (menu.classList.contains("active")) {
         toggleButton.innerHTML = "&times;"; // × (cross)
+        document.body.style.overflow = "hidden";
     } else {
         toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
+        document.body.style.overflow = "";
     }
 });
 
