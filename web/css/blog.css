@@ -8,7 +8,6 @@
     max-width: 1680px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
     gap: 30px;
     margin: 20px;
     margin-left: 20px;
@@ -52,7 +51,6 @@
 
 .card p.largemedium {
     color: var(--coral);
-    margin: 15px 0 0;
     margin-left: 28px;
 }
 
@@ -75,6 +73,7 @@
     .card h3 {
         font-size: 30px;
         margin-left: -0px;
+        min-height: 35px;
     }
 
     .card p.largemedium {
@@ -117,6 +116,7 @@
     .card h3 {
         font-size: 30px;
         margin-left: 25px;
+        min-height: 35px;
     }
 
     .card p.largemedium {
