@@ -1,0 +1,31 @@
+.banner {
+    background-image: url(../image/servicebanner.jpg);
+    background-size: cover;
+}
+
+/*service*/
+
+/*philosophy*/
+.philosophy {
+    display: flex;
+    align-items: center;
+}
+
+.philosophy div {
+    width: 50%;
+}
+
+.information {
+    background-color: var(--lightblue);
+}
+
+/*why us*/
+.choose {
+    background-color: var(--text-light);
+}
+
+@media screen and (max-width: 1080px) {}
+
+@media screen and (max-width: 786px) {}
+
+@media screen and (max-width: 500px) {}
