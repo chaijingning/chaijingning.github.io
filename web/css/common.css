@@ -466,6 +466,9 @@ textarea {
 }
 
 @media screen and (max-width: 1080px) {
+    .lbtnlink {
+        font-size: 18px;
+    }
 
     /*menu*/
     .headerinfo {
@@ -585,10 +588,6 @@ textarea {
         font-size: 30px;
     }
 
-    /*link buttons*/
-    .sbtnlink {
-        font-size: 14px;
-    }
 
     /*header*/
     .headerinfo {
@@ -708,6 +707,15 @@ textarea {
 }
 
 @media screen and (max-width: 500px) {
+
+    /*link buttons*/
+    .sbtnlink {
+        font-size: 14px;
+    }
+
+    .lbtnlink {
+        font-size: 16px;
+    }
 
     /*banner*/
     .banner {

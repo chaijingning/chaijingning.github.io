@@ -43,7 +43,7 @@
     margin-left: 28px;
 }
 
-.card cardhead {
+.card .cardhead {
     min-height: 20px;
 
 }
@@ -52,14 +52,6 @@
     min-height: 35px;
 
 }
-
-
-.card p.largemedium {
-    color: var(--coral);
-    margin-left: 28px;
-}
-
-
 
 @media screen and (max-width:1080px) {
     .blog-grid {
@@ -79,11 +71,6 @@
         font-size: 30px;
         margin-left: -0px;
         min-height: 35px;
-    }
-
-    .card p.largemedium {
-        font-size: 16px;
-        margin-left: -0px;
     }
 }
 
@@ -133,11 +120,6 @@
 
     }
 
-    .card p.largemedium {
-        font-size: 14px;
-        margin-left: 25px;
-    }
-
     .h3 {
         min-height: 20px;
 
@@ -170,11 +152,6 @@
 
     .card h3 {
         font-size: 24px;
-        margin-left: -0px;
-    }
-
-    .card p.largemedium {
-        font-size: 12px;
         margin-left: -0px;
     }
 
