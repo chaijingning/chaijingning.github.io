@@ -4,25 +4,112 @@
 }
 
 /*service*/
+.offer {
+    max-width: 1280px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    text-align: left;
+    width: 80%;
+    min-height: 400px;
+    margin: auto;
+    gap: 10px;
+}
+
+.service-card {
+    background-color: var(--text-light);
+}
+
+.services img {
+    width: 90px;
+    height: 90px;
+}
 
 /*philosophy*/
 .philosophy {
     display: flex;
     align-items: center;
+    margin-bottom: 80px;
 }
 
 .philosophy div {
     width: 50%;
 }
 
-.information {
-    background-color: var(--lightblue);
+.p-image {
+    background-image: url(../image/servicephilosophy.jpg);
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
 }
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--lightblue);
+    min-height: 650px;
+    position: relative;
+    top: 65px;
+    padding-left: 80px;
+    width: 100%;
+}
+
+.information h2 {
+    color: var(--coral);
+}
+
+.text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin-top: 65px;
+    gap: 35px;
+}
+
+.text div {
+    width: 120%;
+    padding: 10px;
+}
+
+.explain {
+    display: flex;
+    gap: 10px;
+    background-color: var(--text-light);
+}
+
+.explain div {}
 
 /*why us*/
 .choose {
     background-color: var(--text-light);
+    position: relative;
+    bottom: -60px;
 }
+
+.choose h2 {
+    text-align: center;
+}
+
+.dogimage img {
+    display: block;
+    margin: auto;
+}
+
+.reason {
+    border: 1px solid var(--coral);
+    border-radius: 25px;
+    padding: 15px;
+    width: 23%;
+
+}
+
 
 @media screen and (max-width: 1080px) {}
 
