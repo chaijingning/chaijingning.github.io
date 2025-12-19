@@ -19,10 +19,10 @@
 }
 
 .subhead img {
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 612px;
-    max-height: 408px;
+    width: 612px;
+    height: 408px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .subhead p {
@@ -83,14 +83,13 @@
     display: flex;
     padding-bottom: 175px;
     padding-left: 120px;
-    padding-bottom: 73px;
 }
 
 .subhead2 img {
-    min-width: 612px;
-    max-width: 408px;
-    max-width: 80%;
+    width: 748px;
     height: 499px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .subhead2 p.normalbold {
@@ -236,6 +235,18 @@
 }
 
 @media screen and (max-width: 500px) {
+    .subhead {
+        padding-bottom: 10px;
+    }
+
+    .ours {
+        padding-bottom: 50px;
+    }
+
+    .subhead2 {
+        padding-bottom: 50px;
+    }
+
     .subhead img {
         width: 100%;
         height: auto;
