@@ -83,14 +83,11 @@
     display: flex;
     padding-bottom: 175px;
     padding-left: 120px;
-    padding-bottom: 73px;
 }
 
 .subhead2 img {
-    min-width: 612px;
-    max-width: 408px;
-    max-width: 80%;
-    height: 499px;
+    width: 40%;
+    height: auto
 }
 
 .subhead2 p.normalbold {
