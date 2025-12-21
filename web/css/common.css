@@ -308,7 +308,6 @@ textarea {
 
 /*banner*/
 .banner {
-    width: 100%;
     min-height: 528px;
     display: flex;
     align-items: center;
