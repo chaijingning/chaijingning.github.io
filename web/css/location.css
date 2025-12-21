@@ -1,12 +1,7 @@
 .banner {
-    background-image: url(../image/location.png);
+    background-image: url(../image/locationbanner.jpg);
     background-size: cover;
     background-position: center;
-}
-
-.title h1 {
-    margin: 0px;
-    padding: 0px;
 }
 
 .subhead {
@@ -68,7 +63,6 @@
 .bangsa {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .top h3 {
@@ -181,5 +175,15 @@
 
     .bot div {
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .subhead h2 {
+        width: 90%
+    }
+
+    .subhead .largemedium {
+        font-size: 14px;
     }
 }
