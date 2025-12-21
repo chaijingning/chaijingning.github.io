@@ -1,7 +1,3 @@
-body {
-    background-color: #FFF9F3;
-}
-
 .banner {
     background-image: url(../image/ourteam.jpg);
     background-size: cover;
@@ -27,4 +23,203 @@ body {
     margin-right: auto;
     max-width: 612px;
     height: 408px;
+}
+
+.subhead p {
+    color: var(--coral);
+}
+
+.subhead p.normalregular {
+    color: var(--darkblue);
+}
+
+.subtext {
+    padding-top: 112px;
+    padding-bottom: 70px;
+    line-height: 150%;
+}
+
+.ours {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 110px;
+}
+
+.ours .purpose {
+    background-image: url(../image/aboutuspurpose.png);
+    background-size: cover;
+    width: 365px;
+    height: 243px;
+    border-radius: 20px;
+}
+
+.ours .service {
+    background-image: url(../image/aboutusservice.png);
+    background-size: cover;
+    width: 365px;
+    height: 243px;
+    border-radius: 20px;
+}
+
+.ours .exp {
+    background-image: url(../image/aboutusexp.png);
+    background-size: cover;
+    width: 365px;
+    height: 243px;
+    border-radius: 20px;
+}
+
+.ours h3 {
+    padding-top: 94.5px;
+    padding-bottom: 94.5px;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.subhead2 {
+    display: flex;
+    padding-bottom: 175px;
+    padding-left: 120px;
+    padding-bottom: 73px;
+    gap: 120px;
+}
+
+.subhead2 img {
+    max-width: 748px;
+    height: 499px;
+}
+
+.subhead2 p.normalbold {
+    color: var(--coral);
+}
+
+.subhead2 p.largeregular {
+    color: var(--darkblue);
+}
+
+.subtext2 {
+    max-width: 585px;
+    line-height: 150%;
+}
+
+.ourteam {
+    text-align: center;
+    padding-bottom: 44px;
+}
+
+.ourteam p.normalbold {
+    color: var(--coral)
+}
+
+.ourteam h2 {
+    color: var(--darkblue);
+}
+
+.ourteam p.largeregular {
+    color: var(--darkblue);
+}
+
+.teams {
+    display: flex;
+    justify-content: center;
+    gap: 29px;
+    padding-left: 57px;
+    padding-right: 57px;
+}
+
+.teams img {
+    width: 310px;
+    height: 324px;
+    border-radius: 20px;
+}
+
+.teams p.normalbold {
+    color: var(--coral);
+
+}
+
+.teams .infojn {
+    position: relative;
+    left: 40px;
+    bottom: 80px;
+    background-color: var(--bg-light);
+    text-align: center;
+    width: 237px;
+    padding: 10px 40px 30px 40px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+}
+
+.teams .infoyh {
+    position: relative;
+    left: 40px;
+    bottom: 80px;
+    background-color: var(--bg-light);
+    text-align: center;
+    width: 237px;
+    padding: 10px 40px 30px 40px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+}
+
+.teams .infobl {
+    position: relative;
+    left: 40px;
+    bottom: 80px;
+    background-color: var(--bg-light);
+    text-align: center;
+    width: 237px;
+    padding: 10px 40px 30px 40px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+}
+
+.teams .infomq {
+    position: relative;
+    left: 40px;
+    bottom: 80px;
+    background-color: var(--bg-light);
+    text-align: center;
+    width: 237px;
+    padding: 10px 40px 30px 40px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+}
+
+.maptext {
+    background-image: url(../image/aboutusmap.png);
+    width: 100%;
+    height: 714px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 440px;
+}
+
+.map p.normalbold {
+    color: var(--coral);
+}
+
+.map .review h3 {
+    color: var(--coral);
+}
+
+.map .review {
+    position: absolute;
+    background-color: var(--bg-light);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 31%;
+    text-align: center;
+    width: 954px;
+    max-width: 90%;
+    padding: 54px 20px 45px 20px;
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.5);
 }
