@@ -308,10 +308,13 @@ textarea {
 
 /*banner*/
 .banner {
+    width: 100%;
     min-height: 528px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .banner .title h1 {
@@ -323,7 +326,6 @@ textarea {
     background-color: var(--darkblue);
     color: var(--text-light);
     padding-top: 70px;
-    margin-top: 50px;
 }
 
 .footer-info {
@@ -540,11 +542,6 @@ textarea {
         font-size: 30px;
     }
 
-    /*link buttons*/
-    .sbtnlink {
-        font-size: 14px;
-    }
-
     /*header*/
     .headerinfo {
         padding: 0px 30px;
@@ -709,7 +706,7 @@ textarea {
     }
 
     .contact-info h5 {
-        margin-left: 15px;
+        margin-left: 20px;
     }
 
     .contact-info {
@@ -721,9 +718,15 @@ textarea {
     }
 
     .info {
+        display: flex;
+        text-align: center;
         gap: 15px;
         width: 60%;
-        margin-left: 45px;
+    }
+
+    .info p {
+        min-width: 250px;
+        text-align: center;
     }
 
     .footerlogo {
