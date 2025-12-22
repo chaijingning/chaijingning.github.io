@@ -116,7 +116,7 @@ p.extrasmall {
 .intro-text {
     font-family: var(--font-base);
     font-size: 22px;
-    font-weight: 500;
+    font-weight: normal;
     color: var(--text-dark);
 }
 
@@ -358,7 +358,7 @@ textarea {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 65px;
 }
 
 .banner .title h1 {
