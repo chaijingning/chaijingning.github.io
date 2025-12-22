@@ -7,7 +7,7 @@
 
 
 .blog-grid {
-    width: auto;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
