@@ -4,6 +4,13 @@
     background-position: center;
 }
 
+body {
+    background-image: url(../image/Vector\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: left;
+}
+
 .title h1 {
     margin: 0px;
     padding: 0px;
