@@ -116,7 +116,7 @@ p.extrasmall {
 .intro-text {
     font-family: var(--font-base);
     font-size: 22px;
-    font-weight: 500;
+    font-weight: normal;
     color: var(--text-dark);
 }
 
@@ -357,6 +357,8 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    margin-bottom: 65px;
 }
 
 .banner .title h1 {
@@ -368,7 +370,6 @@ textarea {
     background-color: var(--darkblue);
     color: var(--text-light);
     padding-top: 70px;
-    margin-top: 50px;
 }
 
 .footer-info {
@@ -598,6 +599,10 @@ textarea {
         font-size: 30px;
     }
 
+    /*link buttons*/
+    .sbtnlink {
+        font-size: 14px;
+    }
 
     /*header*/
     .headerinfo {
@@ -778,7 +783,7 @@ textarea {
     }
 
     .contact-info h5 {
-        margin-left: 15px;
+        margin-left: 20px;
     }
 
     .contact-info {
@@ -795,11 +800,11 @@ textarea {
     }
 
     .info {
-        gap: 15px;
-        width: 80%;
+        display: flex;
         text-align: center;
-        align-items: center;
-        justify-content: center;
+        gap: 15px;
+        width: 60%;
+        margin-left: 45px;
     }
 
     .footerlogo {
