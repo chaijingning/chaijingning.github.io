@@ -45,8 +45,10 @@
         width: 100%;
         border-radius: var(--radius);
         justify-content: space-between;
-        padding-left: 46px;
+        padding-left: 44px;
         padding-right: 16px;
+        z-index: 1;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     }
 
     .faqcontainer .normalregular {
@@ -56,6 +58,15 @@
         padding: 37px;
         min-height: 220px;
         margin: 0 auto;
+        position: relative;
+        top: -20px;
+        z-index: -1;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+
+    .faqcontainer .normalregular.active {
+        display: block;
     }
 
     .faqsection {
