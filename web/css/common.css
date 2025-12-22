@@ -792,7 +792,7 @@ textarea {
         margin-right: 0px;
         margin-top: 15px;
         align-items: center;
-
+        justify-items: center;
     }
 
     .contact-info img {
@@ -802,9 +802,8 @@ textarea {
     .info {
         display: flex;
         text-align: center;
-        gap: 15px;
-        width: 60%;
-        margin-left: 45px;
+        align-items: center;
+        justify-content: center;
     }
 
     .footerlogo {
