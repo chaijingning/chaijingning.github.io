@@ -4,6 +4,13 @@
     background-position: center;
 }
 
+body {
+    background-image: url(../image/Vector\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: left;
+}
+
 .title h1 {
     margin: 0px;
     padding: 0px;
@@ -190,9 +197,7 @@
     margin-left: 40px;
 }
 
-.quote-text {
-    flex: 1;
-}
+
 
 .quote-box img {
     margin-top: 150px;
@@ -206,15 +211,17 @@
     margin-top: 150px;
     margin-left: -120px;
     margin-right: 160px;
+    margin-bottom: 20px;
 }
 
 p.largeregular {
-    margin: 0px;
-
+    margin: 0;
 }
 
 .quote-text ul {
-    padding-left: -130px;
+    margin-left: -120px;
+    margin-right: 160px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -269,7 +276,8 @@ p.largeregular {
         margin: 20px auto;
     }
 
-    .quote-box h2 {
+    .quote-box h2,
+    p.largeregular {
         margin: 20px auto;
     }
 }
