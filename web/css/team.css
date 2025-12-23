@@ -7,7 +7,7 @@
 body {
     background-image: url(../image/Vector\ 2.png);
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 100%;
     background-position: left;
 }
 
@@ -89,15 +89,15 @@ body {
 }
 
 .teams {
+    max-width: 90%;
     display: flex;
     justify-content: center;
+    margin: auto;
     gap: 29px;
-    padding-left: 57px;
-    padding-right: 57px;
 }
 
 .teams img {
-    width: 310px;
+    width: 100%;
     height: 324px;
     border-radius: 20px;
 }
@@ -109,11 +109,11 @@ body {
 
 .teams .infojn {
     position: relative;
-    left: 40px;
+    left: 30px;
     bottom: 80px;
     background-color: var(--bg-light);
     text-align: center;
-    width: 237px;
+    width: 80%;
     padding: 10px 40px 30px 40px;
     border-radius: 5px;
     border: 2px solid var(--darkblue);
@@ -121,11 +121,11 @@ body {
 
 .teams .infoyh {
     position: relative;
-    left: 40px;
+    left: 30px;
     bottom: 80px;
     background-color: var(--bg-light);
     text-align: center;
-    width: 237px;
+    width: 80%;
     padding: 10px 40px 30px 40px;
     border-radius: 5px;
     border: 2px solid var(--darkblue);
@@ -133,11 +133,11 @@ body {
 
 .teams .infobl {
     position: relative;
-    left: 40px;
+    left: 30px;
     bottom: 80px;
     background-color: var(--bg-light);
     text-align: center;
-    width: 237px;
+    width: 80%;
     padding: 10px 40px 30px 40px;
     border-radius: 5px;
     border: 2px solid var(--darkblue);
@@ -145,11 +145,11 @@ body {
 
 .teams .infomq {
     position: relative;
-    left: 40px;
+    left: 30px;
     bottom: 80px;
     background-color: var(--bg-light);
     text-align: center;
-    width: 237px;
+    width: 80%;
     padding: 10px 40px 30px 40px;
     border-radius: 5px;
     border: 2px solid var(--darkblue);
@@ -160,9 +160,9 @@ body {
     border: 2px solid var(--coral);
     border-radius: 20px;
     padding: 30px;
-    width: 1150px;
-    height: 300px;
-    margin-left: 180px;
+    max-width: 1150px;
+    margin-left: 160px;
+    margin-right: 40px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -170,9 +170,7 @@ body {
 }
 
 .values img {
-    width: 491px;
-    height: 383px;
-    height: auto;
+    width: 100%auto;
     margin-left: -82px;
     margin-top: -30px;
 }
@@ -214,11 +212,7 @@ body {
     margin-bottom: 20px;
 }
 
-p.largeregular {
-    margin: 0;
-}
-
-.quote-text ul {
+p.largeregular ul {
     margin-left: -120px;
     margin-right: 160px;
     margin-bottom: 20px;
@@ -231,14 +225,66 @@ p.largeregular {
         text-align: center;
     }
 
-    .subhead img {
-        max-width: 80%;
-        height: auto;
+    .subtext {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
-    .subtext {
-        padding-top: 40px;
-        padding-bottom: 40px;
+    .subhead2 {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 80px;
+        gap: 20px;
+    }
+
+    .teams .infojn {
+        position: relative;
+        left: 30px;
+        bottom: 80px;
+        background-color: var(--bg-light);
+        text-align: center;
+        width: 60%;
+        padding: 10px 40px 30px 40px;
+        border-radius: 5px;
+        border: 2px solid var(--darkblue);
+    }
+
+    .teams .infoyh {
+        position: relative;
+        left: 30px;
+        bottom: 80px;
+        background-color: var(--bg-light);
+        text-align: center;
+        width: 60%;
+        padding: 10px 40px 30px 40px;
+        border-radius: 5px;
+        border: 2px solid var(--darkblue);
+    }
+
+    .teams .infobl {
+        position: relative;
+        left: 30px;
+        bottom: 80px;
+        background-color: var(--bg-light);
+        text-align: center;
+        width: 60%;
+        padding: 10px 40px 30px 40px;
+        border-radius: 5px;
+        border: 2px solid var(--darkblue);
+    }
+
+    .teams .infomq {
+        position: relative;
+        left: 30px;
+        bottom: 80px;
+        background-color: var(--bg-light);
+        text-align: center;
+        width: 60%;
+        padding: 10px 40px 30px 40px;
+        border-radius: 5px;
+        border: 2px solid var(--darkblue);
     }
 
     .teams {
@@ -280,7 +326,27 @@ p.largeregular {
     p.largeregular {
         margin: 20px auto;
     }
+
+    .teams {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .ours h3,
+    .subtext h2,
+    .subtext p,
+    .subtext2,
+    .ourteam h2,
+    .ourteam p,
+    .values h2,
+    .values p,
+    .quote-box h2,
+    p.largeregular {
+        text-align: left;
+    }
+
 }
+
 
 @media screen and (max-width: 786px) {
     .subhead {
@@ -296,7 +362,7 @@ p.largeregular {
     .teams {
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        margin: auto;
     }
 
     .teams img {
@@ -322,24 +388,39 @@ p.largeregular {
 
 
 @media screen and (max-width: 500px) {
+    body {
+        background-image: url(../image/Vector\ 2.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top;
+    }
+
     .subhead {
         flex-direction: column;
         padding: 10px;
     }
 
     .subhead img {
-        width: 100%;
+        width: 90%;
         height: auto;
     }
 
     .subtext {
         padding: 20px;
-        text-align: center;
+        text-align: left;
     }
 
+    .ours h3,
     .subtext h2,
-    .subtext p {
-        margin-left: 0;
+    .subtext p,
+    .subtext2,
+    .ourteam h2,
+    .ourteam p,
+    .values h2,
+    .values p,
+    .quote-box h2,
+    p.largeregular {
+        text-align: left;
     }
 
     .teams {
@@ -348,8 +429,65 @@ p.largeregular {
         padding: 10px;
     }
 
-    .teams img {
-        width: 100%;
-        height: auto;
+    .ourteamtext {
+        padding-left: 50px;
+        padding-right: 50px;
     }
+
+    .teams img {
+        width: 60%;
+        height: auto;
+        margin-left: 80px;
+        margin-right: 80px;
+
+    }
+
+    .teams .infojn {
+        position: relative;
+        left: 100px;
+        bottom: 80px;
+        background-color: var(--bg-light);
+        text-align: center;
+        width: 200px;
+        padding: 10px 30px 20px 30px;
+        border-radius: 5px;
+        border: 2px solid var(--darkblue);
+    }
+
+    .teams .infoyh {
+        position: relative;
+        left: 100px;
+        bottom: 80px;
+        background-color: var(--bg-light);
+        text-align: center;
+        width: 200px;
+        padding: 10px 30px 20px 30px;
+        border-radius: 5px;
+        border: 2px solid var(--darkblue);
+    }
+
+    .teams .infobl {
+        position: relative;
+        left: 100px;
+        bottom: 80px;
+        background-color: var(--bg-light);
+        text-align: center;
+        width: 200px;
+        padding: 10px 30px 20px 30px;
+        border-radius: 5px;
+        border: 2px solid var(--darkblue);
+    }
+
+    .teams .infomq {
+        position: relative;
+        left: 100px;
+        bottom: 80px;
+        background-color: var(--bg-light);
+        text-align: center;
+        width: 200px;
+        padding: 10px 30px 20px 30px;
+        border-radius: 5px;
+        border: 2px solid var(--darkblue);
+    }
+
 }
