@@ -7,7 +7,7 @@
 body {
     background-image: url(../image/Vector\ 2.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 94%;
     background-position: left;
 }
 
@@ -18,7 +18,7 @@ body {
 
 .subhead {
     display: flex;
-    padding-bottom: 85px;
+    padding-bottom: 60px;
     padding-left: 50px;
     padding-right: 115px;
     gap: 20px;
@@ -98,7 +98,6 @@ body {
 
 .teams img {
     width: 100%;
-    height: 324px;
     border-radius: 20px;
 }
 
@@ -161,6 +160,7 @@ body {
     border-radius: 20px;
     padding: 30px;
     max-width: 1150px;
+    height: 298px;
     margin-left: 160px;
     margin-right: 40px;
     display: flex;
@@ -181,7 +181,7 @@ body {
     margin-left: -150px;
 }
 
-.values p.largeregular {
+.values li {
     margin-bottom: 50px;
     margin-left: -150px;
     margin-right: 50px;
@@ -239,52 +239,26 @@ p.largeregular ul {
         gap: 20px;
     }
 
+    .ourteam {
+        width: 85%;
+        margin: auto;
+    }
+
     .teams .infojn {
-        position: relative;
-        left: 30px;
-        bottom: 80px;
-        background-color: var(--bg-light);
-        text-align: center;
-        width: 60%;
-        padding: 10px 40px 30px 40px;
-        border-radius: 5px;
-        border: 2px solid var(--darkblue);
+        width: 80%;
+        left: 50px;
     }
 
     .teams .infoyh {
-        position: relative;
-        left: 30px;
-        bottom: 80px;
-        background-color: var(--bg-light);
-        text-align: center;
-        width: 60%;
-        padding: 10px 40px 30px 40px;
-        border-radius: 5px;
-        border: 2px solid var(--darkblue);
+        width: 80%;
     }
 
     .teams .infobl {
-        position: relative;
-        left: 30px;
-        bottom: 80px;
-        background-color: var(--bg-light);
-        text-align: center;
-        width: 60%;
-        padding: 10px 40px 30px 40px;
-        border-radius: 5px;
-        border: 2px solid var(--darkblue);
+        width: 80%;
     }
 
     .teams .infomq {
-        position: relative;
-        left: 30px;
-        bottom: 80px;
-        background-color: var(--bg-light);
-        text-align: center;
-        width: 60%;
-        padding: 10px 40px 30px 40px;
-        border-radius: 5px;
-        border: 2px solid var(--darkblue);
+        width: 80%;
     }
 
     .teams {
@@ -354,6 +328,13 @@ p.largeregular ul {
         padding: 20px;
     }
 
+    body {
+        background-image: url(../image/Vector\ 2.png);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: left;
+    }
+
     .subhead img {
         width: 100%;
         height: auto;
@@ -365,10 +346,6 @@ p.largeregular ul {
         margin: auto;
     }
 
-    .teams img {
-        width: 80%;
-        height: auto;
-    }
 
     .values {
         width: 95%;
