@@ -269,7 +269,6 @@ textarea {
     height: auto;
 }
 
-
 .menu {
     display: flex;
     gap: 15px;
@@ -280,6 +279,11 @@ textarea {
     display: none;
     cursor: pointer;
     z-index: 1001;
+}
+
+.menu-item:nth-child(4) a,
+.menu-item:nth-child(2) .submenu a {
+    color: var(--gray);
 }
 
 .menu a {
