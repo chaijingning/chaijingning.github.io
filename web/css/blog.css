@@ -130,8 +130,7 @@ body {
 @media screen and (max-width: 786px) {
     .blog-grid {
         display: block;
-        margin: 0 auto;
-        width: 95%;
+        width: 90%;
     }
 
     .card {

@@ -214,11 +214,7 @@ body {
     margin-bottom: 20px;
 }
 
-p.largeregular {
-    margin: 0;
-}
-
-.quote-text ul {
+p.largeregular ul {
     margin-left: -120px;
     margin-right: 160px;
     margin-bottom: 20px;
