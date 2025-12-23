@@ -181,8 +181,12 @@ body {
     margin-left: -150px;
 }
 
-.values li {
-    margin-bottom: 50px;
+.quote-box li {
+    font-family: var(--font-base);
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 6px;
     margin-left: -150px;
     margin-right: 50px;
 }
@@ -207,12 +211,6 @@ body {
 
 .quote-box h2 {
     margin-top: 150px;
-    margin-left: -120px;
-    margin-right: 160px;
-    margin-bottom: 20px;
-}
-
-p.largeregular ul {
     margin-left: -120px;
     margin-right: 160px;
     margin-bottom: 20px;
@@ -297,28 +295,42 @@ p.largeregular ul {
     }
 
     .quote-box h2,
-    p.largeregular {
-        margin: 20px auto;
-    }
+    {
+    margin: 20px auto;
+}
 
-    .teams {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 20px;
-    }
+.teams {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+}
 
-    .ours h3,
-    .subtext h2,
-    .subtext p,
-    .subtext2,
-    .ourteam h2,
-    .ourteam p,
-    .values h2,
-    .values p,
-    .quote-box h2,
-    p.largeregular {
-        text-align: left;
-    }
+.quote-box li {
+    margin-left: 40px;
+    margin-right: 50px;
+}
 
+.ours h3,
+.subtext h2,
+.subtext p,
+.subtext2,
+.ourteam h2,
+.ourteam p,
+.values h2,
+.values p,
+.quote-box h2,
+p.largeregular {
+    text-align: left;
+}
+
+.p.largeregular,
+li {
+    margin-bottom: 6px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.quote-box h2 {
+    margin-left: 20px;
 }
 
 
@@ -395,76 +407,87 @@ p.largeregular ul {
     .ourteam p,
     .values h2,
     .values p,
-    .quote-box h2,
-    p.largeregular {
+    .p.largeregular {
         text-align: left;
     }
 
-    .teams {
-        flex-direction: column;
-        gap: 20px;
-        padding: 10px;
+    .quote-box h2 {
+        margin-top: -40px;
+        margin-left: 20px;
     }
+}
 
-    .ourteamtext {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+.teams {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
 
-    .teams img {
-        width: 60%;
-        height: auto;
-        margin-left: 80px;
-        margin-right: 80px;
+.ourteamtext {
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
-    }
+.teams img {
+    width: 60%;
+    height: auto;
+    margin-left: 80px;
+    margin-right: 80px;
 
-    .teams .infojn {
-        position: relative;
-        left: 100px;
-        bottom: 80px;
-        background-color: var(--bg-light);
-        text-align: center;
-        width: 200px;
-        padding: 10px 30px 20px 30px;
-        border-radius: 5px;
-        border: 2px solid var(--darkblue);
-    }
+}
 
-    .teams .infoyh {
-        position: relative;
-        left: 100px;
-        bottom: 80px;
-        background-color: var(--bg-light);
-        text-align: center;
-        width: 200px;
-        padding: 10px 30px 20px 30px;
-        border-radius: 5px;
-        border: 2px solid var(--darkblue);
-    }
+.teams .infojn {
+    position: relative;
+    left: 100px;
+    bottom: 80px;
+    background-color: var(--bg-light);
+    text-align: center;
+    width: 200px;
+    padding: 10px 30px 20px 30px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+}
 
-    .teams .infobl {
-        position: relative;
-        left: 100px;
-        bottom: 80px;
-        background-color: var(--bg-light);
-        text-align: center;
-        width: 200px;
-        padding: 10px 30px 20px 30px;
-        border-radius: 5px;
-        border: 2px solid var(--darkblue);
-    }
+.teams .infoyh {
+    position: relative;
+    left: 100px;
+    bottom: 80px;
+    background-color: var(--bg-light);
+    text-align: center;
+    width: 200px;
+    padding: 10px 30px 20px 30px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+}
 
-    .teams .infomq {
-        position: relative;
-        left: 100px;
-        bottom: 80px;
-        background-color: var(--bg-light);
-        text-align: center;
-        width: 200px;
-        padding: 10px 30px 20px 30px;
-        border-radius: 5px;
-        border: 2px solid var(--darkblue);
-    }
+.teams .infobl {
+    position: relative;
+    left: 100px;
+    bottom: 80px;
+    background-color: var(--bg-light);
+    text-align: center;
+    width: 200px;
+    padding: 10px 30px 20px 30px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+}
 
+.teams .infomq {
+    position: relative;
+    left: 100px;
+    bottom: 80px;
+    background-color: var(--bg-light);
+    text-align: center;
+    width: 200px;
+    padding: 10px 30px 20px 30px;
+    border-radius: 5px;
+    border: 2px solid var(--darkblue);
+}
+
+.p.largeregular,
+li {
+    margin-bottom: 6px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
 }
