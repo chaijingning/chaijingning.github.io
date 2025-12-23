@@ -2,9 +2,21 @@
     background-image: url(../image/petinfo1.jpg);
     background-size: cover;
     background-position: center;
-    margin-bottom: 0px;
 }
 
+body {
+    background-image: url(../image/Vector\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top left;
+}
+
+.body2 {
+    background-image: url(../image/Vector\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right bottom;
+}
 
 .blog-grid {
     align-items: center;
@@ -32,7 +44,6 @@
 
 .card img {
     width: 90%;
-    height: 333px;
     border-radius: 20px;
 }
 
@@ -105,7 +116,6 @@
 
     .card img {
         width: 100%;
-        min-height: 90px;
         display: block;
         margin: 0 auto;
 
@@ -120,8 +130,7 @@
 @media screen and (max-width: 786px) {
     .blog-grid {
         display: block;
-        margin: 0 auto;
-        width: 95%;
+        width: 90%;
     }
 
     .card {
@@ -130,7 +139,7 @@
     }
 
     .card img {
-        width: 96%;
+        width: 90%;
         display: block;
         margin: 0 auto;
     }
@@ -162,7 +171,6 @@
 
     .card img {
         width: 90%;
-        min-height: 200px;
         display: block;
         margin: 0 auto;
     }
