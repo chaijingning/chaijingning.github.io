@@ -98,14 +98,15 @@ body {
     display: flex;
     padding-bottom: 175px;
     padding-left: 120px;
-    gap: 120px;
+    gap: 60px;
 }
 
 .subhead2 img {
-    width: 748px;
-    height: 499px;
+    width: 825px;
+    height: 500px;
     max-width: 100%;
     max-height: 100%;
+    mix-blend-mode: multiply;
 }
 
 .subhead2 p.normalbold {
@@ -221,10 +222,6 @@ body {
 }
 
 @media screen and (max-width: 1080px) {
-    .body {
-        background-position: none;
-    }
-
     .subhead {
         flex-direction: column;
         align-items: center;
