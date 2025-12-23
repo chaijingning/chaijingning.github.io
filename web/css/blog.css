@@ -63,7 +63,6 @@ body {
 }
 
 .pagination {
-    color: var(--gray);
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -76,14 +75,18 @@ body {
     margin: 40px 0;
 }
 
-.page-btn {
+.pagination button:nth-child(1) {
+    background-color: var(--text-dark);
+    border: none;
+    color: var(--text-light);
+}
+
+.pagination button {
+    border: 1px solid var(--text-dark);
     width: 48px;
     height: 48px;
     border-radius: 4px;
     font-weight: 500;
-    border: 1px solid var(--gray);
-    background-color: var(--text-light);
-    color: var(--gray);
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -136,6 +139,8 @@ body {
     .card {
         margin: 0 auto 30px auto;
         width: 100%;
+        min-height: 200px;
+
     }
 
     .card img {
@@ -145,6 +150,7 @@ body {
     }
 
     .card h3 {
+        min-height: 100px;
         font-size: 26px;
         margin-left: 15px;
     }
@@ -178,6 +184,7 @@ body {
     .card h3 {
         font-size: 24px;
         margin-left: 15px;
+        min-height: 0px;
     }
 
     .card a.lbtnlink {
