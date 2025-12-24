@@ -294,9 +294,9 @@ body {
         margin: 20px auto;
     }
 
-    .quote-box h2,
-    {
-    margin: 20px auto;
+    .quote-box h2 {
+        margin: 20px auto;
+    }
 }
 
 .teams {
@@ -489,5 +489,4 @@ li {
     margin-bottom: 6px;
     margin-left: 20px;
     margin-right: 50px;
-}
 }
