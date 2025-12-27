@@ -7,7 +7,7 @@
 body {
     background-image: url(../image/Vector\ 2.png);
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 95%;
     background-position: left;
 }
 
@@ -145,6 +145,11 @@ body {
     margin-top: -30px;
 }
 
+.valueslargeregular {
+    margin-left: -29px;
+
+}
+
 .values h2 {
     color: var(--coral);
     margin-bottom: 20px;
@@ -203,7 +208,56 @@ body {
     .quote-box {
         flex-direction: column;
     }
+
+    .portrait img {
+        width: 72%;
+
+    }
+
+    .infomem {
+        position: relative;
+        bottom: 80px;
+        background-color: var(--bg-light);
+        width: 50%;
+        border-radius: 5px;
+    }
+
+    body {
+        background-image: url(../image/Vector\ 2.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: left;
+    }
+
+    .values {
+        border-radius: 20px;
+        padding: 30px;
+        max-width: 1150px;
+        height: 510%;
+        margin-left: 160px;
+        margin-right: 40px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 114px;
+    }
+
+    .values h2 {
+        color: var(--coral);
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+
+    .valueslargeregular {
+        margin-left: 29px;
+
+    }
+
+
+
+
 }
+
 
 @media (max-width: 786px) {
     .teams {
@@ -261,10 +315,10 @@ body {
     }
 
     .infomem {
-        width: 50%;
+        width: 40%;
         padding: 20px;
         border-radius: 5px;
-        margin-left: 115px;
+        margin-left: 125px;
         border: 2px solid var(--darkblue);
     }
 
