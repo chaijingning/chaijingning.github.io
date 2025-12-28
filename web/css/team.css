@@ -7,7 +7,7 @@
 body {
     background-image: url(../image/Vector\ 2.png);
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 80%;
     background-position: left;
 }
 
@@ -91,7 +91,6 @@ body {
 .teams {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding-bottom: 120px;
 }
 
 .portrait {
@@ -345,5 +344,10 @@ body {
         margin-top: 150px;
         width: 60%;
         margin-left: 60px;
+    }
+
+    .infomem h5 {
+        margin-bottom: 6px;
+        color: var(--darkblue);
     }
 }
