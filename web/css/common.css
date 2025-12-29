@@ -281,8 +281,7 @@ textarea {
     z-index: 1001;
 }
 
-.menu-item:nth-child(4) a,
-.menu-item:nth-child(2) .submenu a {
+.menu-item:nth-child(4) a {
     color: var(--gray);
 }
 
@@ -378,25 +377,25 @@ textarea {
 }
 
 .footer-info {
+    max-width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: auto;
 }
 
 .footerinfo {
     display: flex;
-    align-items: top;
+    align-items: center;
 }
 
 .footerlogo {
     margin-right: 90px;
-    margin-left: 100px;
 }
 
 .footerlogo img {
     width: 240px;
     height: 240px;
-    image-resolution: calc();
 }
 
 .navigation {
@@ -409,10 +408,6 @@ textarea {
 .footer-menu div {
     padding-bottom: 15px;
     padding-right: 0px;
-}
-
-.footer-menu .mobile-navigation {
-    display: none;
 }
 
 .footer-menu a {
@@ -430,7 +425,6 @@ textarea {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
-    margin-right: 80px;
 }
 
 .contact-info h5 {
@@ -538,15 +532,7 @@ textarea {
 
     /*footer*/
     .footer {
-        padding-top: 60px;
-    }
-
-    .footerinfo {
-        display: flex;
-        padding-left: 20px;
-        padding-right: 20px;
-        flex-direction: column;
-        align-items: baseline;
+        padding-top: 50px;
     }
 
     .footer-menu div {
@@ -554,55 +540,25 @@ textarea {
         padding-right: 0px;
     }
 
-    .footer-menu .website {
-        display: none;
-    }
-
-    .footer-menu .mobile-navigation {
-        display: block;
-    }
-
-    .footer-info {
-        padding-right: 8px;
-    }
-
     .footerlogo {
-        margin-right: 0px;
-        margin-left: 60px;
+        margin-right: 35px;
     }
 
     .footerlogo img {
-        width: 80px;
-        height: 80px;
+        width: 180px;
+        height: 180px;
     }
 
     .navigation {
-        display: flex;
         gap: 25px;
-        margin-top: 25px;
         margin-bottom: 20px;
-        padding-left: 0px;
-    }
-
-    .navigation .desktop {
-        display: none;
-    }
-
-    .mobile-navigation {
-        display: block;
     }
 
     .contact-info {
-        display: flex;
-        flex-direction: column;
-        margin-right: 0px;
         margin-top: 30px;
     }
 
     .info {
-        display: flex;
-        align-items: top;
-        gap: 15px;
         margin: 5px;
         width: 280px;
     }
@@ -684,108 +640,17 @@ textarea {
 
     /*footer*/
     .footer {
-        padding-top: 50px;
-    }
-
-    .footerinfo {
-        display: flex;
-        padding-left: 8px;
-        padding-right: 15px;
-        margin-bottom: 30px;
-        flex-direction: column;
-        align-items: baseline;
-    }
-
-    .footer-menu div {
-        padding-bottom: 10px;
-        padding-right: 0px;
-    }
-
-    .footerlogo {
-        margin-right: 0px;
-        margin-left: 30px;
-    }
-
-    .footerlogo img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .navigation {
-        display: flex;
-        gap: 25px;
-        margin-top: 25px;
-        margin-bottom: 8px;
-        padding-left: 0px;
-    }
-
-    .contact-info {
-        display: flex;
-        flex-direction: column;
-        margin-right: 0px;
-        margin-top: 40px;
-        margin-bottom: 10px;
-    }
-
-    .info {
-        display: flex;
-        align-items: top;
-        gap: 15px;
-        margin: 5px;
-        width: 240px;
-    }
-
-    .info p {
-        font-size: 14px;
-    }
-
-    .copyright {
-        margin-top: 10px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-
-    /*font*/
-    .intro-text {
-        font-size: 18px;
-    }
-
-
-    /*link buttons*/
-    .sbtnlink {
-        font-size: 14px;
-    }
-
-    .lbtnlink {
-        font-size: 16px;
-    }
-
-    /*banner*/
-    .banner {
-        min-height: 220px;
-    }
-
-    .banner .title h1 {
-        font-size: 36px;
-    }
-
-    /*subhead middle*/
-    .subtitle {
-        font-size: 12px;
-    }
-
-    .title {
-        font-size: 30px;
-    }
-
-    /*footer*/
-    .footer {
         padding-top: 35px;
     }
 
     .footerlogo {
-        margin: 0px;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+
+    .footerlogo img {
+        width: 100px;
+        height: 100px;
     }
 
     .footer-info {
@@ -837,8 +702,41 @@ textarea {
         justify-content: center;
     }
 
-    .footerlogo {
-        margin-right: 0px;
-        margin-left: 10px;
+
+}
+
+@media screen and (max-width: 500px) {
+
+    /*font*/
+    .intro-text {
+        font-size: 18px;
+    }
+
+
+    /*link buttons*/
+    .sbtnlink {
+        font-size: 14px;
+    }
+
+    .lbtnlink {
+        font-size: 16px;
+    }
+
+    /*banner*/
+    .banner {
+        min-height: 220px;
+    }
+
+    .banner .title h1 {
+        font-size: 36px;
+    }
+
+    /*subhead middle*/
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 30px;
     }
 }
