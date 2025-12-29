@@ -19,12 +19,9 @@ body {
 .subhead {
     display: flex;
     padding-bottom: 60px;
-    padding-left: 50px;
-    padding-right: 115px;
 }
 
 .subhead img {
-    width: 80%;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -41,6 +38,7 @@ body {
     padding-top: 112px;
     padding-bottom: 70px;
     line-height: 150%;
+    margin-right: 30px;
 }
 
 .subtext p {
@@ -74,8 +72,7 @@ body {
 .ourteamtext p.normalbold {
     margin-top: 24px;
     color: var(--coral);
-    line-height: 1.6;
-    margin-right: 120px;
+    line-height: 1.6
 }
 
 .ourteam h2 {
@@ -143,7 +140,7 @@ body {
 
 
 .values-text {
-    max-width: 600px;
+    max-width: 900px;
 }
 
 .values-text h2 {
@@ -190,7 +187,6 @@ body {
 }
 
 @media (max-width: 1080px) {
-
     .values {
         flex-direction: column;
         align-items: center;
@@ -215,22 +211,21 @@ body {
     .subtext {
         margin-top: -100px;
         text-align: left;
+        padding-left: 10px;
+        margin-right: 60px;
     }
 
     .ourteamtext {
-        margin-top: -100px;
+        margin-top: -80px;
         text-align: left;
-        margin-left: 80px;
-        margin-right: 80px
+        margin-left: 50px;
+        margin-right: 60px
     }
 
     .teams {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .infomem {
-        width: 60%;
-    }
 
     .values img,
     .quote-box img {
@@ -274,10 +269,6 @@ body {
 @media (max-width: 500px) {
     .teams {
         grid-template-columns: 1fr;
-    }
-
-    .portrait img {
-        width: 90%;
     }
 
     .infomem {
