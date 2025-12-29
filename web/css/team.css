@@ -25,8 +25,6 @@ body {
 }
 
 .subhead img {
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
 }
 
@@ -109,8 +107,9 @@ body {
     width: 70%;
     padding: 10px 40px 30px 40px;
     border-radius: 5px;
-    margin-left: 55px;
+    text-align: center;
     border: 2px solid var(--darkblue);
+    margin-left: 60px;
 }
 
 
@@ -139,7 +138,7 @@ body {
 }
 
 .values img {
-    width: 100%auto;
+    width: 100%;
     margin-left: -82px;
     margin-top: -30px;
 }
@@ -161,8 +160,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     margin-bottom: 6px;
-    margin-left: -150px;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .quote-box {
@@ -195,13 +193,14 @@ body {
         padding: 40px;
     }
 
-    .teams {
-        grid-template-columns: repeat(2, 1fr);
+    .subtext p,
+    .subtext h2 {
+        margin-left: 0;
+        text-align: center;
     }
 
-    .values {
-        flex-direction: column;
-        text-align: center;
+    .teams {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .quote-box {
@@ -213,12 +212,17 @@ body {
 
     }
 
+
+
     .infomem {
         position: relative;
         bottom: 80px;
         background-color: var(--bg-light);
-        width: 50%;
+        text-align: center;
+        width: 80%;
+        padding: 10px 40px 30px 40px;
         border-radius: 5px;
+        border: 2px solid var(--darkblue);
     }
 
     body {
@@ -229,6 +233,7 @@ body {
     }
 
     .values {
+        flex-direction: column;
         border-radius: 20px;
         padding: 30px;
         max-width: 1150px;
@@ -239,12 +244,6 @@ body {
         align-items: center;
         gap: 10px;
         margin-top: 114px;
-    }
-
-    .values h2 {
-        color: var(--coral);
-        margin-bottom: 20px;
-        margin-left: 50px;
     }
 
     .valueslargeregular {
@@ -258,9 +257,25 @@ body {
     }
 
 
+    .subtext,
+    .subtext h2,
+    .subtext p {
+        text-align: left;
+    }
 
+    .values h2,
+    .values p {
+        text-align: left;
+    }
 
+    .quote-box h2,
+    .quote-box ul {
+        text-align: left;
+        padding-left: 20px;
+    }
 }
+
+
 
 
 @media (max-width: 786px) {
@@ -342,7 +357,7 @@ body {
 
     .quote-box img {
         margin-top: 150px;
-        width: 60%;
+        width: 80%;
         margin-left: 60px;
     }
 
@@ -350,4 +365,15 @@ body {
         margin-bottom: 6px;
         color: var(--darkblue);
     }
+
+    .quote-box,
+    .quote-box li {
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .quote-box h2 {
+        margin-left: 30px;
+    }
+
 }
