@@ -7,7 +7,7 @@
 body {
     background-image: url(../image/Vector\ 2.png);
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 70%;
     background-position: left;
 }
 
@@ -21,7 +21,6 @@ body {
     padding-bottom: 60px;
     padding-left: 50px;
     padding-right: 115px;
-    gap: 20px;
 }
 
 .subhead img {
@@ -73,6 +72,7 @@ body {
 .ourteamtext p.normalbold {
     margin-top: 24px;
     color: var(--coral);
+    line-height: 1.6;
 }
 
 .ourteam h2 {
@@ -80,9 +80,12 @@ body {
 }
 
 .ourteam p.largemedium {
+    max-width: 800px;
     margin-top: 30px;
     margin-bottom: 35px;
     color: var(--darkblue);
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 
@@ -109,7 +112,7 @@ body {
     border-radius: 5px;
     text-align: center;
     border: 2px solid var(--darkblue);
-    margin-left: 60px;
+    margin: 0 auto;
 }
 
 
@@ -123,35 +126,55 @@ body {
 }
 
 .values {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     background: var(--text-light);
     border: 2px solid var(--coral);
     border-radius: 20px;
     padding: 30px;
-    max-width: 1150px;
-    height: 298px;
-    margin-left: 160px;
-    margin-right: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+
+.values-text {
+    max-width: 600px;
+}
+
+.values-text h2 {
+    color: var(--coral);
+    margin-bottom: 15px;
+}
+
+.quote-box {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 114px;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
 }
 
-.values img {
-    width: 100%;
-    margin-left: -82px;
-    margin-top: -30px;
+
+.quote-box img {
+    width: 60%;
+    margin-bottom: -116px;
+    margin-left: -60px;
 }
 
-.valueslargeregular {
-    margin-left: -29px;
-
+.quote-box.quote-text {
+    max-width: 600px;
 }
 
-.values h2 {
+.quote-box.quote-text h2 {
     color: var(--coral);
     margin-bottom: 20px;
     margin-left: -150px;
+    margin-bottom: 15px;
+    color: var(--darkblue);
 }
 
 .quote-box li {
@@ -160,122 +183,57 @@ body {
     font-size: 18px;
     font-weight: normal;
     margin-bottom: 6px;
-    margin-right: 20px;
-}
-
-.quote-box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-left: 40px;
-}
-
-
-.quote-box img {
-    position: relative;
-    margin-top: 150px;
-    width: 60%;
-    margin-left: 50px;
-    margin-bottom: -40px;
-}
-
-.quote-box h2 {
-    margin-top: 150px;
-    margin-left: -120px;
-    margin-right: 160px;
-    margin-bottom: 20px;
 }
 
 @media (max-width: 1080px) {
-    .subhead {
-        flex-direction: column;
-        padding: 40px;
+    body {
+        background-size: 60%;
+        background-position: left;
+        margin-top: -200px;
     }
 
-    .subtext p,
-    .subtext h2 {
-        margin-left: 0;
+    .values {
+        flex-direction: column;
+        align-items: center;
+        max-width: 750px;
+    }
+
+    .subhead,
+    .quote-box {
+        flex-direction: column;
         text-align: center;
+    }
+
+    .values-text,
+    .quote-text {
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .subtext,
+    .ourteamtext {
+        margin-top: -100px;
     }
 
     .teams {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .quote-box {
-        flex-direction: column;
-    }
-
-    .portrait img {
-        width: 72%;
-
-    }
-
-
-
     .infomem {
-        position: relative;
-        bottom: 80px;
-        background-color: var(--bg-light);
-        text-align: center;
-        width: 80%;
-        padding: 10px 40px 30px 40px;
-        border-radius: 5px;
-        border: 2px solid var(--darkblue);
+        width: 60%;
     }
 
-    body {
-        background-image: url(../image/Vector\ 2.png);
-        background-repeat: no-repeat;
-        background-size: 90%;
-        background-position: left;
+    .values img,
+    .quote-box img {
+        width: 60%;
+        margin: 0 auto;
     }
 
-    .values {
-        flex-direction: column;
-        border-radius: 20px;
-        padding: 30px;
-        max-width: 1150px;
-        height: 510%;
-        margin-left: 160px;
-        margin-right: 40px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-top: 114px;
-    }
-
-    .valueslargeregular {
-        margin-left: 29px;
-
-    }
-
-    .ourteamtext {
-        flex-direction: column;
-        text-align: center;
-    }
-
-
-    .subtext,
-    .subtext h2,
-    .subtext p {
-        text-align: left;
-    }
-
-    .values h2,
-    .values p {
-        text-align: left;
-    }
-
-    .quote-box h2,
-    .quote-box ul {
-        text-align: left;
-        padding-left: 20px;
+    .ourteam p.largemedium {
+        margin-left: 80px;
+        margin-right: 80px;
     }
 }
-
-
 
 
 @media (max-width: 786px) {
@@ -283,30 +241,22 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 
-    .subhead img {
-        margin-left: auto;
-        margin-right: auto;
-        width: 98%;
+    .values,
+    .quote-box {
+        padding: 20px;
     }
 
-    .subhead {
-        padding: 20px;
+    .values img,
+    .quote-box img {
+        width: 70%;
     }
 
     .values {
-        margin: 20px;
-        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
     }
 
-    .values img {
-        width: 70%;
-        margin-left: -82px;
-        margin-top: -30px;
-    }
-
-    .quote-box {
-        margin: 20px;
-    }
 }
 
 @media (max-width: 500px) {
@@ -314,66 +264,32 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .subhead {
-        padding: 10px;
-    }
-
-    .values {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    .values img {
-        width: 80%;
-        margin: 0 auto;
-    }
-
     .portrait img {
-        width: 60%;
-        border-radius: 20px;
+        width: 90%;
     }
 
     .infomem {
-        width: 40%;
-        padding: 20px;
-        border-radius: 5px;
-        margin-left: 125px;
-        border: 2px solid var(--darkblue);
+        width: 60%;
     }
 
-    .quote-box {
-        margin: 10px;
-        gap: 20px;
+    .values img,
+    .quote-box img {
+        width: 80%;
     }
 
-    .quote-box h2 {
+    .quote-text h2 {
         font-size: 20px;
-        text-align: center;
     }
 
-    .quote-box li {
+    .quote-text li {
         font-size: 14px;
     }
 
-    .quote-box img {
-        margin-top: 150px;
-        width: 80%;
-        margin-left: 60px;
+    .values {
+        flex-direction: column;
+        align-items: center;
+        max-width: 450px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
-
-    .infomem h5 {
-        margin-bottom: 6px;
-        color: var(--darkblue);
-    }
-
-    .quote-box,
-    .quote-box li {
-        text-align: left;
-        margin-left: 30px;
-    }
-
-    .quote-box h2 {
-        margin-left: 30px;
-    }
-
 }
