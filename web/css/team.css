@@ -183,6 +183,7 @@ body {
     font-size: 18px;
     font-weight: normal;
     margin-bottom: 6px;
+    text-align: left;
 }
 
 @media (max-width: 1080px) {
@@ -210,9 +211,15 @@ body {
         margin-left: 30px;
     }
 
-    .subtext,
+    .subtext {
+        margin-top: -100px;
+        text-align: left;
+    }
+
     .ourteamtext {
         margin-top: -100px;
+        text-align: left;
+        margin-left: 80px;
     }
 
     .teams {
@@ -233,8 +240,11 @@ body {
         margin-left: 80px;
         margin-right: 80px;
     }
-}
 
+    .values-text {
+        text-align: left;
+    }
+}
 
 @media (max-width: 786px) {
     .teams {
@@ -278,6 +288,7 @@ body {
     }
 
     .quote-text h2 {
+        text-align: left;
         font-size: 20px;
     }
 
@@ -292,4 +303,7 @@ body {
         margin-left: 20px;
         margin-right: 20px;
     }
+
+
+
 }
