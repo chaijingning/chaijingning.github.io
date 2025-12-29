@@ -519,6 +519,23 @@ textarea {
         font-size: 48px;
     }
 
+    /*subhead middle*/
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .intro-text {
+        font-size: 18px;
+    }
+
+    .content-text {
+        font-size: 16px;
+    }
+
     /*footer*/
     .footer {
         padding-top: 60px;
@@ -660,8 +677,9 @@ textarea {
         min-height: 300px;
     }
 
-    .title {
-        font-size: 36px;
+    /*subhead middle*/
+    .intro-text {
+        font-size: 16px;
     }
 
     /*footer*/
@@ -728,12 +746,6 @@ textarea {
 
 @media screen and (max-width: 500px) {
 
-    /*font*/
-    .intro-text {
-        font-size: 18px;
-    }
-
-
     /*link buttons*/
     .sbtnlink {
         font-size: 14px;
@@ -752,6 +764,14 @@ textarea {
         font-size: 36px;
     }
 
+    /*subhead middle*/
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
 
     /*footer*/
     .footer {
