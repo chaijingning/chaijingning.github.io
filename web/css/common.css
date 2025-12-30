@@ -675,7 +675,7 @@ textarea {
         gap: 10px;
         margin-top: 25px;
         margin-bottom: 10px;
-        width: 50%;
+        width: 60%;
     }
 
     .contact-info h5 {
@@ -701,8 +701,6 @@ textarea {
         align-items: center;
         justify-content: center;
     }
-
-
 }
 
 @media screen and (max-width: 500px) {
