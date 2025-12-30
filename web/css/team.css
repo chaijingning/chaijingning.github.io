@@ -191,6 +191,10 @@
         margin-left: 44px;
     }
 
+    .subhead img {
+        max-width: 80%;
+    }
+
     .subtext h2 {
         margin-left: 44px;
     }
