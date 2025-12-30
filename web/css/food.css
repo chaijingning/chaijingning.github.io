@@ -1,0 +1,57 @@
+.banner {
+    background-image: url(../image/petfoodbanner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.suggestions h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 115px;
+}
+
+.catfoods {
+    display: flex;
+    justify-content: center;
+    gap: 82px;
+    padding-top: 15px;
+    padding-bottom: 115px;
+}
+
+.catfoods h4 {
+    padding-top: 29px;
+    text-align: center;
+    color: var(--coral);
+}
+
+.catfoods h5 {
+    padding-top: 25px;
+    text-align: center;
+    color: var(--darkblue);
+}
+
+.catfoods img {
+    width: 341px;
+    height: 341px;
+    max-width: 100%;
+    max-height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 102px;
+    padding-right: 102px;
+    padding-bottom: 40px;
+}
+
+.input input {
+    width: 284px;
+    height: 55px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--lightblue);
+}
