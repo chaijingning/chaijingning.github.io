@@ -34,3 +34,40 @@ questions.forEach(question => {
     });
 });
 
+
+document.querySelectorAll('.type').forEach((typeDiv, index) => {
+    typeDiv.addEventListener('click', function () {
+        // Toggle persistent active style
+        document.querySelectorAll('.type').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+
+        // Hide all introduce divs
+        document.querySelectorAll('.introduce').forEach(intro => {
+            intro.style.display = 'none';
+        });
+
+        // Show the corresponding introduce div
+        const introduceDiv = document.querySelectorAll('.introduce')[index];
+        if (introduceDiv) {
+            introduceDiv.style.display = 'flex';
+        }
+    });
+});
+
+// Optional: Show the first intro on page load
+window.addEventListener('load', function () {
+    const types = document.querySelectorAll('.type');
+    const introduces = document.querySelectorAll('.introduce');
+
+    // Default selected card mirrors hover look
+    if (types.length) {
+        types.forEach(t => t.classList.remove('active'));
+        types[0].classList.add('active');
+        // Make focusable for CSS-only focus fallback
+        types.forEach(t => t.setAttribute('tabindex', '0'));
+    }
+
+    introduces.forEach((intro, index) => {
+        intro.style.display = index === 0 ? 'flex' : 'none';
+    });
+});

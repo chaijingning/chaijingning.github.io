@@ -1,0 +1,354 @@
+.banner {
+    background-image: url(../image/nutritionbanner.jpg);
+    background-size: cover;
+}
+
+/*offer*/
+.offer {
+    background-color: var(--text-light);
+    background-image: url(../image/Vector\ 2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+    display: flex;
+    position: relative;
+    top: -65px;
+}
+
+.offer div {
+    width: 50%;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0px 60px 0px 120px;
+}
+
+.offer-image img {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+/*more*/
+.more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    width: 100%;
+}
+
+.intro {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+.category {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.type {
+    width: 13%;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: var(--text-light);
+    border: 1px solid var(--darkblue);
+    border-radius: 5px;
+    color: var(--coral);
+}
+
+.type .paws {
+    width: 50px;
+    height: 50px;
+    background-image: url(../image/pawscoral.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 10px;
+}
+
+.type:hover {
+    background-color: var(--coral);
+    border: none;
+    color: var(--darkblue);
+    cursor: pointer;
+}
+
+.type:hover .paws {
+    background-image: url(../image/pawsyellow.png);
+}
+
+.type.active {
+    background-color: var(--coral);
+    border: none;
+    color: var(--darkblue);
+}
+
+.type.active .paws {
+    background-image: url(../image/pawsyellow.png);
+}
+
+.type:focus {
+    outline: none;
+    background-color: var(--coral);
+    border: none;
+    color: var(--darkblue);
+}
+
+.type:focus .paws {
+    background-image: url(../image/pawsyellow.png);
+}
+
+/*explain*/
+.explain {
+    max-width: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.introduce {
+    padding: 50px;
+    display: flex;
+    margin: auto;
+    background-color: var(--text-light);
+    background-image: url(../image/specialized-diet-cat.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    box-shadow: 0px 4px 4px #ffd8d5;
+}
+
+.introduce div {
+    width: 50%;
+}
+
+.text {
+    margin-top: 50px;
+    padding: 0px 70px 0px 30px;
+}
+
+.text h4 {
+    color: var(--coral);
+}
+
+.t-image img {
+    width: 80%;
+    display: flex;
+    justify-self: end;
+}
+
+/*gallery*/
+.gallery {
+    background-color: var(--lightblue);
+    background-image: url(../image/pawprint.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    padding: 50px 0px 80px 0px;
+}
+
+.g-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.g-image img {
+    width: 30%;
+    padding: 0px 20px;
+}
+
+@media screen and (max-width: 1080px) {
+
+    /*offer*/
+    .information {
+        padding: 0px 10px 0px 70px;
+    }
+
+    .information .intro-text {
+        font-size: 18px;
+    }
+
+    .offer-image img {
+        width: 100%;
+    }
+
+    /*more*/
+    .more {
+        margin: 0px auto;
+        width: 100%;
+    }
+
+    .intro {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .category {
+        width: 70%;
+        margin: 0px;
+    }
+
+    .type {
+        width: 25%;
+        padding: 15px;
+        margin: 0px 10px 20px 10px;
+    }
+
+    /*explain*/
+    .explain {
+        width: 85%;
+    }
+
+    .introduce {
+        padding: 30px;
+        margin-bottom: 40px;
+        background-image: none;
+    }
+
+    .introduce div {
+        width: 50%;
+    }
+
+    .text {
+        margin-top: 10px;
+        padding: 0px 10px 0px 20px;
+    }
+
+    .text p.largeregular {
+        font-size: 16px;
+    }
+
+    .t-image {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+    }
+
+    /*gallery*/
+    .gallery {
+        padding: 30px 0px 60px 0px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+
+    /*offer*/
+    .offer {
+        padding: 40px 0px;
+    }
+
+    .information {
+        padding: 0px 10px 0px 70px;
+    }
+
+    .information .intro-text {
+        font-size: 18px;
+    }
+
+    .offer-image img {
+        width: 100%;
+    }
+
+    /*more*/
+    .intro {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .category {
+        width: 90%;
+        margin: 0px;
+    }
+
+    .type {
+        width: 90%;
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    /*explain*/
+    .explain {
+        width: 80%;
+    }
+
+    .introduce {
+        padding: 30px;
+        display: flex;
+        margin-bottom: 40px;
+        background-image: none;
+    }
+
+    .introduce div {
+        width: 100%;
+    }
+
+    .text {
+        text-align: center;
+        margin-top: auto;
+        padding: 0px;
+    }
+
+    .t-image {
+        display: none;
+    }
+
+    /*gallery*/
+    .gallery {
+        padding: 30px 0px;
+    }
+
+    .g-image {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .g-image img {
+        width: 100%;
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    /*offer*/
+    .offer {
+        padding: 0px;
+    }
+
+    .offer div {
+        width: 80%;
+    }
+
+    .information {
+        padding: 40px 0px;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .information .intro-text {
+        font-size: 18px;
+    }
+
+    .offer-image {
+        display: none;
+    }
+}

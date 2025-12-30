@@ -4,12 +4,7 @@
     background-position: center;
 }
 
-body {
-    background-image: url(../image/Vector\ 2.png);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: left;
-}
+
 
 .title h1 {
     margin: 0px;
@@ -18,13 +13,10 @@ body {
 
 .subhead {
     display: flex;
-    padding-bottom: 60px;
-    padding-left: 50px;
-    padding-right: 115px;
+    padding-bottom: 40px;
 }
 
 .subhead img {
-    width: 80%;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -39,8 +31,9 @@ body {
 
 .subtext {
     padding-top: 112px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     line-height: 150%;
+    margin-right: 30px;
 }
 
 .subtext p {
@@ -67,6 +60,15 @@ body {
 }
 
 .ourteam {
+    background-color: var(--lightblue);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    padding: 80px 0px 80px 0px;
     text-align: center;
     padding-bottom: 44px;
 }
@@ -74,8 +76,7 @@ body {
 .ourteamtext p.normalbold {
     margin-top: 24px;
     color: var(--coral);
-    line-height: 1.6;
-    margin-right: 120px;
+    line-height: 1.6
 }
 
 .ourteam h2 {
@@ -98,6 +99,7 @@ body {
 }
 
 .portrait {
+    background-color: var(--lightblue);
     text-align: center;
 }
 
@@ -111,7 +113,7 @@ body {
     bottom: 80px;
     background-color: var(--bg-light);
     width: 70%;
-    padding: 10px 40px 30px 40px;
+    padding: 10px 20px 10px 20px;
     border-radius: 5px;
     text-align: center;
     border: 2px solid var(--darkblue);
@@ -120,12 +122,14 @@ body {
 
 
 .infomem h5 {
+    margin-top: 10px;
     margin-bottom: 6px;
     color: var(--darkblue);
 }
 
 .infomem p {
     color: var(--coral);
+    min-height: 40px;
 }
 
 .values {
@@ -143,7 +147,7 @@ body {
 
 
 .values-text {
-    max-width: 600px;
+    max-width: 900px;
 }
 
 .values-text h2 {
@@ -190,7 +194,6 @@ body {
 }
 
 @media (max-width: 1080px) {
-
     .values {
         flex-direction: column;
         align-items: center;
@@ -199,6 +202,7 @@ body {
 
     .subhead {
         flex-direction: column;
+        padding-bottom: 0%;
     }
 
     .quote-box {
@@ -215,22 +219,21 @@ body {
     .subtext {
         margin-top: -100px;
         text-align: left;
+        padding-left: 10px;
+        margin-right: 60px;
     }
 
     .ourteamtext {
-        margin-top: -100px;
+        margin-top: -80px;
         text-align: left;
-        margin-left: 80px;
-        margin-right: 80px
+        margin-left: 50px;
+        margin-right: 60px
     }
 
     .teams {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .infomem {
-        width: 60%;
-    }
 
     .values img,
     .quote-box img {
@@ -245,6 +248,10 @@ body {
 
     .values-text {
         text-align: left;
+    }
+
+    body {
+        background-position: left 9px;
     }
 }
 
@@ -274,10 +281,6 @@ body {
 @media (max-width: 500px) {
     .teams {
         grid-template-columns: 1fr;
-    }
-
-    .portrait img {
-        width: 90%;
     }
 
     .infomem {
