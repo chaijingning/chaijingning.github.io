@@ -109,6 +109,10 @@
     background-image: url(../image/pawsyellow.png);
 }
 
+.text-mobile {
+    display: none;
+}
+
 /*explain*/
 .explain {
     max-width: 100%;
@@ -125,9 +129,6 @@
     display: flex;
     margin: auto;
     background-color: var(--text-light);
-    background-image: url(../image/specialized-diet-cat.png);
-    background-repeat: no-repeat;
-    background-position: left bottom;
     box-shadow: 0px 4px 4px #ffd8d5;
 }
 
@@ -212,6 +213,11 @@
         margin: 0px 10px 20px 10px;
     }
 
+    .type .paws {
+        width: 40px;
+        height: 40px;
+    }
+
     /*explain*/
     .explain {
         width: 85%;
@@ -284,29 +290,27 @@
         margin: 15px auto;
     }
 
+    .text-mobile {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px auto;
+        background-color: var(--text-light);
+        box-shadow: 0px 4px 4px #ffd8d5;
+        text-align: center;
+        padding: 30px;
+        position: relative;
+        top: -20px;
+    }
+
+    .text-mobile h4 {
+        color: var(--coral);
+    }
+
     /*explain*/
     .explain {
-        width: 80%;
-    }
-
-    .introduce {
-        padding: 30px;
-        display: flex;
-        margin-bottom: 40px;
-        background-image: none;
-    }
-
-    .introduce div {
-        width: 100%;
-    }
-
-    .text {
-        text-align: center;
-        margin-top: auto;
-        padding: 0px;
-    }
-
-    .t-image {
         display: none;
     }
 
