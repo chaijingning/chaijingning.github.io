@@ -4,12 +4,7 @@
     background-position: center;
 }
 
-body {
-    background-image: url(../image/Vector\ 2.png);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: left;
-}
+
 
 .title h1 {
     margin: 0px;
@@ -18,7 +13,7 @@ body {
 
 .subhead {
     display: flex;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .subhead img {
@@ -36,7 +31,7 @@ body {
 
 .subtext {
     padding-top: 112px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     line-height: 150%;
     margin-right: 30px;
 }
@@ -65,6 +60,15 @@ body {
 }
 
 .ourteam {
+    background-color: var(--lightblue);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    padding: 80px 0px 80px 0px;
     text-align: center;
     padding-bottom: 44px;
 }
@@ -95,6 +99,7 @@ body {
 }
 
 .portrait {
+    background-color: var(--lightblue);
     text-align: center;
 }
 
@@ -108,7 +113,7 @@ body {
     bottom: 80px;
     background-color: var(--bg-light);
     width: 70%;
-    padding: 10px 40px 30px 40px;
+    padding: 10px 20px 10px 20px;
     border-radius: 5px;
     text-align: center;
     border: 2px solid var(--darkblue);
@@ -117,12 +122,14 @@ body {
 
 
 .infomem h5 {
+    margin-top: 10px;
     margin-bottom: 6px;
     color: var(--darkblue);
 }
 
 .infomem p {
     color: var(--coral);
+    min-height: 40px;
 }
 
 .values {
@@ -195,6 +202,7 @@ body {
 
     .subhead {
         flex-direction: column;
+        padding-bottom: 0%;
     }
 
     .quote-box {
@@ -240,6 +248,10 @@ body {
 
     .values-text {
         text-align: left;
+    }
+
+    body {
+        background-position: left 9px;
     }
 }
 
