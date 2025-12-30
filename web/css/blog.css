@@ -90,7 +90,7 @@ body {
 }
 
 .page-btn:hover {
-    background-color: var(--text-dark);
+    background-color: var(--coral);
     color: var(--text-light);
     transform: scale(1.1);
     border: none;
