@@ -1,5 +1,5 @@
 .headline {
-    background-image: url(../image/landingbg.png);
+    background-image: url(../image/landingbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -74,11 +74,15 @@
 .perkssection {
     display: flex;
     margin-bottom: 115px;
+    width: 100%;
 }
 
-.perkimage img {
-    width: 100%;
-    height: 100%;
+.perkssection-image {
+    flex: 0 0 50%;
+    background-image: url(../image/perks.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .perktext {
@@ -89,8 +93,9 @@
     padding-right: 94px;
     padding-top: 75px;
     padding-bottom: 159px;
-    width: 130%;
+    width: 100%;
     gap: 24px;
+    flex: 1;
 }
 
 .perktext p.normalbold {
@@ -142,7 +147,7 @@ ul.largeregular {
 }
 
 .reviews {
-    background-image: url(../image/reviewbg.png);
+    background-image: url(../image/reviewbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -253,11 +258,6 @@ ul.largeregular {
         margin-bottom: 100px;
     }
 
-    .perkimage,
-    .perktext {
-        min-width: 50%;
-    }
-
     .perktext {
         padding: 30px;
         gap: 10px;
@@ -356,7 +356,7 @@ ul.largeregular {
     }
 
     .categories {
-        margin: 40px 25px;
+        margin: 52px 25px;
         gap: 16px;
     }
 
@@ -370,12 +370,12 @@ ul.largeregular {
     }
 
     .perkssection {
-        flex-wrap: wrap;
-        margin-bottom: 5px;
+        flex-direction: column;
+        margin-bottom: 95px;
     }
 
-    .perkimage {
-        width: 100%;
+    .perkssection-image {
+        min-height: 450px;
     }
 
     .perktext {
@@ -384,8 +384,8 @@ ul.largeregular {
         padding-top: 45px;
         padding-bottom: 100px;
         min-height: auto;
-        position: relative;
-        bottom: 80px;
+        flex: 1;
+        width: 100%;
     }
 
     .featureimage {
@@ -470,15 +470,31 @@ ul.largeregular {
     }
 
     .perkssection {
-        margin-bottom: -20px;
+        margin-bottom: 60px;
+    }
+
+    .perkssection-image {
+        min-height: 300px;
     }
 
     .perktext {
-        padding: 54px 45px;
+        padding: 44px 35px;
+    }
+
+    .perktext .normalbold {
+        font-size: 12px;
+    }
+
+    .perktext h3 {
+        font-size: 24px;
+    }
+
+    .perktext .largeregular {
+        font-size: 14px;
     }
 
     .features {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
 
     .featuretext {
