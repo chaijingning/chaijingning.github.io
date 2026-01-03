@@ -122,7 +122,7 @@ body {
     align-items: center;
     width: 700px;
     height: 55px;
-    background: #ffffff;
+    background: var(--bg-light);
     border-radius: var(--radius);
     overflow: hidden;
 }
@@ -134,13 +134,12 @@ body {
     outline: none;
     padding: 15px;
     font-size: 16px;
-    background: white;
+    background: var(--bg-light);
     font-family: var(--font-base);
 }
 
 .search-btn {
     width: 55px;
-    height: 100%;
     border: none;
     background: transparent;
     cursor: pointer;
@@ -150,12 +149,12 @@ body {
 }
 
 .search-btn img {
-    width: 28px;
-    height: 28px;
+    max-width: 100%;
+    margin-right: 20px;
 }
 
 .search-btn:hover {
-    background: #f0f0f0;
+    background: var(--bg-light);
 }
 
 .home-btn {
