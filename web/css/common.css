@@ -144,6 +144,12 @@ a {
     border-radius: 3px;
 }
 
+.smallbtn:hover {
+    background-color: var(--darkblue);
+    border: none;
+    color: var(--text-light);
+}
+
 .mediumbtn {
     color: var(--text-light);
     background-color: var(--coral);
