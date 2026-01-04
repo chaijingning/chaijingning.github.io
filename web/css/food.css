@@ -10,24 +10,14 @@
     padding-top: 115px;
 }
 
-.input {
-    display: flex;
+.searchbox {
     position: relative;
-    align-items: center;
     width: 100%;
     max-width: 284px;
-}
-
-.input-top {
-    display: flex;
-    padding-left: 102px;
-    padding-right: 102px;
     padding-bottom: 40px;
-    justify-content: space-between;
-    align-items: flex-end;
 }
 
-.input img {
+.searchbox img {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -36,36 +26,27 @@
     mix-blend-mode: multiply;
 }
 
-.input .arrowicon {
+.searchbox .arrowicon {
     width: 24px;
     height: 24px;
 }
 
-.input input {
-    width: 100%;
+.searchbox input {
     height: 55px;
     padding: 0 50px 0 16px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border-style: none;
-    background-color: var(--lightblue);
 }
 
-.input-right {
-    display: flex;
-    width: 70%;
-    justify-content: space-between;
+.productvariants {
+    padding-bottom: 40px;
 }
 
-.sort {
-    display: flex;
+.sortbox {
     position: relative;
-    align-items: center;
     width: 100%;
     max-width: 284px;
 }
 
-.sort img {
+.sortbox img {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -74,24 +55,15 @@
     mix-blend-mode: multiply;
 }
 
-.sort input {
+.sortbox input {
     width: 100%;
     height: 55px;
     padding: 0 50px 0 16px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border-style: none;
-    background-color: var(--lightblue);
 }
 
 .largeregular {
     justify-content: center;
     text-align: center;
-    padding-top: 15px;
-}
-
-.searchboxmobile {
-    display: none;
 }
 
 /*Suggestions Section*/
@@ -124,50 +96,28 @@
 }
 
 /*Options Section*/
-.products {
-    display: flex;
-    padding-left: 102px;
-    padding-right: 102px;
-    gap: 63px;
-}
-
-.food-selection {
+.productcategories {
     padding-top: 33px;
     padding-bottom: 33px;
 }
 
-.food-selection p {
-    margin: 18px 0px;
-}
-
-.priceline {
-    width: 65%;
-}
-
-.filter {
-    display: flex;
+.pricefilter {
     flex-direction: row;
-    gap: 19px;
     padding-top: 33px;
     padding-bottom: 74px;
 }
 
-.filter button {
-    width: 121px;
+.pricefilter button {
     height: 37px;
 }
 
-.filter p {
+.pricefilter p {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.tags {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 16px;
-    max-width: 33%;
+.producttags {
     padding-bottom: 74px;
 }
 
@@ -175,7 +125,7 @@
     padding-top: 11px;
 }
 
-.tags a {
+.producttags a {
     min-width: 66px;
     height: 29px;
     padding-left: 5px;
@@ -186,7 +136,7 @@
     padding-bottom: 21px;
 }
 
-.cart {
+.cartinfo {
     padding-left: 60px;
 }
 
@@ -195,23 +145,12 @@
 }
 
 /*Food Products Section*/
-.foodproducts {
-    display: grid;
+.productgrid {
     grid-template-columns: repeat(3, auto);
-    gap: 55px 23px;
-    padding-bottom: 115px;
     margin-left: auto;
 }
 
-.petfood {
-    text-align: center;
-}
-
-.petfood h5 {
-    color: var(--coral);
-}
-
-.petfood img {
+.productitem img {
     mix-blend-mode: multiply;
     width: 100%;
     height: auto;
@@ -236,18 +175,36 @@
 }
 
 @media screen and (max-width: 1080px) {
+    .suggestions {
+        padding-left: 62px;
+        padding-right: 62px;
+    }
+
+    .suggestions h2 {
+        padding-top: 0px;
+        font-size: 36px;
+    }
+
+    .suggestions h4 {
+        font-size: 24px;
+    }
+
+    .suggestions h5 {
+        font-size: 22px;
+    }
+
     .foodproducts {
         display: grid;
         grid-template-columns: repeat(2, auto);
     }
 
-    .products {
+    .shopcontainer {
         gap: 40px;
         padding-left: 62px;
         padding-right: 62px;
     }
 
-    .input {
+    .searchbox {
         display: none;
     }
 
@@ -266,10 +223,101 @@
     .searchboxmobile .filter-toggle {
         display: none;
     }
+
+    .sidebar h5 {
+        font-size: 22px;
+    }
+
+    .productcategories .smallbold {
+        font-size: 12px;
+    }
+
+    .priceline {
+        width: 80%;
+    }
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter .smallbold {
+        font-size: 12px;
+        order: 1;
+    }
+
+    .filter .mediumbtn {
+        font-size: 12px;
+        order: 2;
+    }
+
+    .producttags {
+        gap: 10px;
+        padding-right: 15px;
+    }
+
+    .producttags .smallbtn {
+        flex: 0 0 calc((50% - 10px) / 2);
+    }
+
+    .cartinfo {
+        margin-top: 18px;
+        padding-left: 0;
+    }
+
+    .cartinfo .smallbold {
+        font-size: 12px;
+    }
+
+    .productvariants .largeregular {
+        font-size: 12px;
+    }
+
+    .sortbox input {
+        gap: 14px;
+        padding: 8px 12px;
+        height: 40px;
+    }
+
+    .sortbox .smallbold {
+        font-size: 12px;
+    }
+
+    .productgrid {
+        row-gap: 40px;
+        column-gap: 40px;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    .productitem {
+        gap: 10px;
+    }
+
+    .productitem h5 {
+        font-size: 22px;
+    }
+
+    .productitem .normalbold {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 786px) {
-    .products {
+    .suggestions h2 {
+        font-size: 30px;
+    }
+
+    .suggestions h4 {
+        font-size: 22px;
+    }
+
+    .suggestions h5 {
+        font-size: 18px;
+    }
+
+    .shopcontainer {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -278,7 +326,7 @@
         display: none;
     }
 
-    .foodproducts {
+    .productgrid {
         width: 100%;
     }
 
@@ -289,14 +337,76 @@
     .filter-toggle img {
         width: 30px;
     }
+
+    .foodproducts {
+        justify-content: space-between;
+    }
+
+    .qna {
+        padding-left: 62px;
+        padding-right: 62px;
+        padding-bottom: 61px;
+    }
+
+    .qna h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .qna h4 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .qna .largemedium {
+        font-size: 18px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    .petfood h5 {
+    .suggestions h2 {
+        font-size: 24px;
+    }
+
+    .suggestions h4 {
+        font-size: 18px;
+    }
+
+    .suggestions h5 {
+        font-size: 16px;
+    }
+
+    .catfoods {
+        display: grid;
+    }
+
+    .productitem h5 {
         font-size: 20px;
     }
 
-    .petfood .normalbold {
+    .productitem .normalbold {
         font-size: 12px;
+    }
+
+    .qna {
+        padding-left: 62px;
+        padding-right: 62px;
+        padding-bottom: 31px;
+    }
+
+    .qna h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .qna h4 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .qna .largemedium {
+        font-size: 16px;
+        text-align: center;
     }
 }
