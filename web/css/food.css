@@ -10,7 +10,53 @@
     padding-top: 115px;
 }
 
+.input {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    max-width: 284px;
+}
+
+.input-top {
+    display: flex;
+    padding-left: 102px;
+    padding-right: 102px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+
+.input img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    right: 12px;
+    mix-blend-mode: multiply;
+}
+
+.input .arrowicon {
+    width: 24px;
+    height: 24px;
+}
+
+.input input {
+    width: 100%;
+    height: 55px;
+    padding: 0 50px 0 16px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--lightblue);
+}
+
+.largeregular {
+    justify-content: center;
+    text-align: center;
+}
+
 .products {
+    display: flex;
     padding-left: 102px;
     padding-right: 102px;
 }
@@ -41,24 +87,6 @@
     max-width: 100%;
     max-height: 100%;
     mix-blend-mode: multiply;
-}
-
-.input {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 102px;
-    padding-right: 102px;
-    padding-bottom: 40px;
-}
-
-.input input {
-    width: 284px;
-    height: 55px;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-    border-style: none;
-    background-color: var(--lightblue);
 }
 
 .food-selection {
@@ -104,4 +132,55 @@
 .tags a {
     min-width: 66px;
     height: 29px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cartpara {
+    padding-bottom: 21px;
+}
+
+.cart {
+    padding-left: 60px;
+}
+
+.categories {
+    flex: 1;
+}
+
+/*Food Products Section*/
+.foodproducts {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 55px 23px;
+    padding-bottom: 115px;
+}
+
+.petfood {
+    text-align: center;
+}
+
+.petfood h5 {
+    color: var(--coral);
+}
+
+.petfood img {
+    mix-blend-mode: multiply;
+}
+
+/*QNA*/
+.qna {
+    padding-left: 125px;
+    padding-right: 125px;
+    padding-bottom: 91px;
+}
+
+.qna .qnaheader {
+    padding-bottom: 37px;
+    color: var(--coral);
+}
+
+.qna .questions {
+    padding-bottom: 50px;
 }
