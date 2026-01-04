@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/shop.css">
     <script src="js/common.js" defer></script>
+    <script src="js/shop.js" defer></script>
 </head>
 
 <style>
@@ -275,6 +276,38 @@
 
         .sidebar {
             display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 100vh;
+            background-color: white;
+            z-index: 1003;
+            overflow-y: auto;
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar.active {
+            display: flex;
+            transform: translateX(0);
+        }
+
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1002;
+        }
+
+        .sidebar-overlay.active {
+            display: block;
         }
 
         .productcontent {
@@ -295,6 +328,10 @@
     }
 
     @media screen and (max-width: 500px) {
+
+        .sidebar {
+            width: 80%;
+        }
 
         .productitem h5 {
             font-size: 20px;
