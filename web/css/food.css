@@ -24,6 +24,7 @@
     padding-right: 102px;
     padding-bottom: 40px;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .input img {
@@ -50,17 +51,50 @@
     background-color: var(--lightblue);
 }
 
+.input-right {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.sort {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    max-width: 284px;
+}
+
+.sort img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    right: 12px;
+    mix-blend-mode: multiply;
+}
+
+.sort input {
+    width: 100%;
+    height: 55px;
+    padding: 0 50px 0 16px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--lightblue);
+}
+
 .largeregular {
     justify-content: center;
     text-align: center;
+    padding-top: 15px;
 }
 
-.products {
-    display: flex;
-    padding-left: 102px;
-    padding-right: 102px;
+.searchboxmobile {
+    display: none;
 }
 
+/*Suggestions Section*/
 .catfoods {
     display: flex;
     justify-content: center;
@@ -82,11 +116,19 @@
 }
 
 .catfoods img {
-    width: 341px;
-    height: 341px;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 341px;
+    max-height: 341px;
+    width: 100%;
+    height: auto;
     mix-blend-mode: multiply;
+}
+
+/*Options Section*/
+.products {
+    display: flex;
+    padding-left: 102px;
+    padding-right: 102px;
+    gap: 63px;
 }
 
 .food-selection {
@@ -96,6 +138,10 @@
 
 .food-selection p {
     margin: 18px 0px;
+}
+
+.priceline {
+    width: 65%;
 }
 
 .filter {
@@ -145,16 +191,16 @@
 }
 
 .categories {
-    flex: 1;
+    width: 284px;
 }
 
 /*Food Products Section*/
 .foodproducts {
-    flex: 1;
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 55px 23px;
     padding-bottom: 115px;
+    margin-left: auto;
 }
 
 .petfood {
@@ -167,6 +213,10 @@
 
 .petfood img {
     mix-blend-mode: multiply;
+    width: 100%;
+    height: auto;
+    max-width: 281px;
+    max-height: 264px;
 }
 
 /*QNA*/
@@ -183,4 +233,70 @@
 
 .qna .questions {
     padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1080px) {
+    .foodproducts {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .products {
+        gap: 40px;
+        padding-left: 62px;
+        padding-right: 62px;
+    }
+
+    .input {
+        display: none;
+    }
+
+    .searchboxmobile {
+        display: block;
+        display: flex;
+        gap: 5px;
+    }
+
+    .searchboxmobile .searchicon {
+        position: static;
+        width: 40px;
+        height: 40px;
+    }
+
+    .searchboxmobile .filter-toggle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .products {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .categories {
+        display: none;
+    }
+
+    .foodproducts {
+        width: 100%;
+    }
+
+    .searchboxmobile .filter-toggle {
+        display: block;
+    }
+
+    .filter-toggle img {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .petfood h5 {
+        font-size: 20px;
+    }
+
+    .petfood .normalbold {
+        font-size: 12px;
+    }
 }
