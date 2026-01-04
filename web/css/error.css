@@ -18,6 +18,11 @@
     text-align: center;
 }
 
+.mediumicon {
+    margin-bottom: 8px;
+    margin-right: 20px;
+}
+
 h1 {
     text-align: center;
 }
@@ -197,6 +202,10 @@ body {
         .home-btn {
             line-height: 50px;
             font-size: 16px;
+        }
+
+        h1 {
+            font-size: 14px;
         }
     }
 }

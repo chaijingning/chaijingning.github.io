@@ -234,6 +234,11 @@ body {
     .search-bar {
         width: 100%;
     }
+
+    .card h3 {
+        font-size: 30px;
+        margin-left: 15px;
+    }
 }
 
 
@@ -254,13 +259,21 @@ body {
     }
 
     .pet-grid {
-        grid-template-columns: 1fr;
         align-items: left;
     }
 
     .search-bar {
         width: 100%;
     }
+
+    .card h3,
+    .word h3,
+    .nut h3 {
+        margin-left: 20px;
+        margin-right: 0;
+        text-align: left;
+    }
+
 }
 
 
