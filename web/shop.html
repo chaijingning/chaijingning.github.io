@@ -157,6 +157,114 @@
     .productitem h5 {
         color: var(--coral);
     }
+
+    @media screen and (max-width: 1080px) {
+
+        .shopcontainer {
+            gap: 40px;
+            padding-left: 62px;
+            padding-right: 62px;
+        }
+
+        .searchbox {
+            display: none;
+        }
+
+        .searchboxmobile {
+            display: block;
+            display: flex;
+            gap: 5px;
+        }
+
+        .searchboxmobile .searchicon {
+            position: static;
+            width: 40px;
+            height: 40px;
+        }
+
+        .searchboxmobile .filter-toggle {
+            display: none;
+        }
+
+        .sidebarsection h5 {
+            font-size: 22px;
+        }
+
+        .productcategories .smallbold {
+            font-size: 12px;
+        }
+
+        .priceline {
+            width: 80%;
+        }
+
+        .pricefilter {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .pricefilter .smallbold {
+            font-size: 12px;
+            order: 1;
+        }
+
+        .pricefilter .mediumbtn {
+            font-size: 12px;
+            order: 2;
+        }
+
+        .producttags {
+            gap: 10px;
+            padding-right: 15px;
+        }
+
+        .producttags .smallbtn {
+            flex: 0 0 calc((50% - 10px) / 2);
+        }
+
+        .cartinfo {
+            margin-top: 18px;
+            padding-left: 0;
+        }
+
+        .cartinfo .smallbold {
+            font-size: 12px;
+        }
+
+        .productvariants .largeregular {
+            font-size: 12px;
+        }
+
+        .sortbox {
+            gap: 14px;
+            padding: 8px 12px;
+        }
+
+        .sortbox .smallbold {
+            font-size: 12px;
+        }
+
+        .productgrid {
+            row-gap: 40px;
+            column-gap: 40px;
+            margin-top: 30px;
+            margin-bottom: 80px;
+        }
+
+        .productitem {
+            width: calc(50% - 23px);
+            gap: 10px;
+        }
+
+        .productitem h5 {
+            font-size: 22px;
+        }
+
+        .productitem .normalbold {
+            font-size: 14px;
+        }
+    }
 </style>
 
 <body>
