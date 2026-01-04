@@ -16,6 +16,85 @@
         background-size: cover;
         background-position: center;
     }
+
+    .shopcontainer {
+        display: flex;
+        gap: 63px;
+        padding-left: 102px;
+        padding-right: 102px;
+    }
+
+    .sidebar {
+        display: flex block;
+        flex-direction: column;
+        gap: 65px;
+        width: 25%;
+    }
+
+    .searchbox {
+        display: flex;
+        align-items: center;
+    }
+
+    .searchbox input {
+        width: 100%;
+        border-radius: var(--radius);
+    }
+
+    .searchicon {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        position: relative;
+        left: -42px;
+    }
+
+    .productcategories {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 40px;
+    }
+
+    .productcategories a {
+        text-decoration: none;
+        color: var(--text-dark);
+    }
+
+    .productcategories a:hover {
+        color: var(--coral);
+    }
+
+    .priceline {
+        width: 65%;
+        margin-top: 15px;
+    }
+
+    .pricefilter {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .producttags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin-top: 18px;
+        padding-right: 45px;
+    }
+
+    .producttags .smallbtn {
+        flex: 0 0 calc((100% - 14px) / 3);
+        text-align: center;
+    }
+
+    .cartinfo {
+        margin-top: 28px;
+        padding-left: 60px;
+    }
 </style>
 
 <body>
@@ -86,57 +165,65 @@
                 <img class="searchicon" src="image/search.png" alt="search icon">
             </div>
 
-            <h5>Product Categories</h5>
+            <div class="sidebarsection">
 
-            <div class="productcategories">
-                <a href="#">
-                    <p class="smallbold">FEATURED</p>
-                </a>
-                <a href="food.html">
-                    <p class="smallbold">PET FOOD</p>
-                </a>
-                <a href="#">
-                    <p class="smallbold">PET SUPPLY</p>
-                </a>
-                <a href="#">
-                    <p class="smallbold">PET TOY</p>
-                </a>
-                <a href="#">
-                    <p class="smallbold">PET CLOTHING</p>
-                </a>
-                <a href="#">
-                    <p class="smallbold">DENTAL CARE</p>
-                </a>
-                <a href="#">
-                    <p class="smallbold">MISC</p>
-                </a>
+                <h5>Product Categories</h5>
+                <div class="productcategories">
+                    <a href="#">
+                        <p class="smallbold">FEATURED</p>
+                    </a>
+                    <a href="food.html">
+                        <p class="smallbold">PET FOOD</p>
+                    </a>
+                    <a href="#">
+                        <p class="smallbold">PET SUPPLY</p>
+                    </a>
+                    <a href="#">
+                        <p class="smallbold">PET TOY</p>
+                    </a>
+                    <a href="#">
+                        <p class="smallbold">PET CLOTHING</p>
+                    </a>
+                    <a href="#">
+                        <p class="smallbold">DENTAL CARE</p>
+                    </a>
+                    <a href="#">
+                        <p class="smallbold">MISC</p>
+                    </a>
+                </div>
             </div>
 
-            <h5>Price</h5>
-            <img class="priceline" src="image/priceline.png" alt="price divider">
+            <div class="sidebarsection">
 
-            <div class="pricefilter">
-                <a class="mediumbtn" href="#">FILTER</a>
-                <p class="smallbold">Price: RM1 -RM120</p>
+                <h5>Price</h5>
+                <img class="priceline" src="image/priceline.png" alt="price divider">
+                <div class="pricefilter">
+                    <a class="mediumbtn" href="#">FILTER</a>
+                    <p class="smallbold">Price: RM1 -RM120</p>
+                </div>
             </div>
 
-            <h5>Product Tags</h5>
+            <div class="sidebarsection">
 
-            <div class="producttags">
-                <a class="smallbtn" href="#">Purina</a>
-                <a class="smallbtn" href="#">Hug</a>
-                <a class="smallbtn" href="#">Optimum</a>
-                <a class="smallbtn" href="#">Joyce</a>
-                <a class="smallbtn" href="#">Exotic</a>
-                <a class="smallbtn" href="#">Small</a>
-                <a class="smallbtn" href="#">Cheap</a>
-                <a class="smallbtn" href="#">Premium</a>
+                <h5>Product Tags</h5>
+                <div class="producttags">
+                    <a class="smallbtn" href="#">Purina</a>
+                    <a class="smallbtn" href="#">Hug</a>
+                    <a class="smallbtn" href="#">Optimum</a>
+                    <a class="smallbtn" href="#">Joyce</a>
+                    <a class="smallbtn" href="#">Exotic</a>
+                    <a class="smallbtn" href="#">Small</a>
+                    <a class="smallbtn" href="#">Cheap</a>
+                    <a class="smallbtn" href="#">Premium</a>
+                </div>
             </div>
 
-            <h5>Cart</h5>
+            <div class="sidebarsection">
 
-            <div class="cartinfo">
-                <p class="smallbold">No product in the cart.</p>
+                <h5>Cart</h5>
+                <div class="cartinfo">
+                    <p class="smallbold">No product in the cart.</p>
+                </div>
             </div>
 
         </div>
