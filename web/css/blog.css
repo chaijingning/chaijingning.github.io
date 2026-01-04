@@ -37,6 +37,12 @@ body {
 
 }
 
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px var(--text-dark);
+}
+
+
 .card div {
     width: 50%;
 }
