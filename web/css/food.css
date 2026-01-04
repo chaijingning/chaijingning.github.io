@@ -10,6 +10,11 @@
     padding-top: 115px;
 }
 
+.products {
+    padding-left: 102px;
+    padding-right: 102px;
+}
+
 .catfoods {
     display: flex;
     justify-content: center;
@@ -56,11 +61,6 @@
     background-color: var(--lightblue);
 }
 
-.products {
-    padding-left: 102px;
-    padding-right: 102px;
-}
-
 .food-selection {
     padding-top: 33px;
     padding-bottom: 33px;
@@ -68,4 +68,40 @@
 
 .food-selection p {
     margin: 18px 0px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    padding-top: 33px;
+    padding-bottom: 74px;
+}
+
+.filter button {
+    width: 121px;
+    height: 37px;
+}
+
+.filter p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tags {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 16px;
+    max-width: 33%;
+    padding-bottom: 74px;
+}
+
+.tagspara {
+    padding-top: 11px;
+}
+
+.tags a {
+    min-width: 66px;
+    height: 29px;
 }
