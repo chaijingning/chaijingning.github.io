@@ -11,13 +11,6 @@ body {
     background-position: top left;
 }
 
-.body2 {
-    background-image: url(../image/Vector\ 3.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: right bottom;
-}
-
 .blog-grid {
     align-items: center;
     display: grid;
