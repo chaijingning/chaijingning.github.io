@@ -278,10 +278,16 @@ body {
 
 
 @media screen and (max-width: 500px) {
+    .blog-grid {
+        margin-left: 40px;
+        margin-right: 50px;
+        width: 95%;
+    }
 
     .card h3,
     .word h3,
     .nut h3 {
+        font-size: 24px;
         margin-left: 20px;
         margin-right: 0;
         text-align: left;
