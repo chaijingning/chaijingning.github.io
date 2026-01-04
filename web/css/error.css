@@ -138,7 +138,7 @@ body {
     font-family: var(--font-base);
 }
 
-.search-btn {
+.search- {
     width: 55px;
     border: none;
     background: transparent;
@@ -160,7 +160,6 @@ body {
 .home-btn {
     display: block;
     width: 270px;
-    height: 57px;
     line-height: 57px;
     background: var(--coral);
     color: var(--text-light);
