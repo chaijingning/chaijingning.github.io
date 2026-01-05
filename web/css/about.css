@@ -4,14 +4,6 @@
     background-position: center;
 }
 
-body {
-    background-image: url(../image/bluespotbg2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center -425px;
-    margin: 0px;
-}
-
 .title h1 {
     margin: 0px;
     padding: 0px;
@@ -101,7 +93,6 @@ body {
 
 .subhead2 {
     display: flex;
-    padding-bottom: 175px;
     padding-left: 120px;
     gap: 60px;
     width: 100%
@@ -128,6 +119,8 @@ body {
 }
 
 .ourteam {
+    background-color: var(--lightblue);
+    padding: 80px 0px 80px 0px;
     text-align: center;
     padding-bottom: 44px;
 }
@@ -150,6 +143,7 @@ body {
 }
 
 .portrait {
+    background-color: var(--lightblue);
     text-align: center;
 }
 
@@ -235,7 +229,6 @@ body {
         align-items: center;
         padding-left: 50px;
         padding-right: 50px;
-        padding-bottom: 80px;
         gap: 20px;
     }
 
@@ -281,10 +274,6 @@ body {
         height: auto;
     }
 
-    .maptext {
-        height: 500px;
-    }
-
     .teams .infoteam {
         width: 80%;
         max-height: 164px;
@@ -298,10 +287,6 @@ body {
     }
 
     .ours {
-        padding-bottom: 50px;
-    }
-
-    .subhead2 {
         padding-bottom: 50px;
     }
 
@@ -320,7 +305,7 @@ body {
         padding-right: 50px;
     }
 
-    .team {
+    .teams {
         grid-template-columns: 1fr;
     }
 

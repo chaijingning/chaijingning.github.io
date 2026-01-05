@@ -298,12 +298,22 @@
     .values-text h2 {
         font-size: 30px;
     }
+
+    .subtext p {
+        margin-left: 20px;
+    }
 }
 
 @media (max-width: 500px) {
     .teams {
         grid-template-columns: 1fr;
     }
+
+    .portrait img {
+        width: 60%;
+        border-radius: 20px;
+    }
+
 
     .infomem {
         width: 60%;
@@ -340,6 +350,12 @@
         text-align: left;
     }
 
-
-
+    .infomem {
+        position: relative;
+        bottom: 80px;
+        width: 70%;
+        padding: 10px 20px 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
 }
