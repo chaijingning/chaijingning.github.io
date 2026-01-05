@@ -9,6 +9,12 @@
     justify-content: center;
 }
 
+.cat-food :hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
 .searchbox .arrowicon {
     width: 24px;
     height: 24px;

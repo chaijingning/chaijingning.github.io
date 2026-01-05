@@ -124,6 +124,12 @@
     padding: 20px;
 }
 
+.locationcard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px var(--text-dark);
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1080px) {
     .top {
         padding-bottom: 20px;
