@@ -143,6 +143,7 @@ ul.largeregular {
     gap: 10px;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
 }
 
 .featureimage img {
@@ -150,11 +151,15 @@ ul.largeregular {
     flex-shrink: 0;
     object-fit: cover;
     scroll-snap-align: start;
-    cursor: grab;
+    cursor: pointer;
 }
 
 .featureimage img:active {
     cursor: grabbing;
+}
+
+.featureimage::-webkit-scrollbar {
+    display: none;
 }
 
 .fx {
