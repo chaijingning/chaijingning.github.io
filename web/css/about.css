@@ -140,10 +140,10 @@
 .teams {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    background-color: var(--lightblue);
 }
 
 .portrait {
-    background-color: var(--lightblue);
     text-align: center;
 }
 
