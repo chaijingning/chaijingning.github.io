@@ -93,7 +93,6 @@
 
 .subhead2 {
     display: flex;
-    padding-bottom: 175px;
     padding-left: 120px;
     gap: 60px;
     width: 100%
@@ -230,7 +229,6 @@
         align-items: center;
         padding-left: 50px;
         padding-right: 50px;
-        padding-bottom: 80px;
         gap: 20px;
     }
 
@@ -289,10 +287,6 @@
     }
 
     .ours {
-        padding-bottom: 50px;
-    }
-
-    .subhead2 {
         padding-bottom: 50px;
     }
 

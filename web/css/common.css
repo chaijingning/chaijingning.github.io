@@ -265,7 +265,8 @@ textarea {
 }
 
 .headerinfo {
-    max-width: 90%;
+    max-width: 100%;
+    padding: 0px 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
