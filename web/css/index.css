@@ -133,7 +133,7 @@ ul.largeregular {
     color: var(--coral);
 }
 
-.featureimage {
+.featureimage img {
     max-width: 85%;
 }
 
@@ -305,7 +305,7 @@ ul.largeregular {
         margin-bottom: 100px;
     }
 
-    .featureimage {
+    .featureimage img {
         max-width: 100%;
     }
 
@@ -407,7 +407,7 @@ ul.largeregular {
         width: 100%;
     }
 
-    .featureimage {
+    .featureimage img {
         width: 100%;
     }
 
@@ -546,7 +546,7 @@ ul.largeregular {
         font-size: 10px;
     }
 
-    .featureimage {
+    .featureimage img {
         width: 100%;
     }
 
