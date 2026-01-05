@@ -60,6 +60,16 @@ body {
     width: 90%;
 }
 
+.links {
+    display: flex;
+    gap: 8px;
+}
+
+.external {
+    width: 20px;
+    height: 20px;
+}
+
 
 /*forms*/
 .form {

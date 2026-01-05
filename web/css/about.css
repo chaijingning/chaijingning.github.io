@@ -4,14 +4,6 @@
     background-position: center;
 }
 
-body {
-    background-image: url(../image/bluespotbg2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center -425px;
-    margin: 0px;
-}
-
 .title h1 {
     margin: 0px;
     padding: 0px;
@@ -128,6 +120,8 @@ body {
 }
 
 .ourteam {
+    background-color: var(--lightblue);
+    padding: 80px 0px 80px 0px;
     text-align: center;
     padding-bottom: 44px;
 }
@@ -150,6 +144,7 @@ body {
 }
 
 .portrait {
+    background-color: var(--lightblue);
     text-align: center;
 }
 
@@ -281,10 +276,6 @@ body {
         height: auto;
     }
 
-    .maptext {
-        height: 500px;
-    }
-
     .teams .infoteam {
         width: 80%;
         max-height: 164px;
@@ -320,7 +311,7 @@ body {
         padding-right: 50px;
     }
 
-    .team {
+    .teams {
         grid-template-columns: 1fr;
     }
 

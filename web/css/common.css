@@ -260,17 +260,21 @@ textarea {
     position: sticky;
     top: 0;
     z-index: 1000;
+
+
 }
 
 .headerinfo {
+    max-width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 0px 50px;
+
 }
 
 .logo img {
+    padding-left: 10px;
     width: 90px;
     height: auto;
 }
