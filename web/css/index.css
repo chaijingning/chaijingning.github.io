@@ -2,7 +2,7 @@
     background-image: url(../image/landingbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center 5%;
     display: flex;
     width: 100%;
 }
@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     gap: 29px;
-    width: calc(33.33% - 36px);
+    max-width: calc(33.33% - 36px);
     justify-content: center;
     background-color: var(--lightblue);
     border-radius: var(--radius);
@@ -134,11 +134,11 @@ ul.largeregular {
 }
 
 .featureimage {
-    width: 85%;
+    max-width: 85%;
 }
 
 .paginationimage {
-    width: 6%;
+    max-width: 6%;
     margin-top: 30px;
 }
 
@@ -177,7 +177,7 @@ ul.largeregular {
     align-items: center;
     text-align: center;
     background-color: var(--bg-light);
-    width: 80%;
+    max-width: 80%;
     min-height: 443px;
     border-radius: var(--radius);
 }
@@ -242,7 +242,7 @@ ul.largeregular {
     }
 
     .categories .service {
-        width: 100%;
+        max-width: 100%;
         padding: 30px;
     }
 
@@ -282,7 +282,7 @@ ul.largeregular {
     }
 
     .featureimage {
-        width: 100%;
+        max-width: 100%;
     }
 
     .featuretext {
@@ -295,7 +295,7 @@ ul.largeregular {
     }
 
     .paginationimage {
-        width: 10%;
+        max-width: 10%;
         margin-top: 20px;
     }
 
@@ -314,7 +314,7 @@ ul.largeregular {
     }
 
     .reviewbox {
-        width: 90%;
+        max-width: 90%;
     }
 
     .reviewprof {
