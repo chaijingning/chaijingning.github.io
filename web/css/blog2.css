@@ -237,6 +237,7 @@ body {
     .blog-grid {
         margin-right: 0;
         grid-template-columns: 1fr;
+        width: 80%;
     }
 
     .side {
@@ -257,6 +258,12 @@ body {
         font-size: 24px;
         margin-right: 10px;
         margin-left: 30px;
+    }
+
+    .card {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
     }
 
     .pet-card p {
@@ -281,12 +288,14 @@ body {
         max-width: 100%;
     }
 
+
     /* 2️⃣ 桌面残留 margin 的真正凶手 */
     .blog-grid {
         display: block;
         width: 100%;
         padding: 16px;
     }
+
 
     /* 3️⃣ 卡片绝对不能撑宽 */
     .card {
