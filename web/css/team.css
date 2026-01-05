@@ -270,10 +270,6 @@
 }
 
 @media (max-width: 786px) {
-    .subtext h2 {
-        margin-left: 20px;
-    }
-
 
     .teams {
         grid-template-columns: 1fr 1fr;
