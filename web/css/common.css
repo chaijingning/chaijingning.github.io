@@ -546,7 +546,7 @@ textarea {
 .producttags {
     display: flex;
     flex-wrap: wrap;
-    gap: 7px;
+    gap: 10px;
     margin-top: 18px;
     padding-right: 45px;
 }
