@@ -1,0 +1,400 @@
+.banner {
+    background-image: url(../image/petfoodbanner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.suggestions h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.cat-food :hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.searchbox .arrowicon {
+    width: 24px;
+    height: 24px;
+}
+
+.sortbox input {
+    width: 100%;
+    height: 55px;
+    padding: 0 50px 0 16px;
+}
+
+.largeregular {
+    justify-content: center;
+    text-align: center;
+}
+
+/*Suggestions Section*/
+.catfoods {
+    display: flex;
+    justify-content: center;
+    gap: 82px;
+    padding-top: 15px;
+    padding-bottom: 115px;
+}
+
+.catfoods h4 {
+    padding-top: 29px;
+    text-align: center;
+    color: var(--coral);
+}
+
+.catfoods h5 {
+    padding-top: 25px;
+    text-align: center;
+    color: var(--darkblue);
+}
+
+.catfoods img {
+    max-width: 341px;
+    max-height: 341px;
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+/*Options Section*/
+.pricefilter button {
+    height: 37px;
+}
+
+.pricefilter p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tagspara {
+    padding-top: 11px;
+}
+
+/*.producttags a {
+    min-width: 66px;
+    height: 29px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+    */
+
+.cartpara {
+    padding-bottom: 21px;
+}
+
+.cartinfo {
+    padding-left: 60px;
+}
+
+.categories {
+    width: 284px;
+}
+
+/*Food Products Section*/
+.productitem {
+    justify-content: center;
+}
+
+.productitem img {
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: auto;
+    max-width: 281px;
+    max-height: 264px;
+}
+
+/*QNA*/
+.qna {
+    padding-left: 125px;
+    padding-right: 125px;
+    padding-bottom: 91px;
+}
+
+.qna .qnaheader {
+    padding-bottom: 37px;
+    color: var(--coral);
+}
+
+.qna .questions {
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1080px) {
+    .catfoods {
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+
+    .catfoods img {
+        max-width: 281px;
+        max-height: 264px;
+        width: 100%;
+        height: auto;
+    }
+
+    .suggestions {
+        padding-left: 62px;
+        padding-right: 62px;
+    }
+
+    .suggestions h2 {
+        padding-top: 0px;
+        font-size: 36px;
+    }
+
+    .suggestions h4 {
+        font-size: 24px;
+    }
+
+    .suggestions h5 {
+        font-size: 22px;
+    }
+
+    .searchbox {
+        display: none;
+    }
+
+    .searchboxmobile {
+        display: block;
+        display: flex;
+        gap: 5px;
+    }
+
+    .searchboxmobile .searchicon {
+        position: static;
+        width: 40px;
+        height: 40px;
+    }
+
+    .searchboxmobile .filter-toggle {
+        display: none;
+    }
+
+    .sidebar h5 {
+        font-size: 22px;
+    }
+
+    .productcategories .smallbold {
+        font-size: 12px;
+    }
+
+    .priceline {
+        width: 80%;
+    }
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter .smallbold {
+        font-size: 12px;
+        order: 1;
+    }
+
+    .filter .mediumbtn {
+        font-size: 12px;
+        order: 2;
+    }
+
+    .producttags {
+        gap: 10px;
+        padding-right: 15px;
+    }
+
+    .producttags .smallbtn {
+        flex: 0 0 calc((50% - 10px) / 2);
+    }
+
+    .cartinfo {
+        margin-top: 18px;
+        padding-left: 0;
+    }
+
+    .cartinfo .smallbold {
+        font-size: 12px;
+    }
+
+    .productvariants .largeregular {
+        font-size: 12px;
+    }
+
+    .sortbox input {
+        gap: 14px;
+        padding: 8px 12px;
+        height: 40px;
+    }
+
+    .sortbox .smallbold {
+        font-size: 12px;
+    }
+
+    .productitem {
+        gap: 10px;
+    }
+
+    .productitem h5 {
+        font-size: 22px;
+    }
+
+    .productitem .normalbold {
+        font-size: 14px;
+    }
+
+    .qna {
+        padding-left: 62px;
+        padding-right: 62px;
+        padding-bottom: 61px;
+    }
+
+    .qna h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .qna h4 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .qna .largemedium {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .catfoods {
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .catfoods img {
+        max-width: 190px;
+        max-height: 190px;
+        width: 100%;
+        height: auto;
+    }
+
+    .suggestions {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .suggestions h2 {
+        font-size: 30px;
+    }
+
+    .suggestions h4 {
+        font-size: 22px;
+    }
+
+    .suggestions h5 {
+        font-size: 18px;
+    }
+
+    .categories {
+        display: none;
+    }
+
+    .searchboxmobile .filter-toggle {
+        display: block;
+    }
+
+    .filter-toggle img {
+        width: 30px;
+    }
+
+    .foodproducts {
+        justify-content: space-between;
+    }
+
+    .qna {
+        padding-left: 62px;
+        padding-right: 62px;
+        padding-bottom: 61px;
+    }
+
+    .qna h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .qna h4 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .qna .largemedium {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .catfoods {
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .catfoods img {
+        max-width: 190px;
+        max-height: 190px;
+        width: 100%;
+        height: auto;
+    }
+
+    .suggestions {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .suggestions h2 {
+        font-size: 24px;
+    }
+
+    .suggestions h4 {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+
+    .suggestions h5 {
+        font-size: 16px;
+        padding-top: 10px
+    }
+
+    .productitem h5 {
+        font-size: 20px;
+    }
+
+    .productitem .normalbold {
+        font-size: 12px;
+    }
+
+    .qna {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+
+    .qna h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .qna h4 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .qna .largemedium {
+        font-size: 16px;
+        text-align: center;
+    }
+}

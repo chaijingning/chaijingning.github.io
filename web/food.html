@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Food</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/food.css">
     <script src="js/common.js" defer></script>
+    <script src="js/shop.js" defer></script>
 </head>
 
 <body>
@@ -60,6 +61,220 @@
                     <div><a href="contact.html">Contact Us</a></div>
                 </div>
             </nav>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="title">
+            <h1>Pet Food</h1>
+        </div>
+    </div>
+    <div class="suggestions">
+        <h2>Personalised for You</h2>
+        <div class="catfoods">
+            <div class="cat-food">
+                <img src="image/cat-food1.jpg" alt="cat-food1">
+                <h4>Whiskas</h4>
+                <h5>Ocean Fish Flavour Loaf</h5>
+            </div>
+            <div class="cat-food">
+                <img src="image/cat-food3.jpg" alt="cat-food3">
+                <h4>ProDiet</h4>
+                <h5>Ocean Fish Cat Food</h5>
+            </div>
+            <div class="cat-food">
+                <img src="image/cat-food2.jpg" alt="cat-food2">
+                <h4>SmartHeart</h4>
+                <h5>Can Food Offer Pack</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="shopcontainer">
+        <div class="sidebar">
+
+            <div class="searchbox">
+                <input type="text" id="searchprod" name="searchprod" placeholder="Search products..." required>
+                <img class="searchicon" src="image/search.png" alt="search icon">
+            </div>
+
+            <div class="sidebarsection">
+
+                <h5>Product Categories</h5>
+                <div class="productcategories">
+                    <a href="#">
+                        <p class="smallbold">FEATURED</p>
+                    </a>
+                    <a href="food.html">
+                        <p class="smallbold">PET FOOD</p>
+                    </a>
+                    <a href="#">
+                        <p class="smallbold">PET SUPPLY</p>
+                    </a>
+                    <a href="#">
+                        <p class="smallbold">PET TOY</p>
+                    </a>
+                    <a href="#">
+                        <p class="smallbold">PET CLOTHING</p>
+                    </a>
+                    <a href="#">
+                        <p class="smallbold">DENTAL CARE</p>
+                    </a>
+                    <a href="#">
+                        <p class="smallbold">MISC</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebarsection">
+
+                <h5>Price</h5>
+                <img class="priceline" src="image/priceline.png" alt="price divider">
+                <div class="pricefilter">
+                    <a class="mediumbtn" href="#">FILTER</a>
+                    <p class="smallbold">Price: RM1 -RM120</p>
+                </div>
+            </div>
+
+            <div class="sidebarsection">
+
+                <h5>Product Tags</h5>
+                <div class="producttags">
+                    <a class="smallbtn" href="#">Purina</a>
+                    <a class="smallbtn" href="#">Hug</a>
+                    <a class="smallbtn" href="#">Optimum</a>
+                    <a class="smallbtn" href="#">Joyce</a>
+                    <a class="smallbtn" href="#">Exotic</a>
+                    <a class="smallbtn" href="#">Small</a>
+                    <a class="smallbtn" href="#">Cheap</a>
+                    <a class="smallbtn" href="#">Premium</a>
+                </div>
+            </div>
+
+            <div class="sidebarsection">
+
+                <h5>Cart</h5>
+                <div class="cartinfo">
+                    <p class="smallbold">No product in the cart.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="productcontent">
+            <div class="searchboxmobile">
+                <div class="filter-toggle" id="filter-toggle"><img src="image/filter.png" alt="filter icon"></div>
+                <input type="text" id="searchprodmobile" name="searchprod" placeholder="Search products..." required>
+                <img class="searchicon" src="image/search.png" alt="search icon">
+            </div>
+
+            <div class="productvariants">
+                <div class="result">
+                    <p class="largeregular">Showing 1-12 of 23 results</p>
+                </div>
+                <div class="sortbox">
+                    <p class="smallbold">Default sorting</p>
+                    <img class="arrowicon" src="image/arrowdown.jpg" alt="arrow icon">
+                </div>
+            </div>
+
+            <div class="productgrid">
+                <div class="productitem">
+                    <img src="image/product1.jpg" alt="Product 1">
+                    <h5>Hug Bundle Set</h5>
+                    <p class="normalbold">RM85.00</p>
+                </div>
+
+                <div class="productitem">
+                    <img src="image/product2.jpg" alt="Product 2">
+                    <h5>Optimum: Beef & Rice</h5>
+                    <p class="normalbold">RM25.00</p>
+                </div>
+
+                <div class="productitem">
+                    <img src="image/product3.jpg" alt="Product 3">
+                    <h5>Purina: One</h5>
+                    <p class="normalbold">RM15.00</p>
+                </div>
+
+                <div class="productitem">
+                    <img src="image/product4.jpg" alt="Product 4">
+                    <h5>Pelen Cat Sticks</h5>
+                    <p class="normalbold">RM6.00</p>
+                </div>
+
+                <div class="productitem">
+                    <img src="image/product5.jpg" alt="Product 5">
+                    <h5>MeowMore Jerky</h5>
+                    <p class="normalbold">RM15.00</p>
+                </div>
+
+                <div class="productitem">
+                    <img src="image/product6.jpg" alt="Product 6">
+                    <h5>Milk Bone (Small)</h5>
+                    <p class="normalbold">RM25.00</p>
+                </div>
+
+                <div class="productitem">
+                    <img src="image/product7.jpg" alt="Product 7">
+                    <h5>Milk Bone (Big)</h5>
+                    <p class="normalbold">RM45.00</p>
+                </div>
+
+                <div class="productitem">
+                    <img src="image/product8.jpg" alt="Product 8">
+                    <h5>Kaytee Multi Bird Seed</h5>
+                    <p class="normalbold">RM12.00</p>
+                </div>
+
+                <div class="productitem">
+                    <img src="image/product9.jpg" alt="Product 9">
+                    <h5>Exotic Nutrition treats</h5>
+                    <p class="normalbold">RM24.00</p>
+                </div>
+
+                <div class="productitem">
+                    <img src="image/product10.jpg" alt="Product 10">
+                    <h5>Extreme Trail Mix</h5>
+                    <p class="normalbold">RM23.00</p>
+                </div>
+
+                <div class="productitem">
+                    <img src="image/product11.jpg" alt="Product 11">
+                    <h5>Aqueon Fish Treats</h5>
+                    <p class="normalbold">RM14.00</p>
+                </div>
+
+                <div class="productitem">
+                    <img src="image/product12.jpg" alt="Product 12">
+                    <h5>Fish Treats (Shrimp)</h5>
+                    <p class="normalbold">RM50.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qna">
+        <div class="qnaheader">
+            <h1>Frequently Asked Questions About Pet Food</h1>
+        </div>
+        <div class="questions">
+            <h4>What is the best food for my pet?</h4>
+            <p class="largemedium">The "best" pet food varies for each pet and depends on a range of factors, including
+                your pet's life stage, breed, and specific health needs. At Pet and Whiskers, we offer a diverse
+                assortment of high-quality dog foods from renowned pet brands, featuring wholesome protein sources to
+                cater to different preferences. Finding the perfect fit for your pet might seem daunting, but we are
+                here to help. <br>
+                For personalised advice, we recommend consulting with a veterinarian who can guide you based on your
+                pet's individual requirements. </p>
+        </div>
+        <div class="questions">
+            <h4>How much food should I feed my pets?</h4>
+            <p class="largemedium">The amount of food that your pet needs will vary according to it’s age, size and
+                activity level. The goal is to supply them with the necessary energy and nutrients without overfeeding,
+                which can lead to obesity. Even treats, while enjoyable, should be factored into their daily calorie
+                intake and given sparingly. For the most accurate advice, it is best to consult with a vet who can
+                provide guidelines specific to your pet's dietary needs.
+            </p>
         </div>
     </div>
 

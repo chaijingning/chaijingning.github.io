@@ -11,13 +11,6 @@ body {
     background-position: top left;
 }
 
-.body2 {
-    background-image: url(../image/Vector\ 3.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: right bottom;
-}
-
 .blog-grid {
     align-items: center;
     display: grid;
@@ -36,6 +29,12 @@ body {
     border-radius: 20px;
 
 }
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px var(--text-dark);
+}
+
 
 .card div {
     width: 50%;

@@ -5,7 +5,6 @@
 }
 
 .subhead {
-    padding-top: 75px;
     padding-bottom: 50px;
     gap: 20px;
 }
@@ -123,6 +122,12 @@
     width: 95%;
     margin: 10px;
     padding: 20px;
+}
+
+.locationcard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px var(--text-dark);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1080px) {

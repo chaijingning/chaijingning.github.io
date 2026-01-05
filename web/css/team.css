@@ -14,6 +14,7 @@
 .subhead {
     display: flex;
     padding-bottom: 40px;
+    justify-content: center;
 }
 
 .subhead img {
@@ -191,6 +192,10 @@
         margin-left: 44px;
     }
 
+    .subhead img {
+        max-width: 80%;
+    }
+
     .subtext h2 {
         margin-left: 44px;
     }
@@ -199,6 +204,7 @@
         flex-direction: column;
         align-items: center;
         max-width: 750px;
+        margin-top: 80px;
     }
 
     .subhead {
@@ -222,6 +228,7 @@
         text-align: left;
         padding-left: 10px;
         margin-right: 60px;
+        margin-bottom: 30px;
     }
 
     .ourteamtext {
