@@ -260,8 +260,6 @@ textarea {
     position: sticky;
     top: 0;
     z-index: 1000;
-
-
 }
 
 .headerinfo {
@@ -271,7 +269,6 @@ textarea {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-
 }
 
 .logo img {
