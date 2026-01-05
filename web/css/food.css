@@ -10,49 +10,9 @@
     padding-top: 115px;
 }
 
-.searchbox {
-    position: relative;
-    width: 100%;
-    max-width: 284px;
-    padding-bottom: 40px;
-}
-
-.searchbox img {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    right: 12px;
-    mix-blend-mode: multiply;
-}
-
 .searchbox .arrowicon {
     width: 24px;
     height: 24px;
-}
-
-.searchbox input {
-    height: 55px;
-    padding: 0 50px 0 16px;
-}
-
-.productvariants {
-    padding-bottom: 40px;
-}
-
-.sortbox {
-    position: relative;
-    width: 100%;
-    max-width: 284px;
-}
-
-.sortbox img {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    right: 12px;
-    mix-blend-mode: multiply;
 }
 
 .sortbox input {
@@ -96,17 +56,6 @@
 }
 
 /*Options Section*/
-.productcategories {
-    padding-top: 33px;
-    padding-bottom: 33px;
-}
-
-.pricefilter {
-    flex-direction: row;
-    padding-top: 33px;
-    padding-bottom: 74px;
-}
-
 .pricefilter button {
     height: 37px;
 }
@@ -115,10 +64,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.producttags {
-    padding-bottom: 74px;
 }
 
 .tagspara {
@@ -145,9 +90,8 @@
 }
 
 /*Food Products Section*/
-.productgrid {
-    grid-template-columns: repeat(3, auto);
-    margin-left: auto;
+.productitem {
+    justify-content: center;
 }
 
 .productitem img {
@@ -175,6 +119,18 @@
 }
 
 @media screen and (max-width: 1080px) {
+    .catfoods {
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+
+    .catfoods img {
+        max-width: 281px;
+        max-height: 264px;
+        width: 100%;
+        height: auto;
+    }
+
     .suggestions {
         padding-left: 62px;
         padding-right: 62px;
@@ -191,17 +147,6 @@
 
     .suggestions h5 {
         font-size: 22px;
-    }
-
-    .foodproducts {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-    }
-
-    .shopcontainer {
-        gap: 40px;
-        padding-left: 62px;
-        padding-right: 62px;
     }
 
     .searchbox {
@@ -284,13 +229,6 @@
         font-size: 12px;
     }
 
-    .productgrid {
-        row-gap: 40px;
-        column-gap: 40px;
-        margin-top: 30px;
-        margin-bottom: 80px;
-    }
-
     .productitem {
         gap: 10px;
     }
@@ -302,9 +240,47 @@
     .productitem .normalbold {
         font-size: 14px;
     }
+
+    .qna {
+        padding-left: 62px;
+        padding-right: 62px;
+        padding-bottom: 61px;
+    }
+
+    .qna h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .qna h4 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .qna .largemedium {
+        font-size: 18px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 786px) {
+    .catfoods {
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .catfoods img {
+        max-width: 190px;
+        max-height: 190px;
+        width: 100%;
+        height: auto;
+    }
+
+    .suggestions {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .suggestions h2 {
         font-size: 30px;
     }
@@ -317,17 +293,8 @@
         font-size: 18px;
     }
 
-    .shopcontainer {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
     .categories {
         display: none;
-    }
-
-    .productgrid {
-        width: 100%;
     }
 
     .searchboxmobile .filter-toggle {
@@ -365,20 +332,35 @@
 }
 
 @media screen and (max-width: 500px) {
+    .catfoods {
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    .catfoods img {
+        max-width: 190px;
+        max-height: 190px;
+        width: 100%;
+        height: auto;
+    }
+
+    .suggestions {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .suggestions h2 {
         font-size: 24px;
     }
 
     .suggestions h4 {
         font-size: 18px;
+        padding-top: 10px;
     }
 
     .suggestions h5 {
         font-size: 16px;
-    }
-
-    .catfoods {
-        display: grid;
+        padding-top: 10px
     }
 
     .productitem h5 {
@@ -390,9 +372,9 @@
     }
 
     .qna {
-        padding-left: 62px;
-        padding-right: 62px;
-        padding-bottom: 31px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
     }
 
     .qna h1 {
