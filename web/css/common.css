@@ -843,7 +843,7 @@ textarea {
 
     /*header*/
     .headerinfo {
-        padding: 0px 30px;
+        padding: 0px 25px;
     }
 
     .menu-toggle {
@@ -1035,6 +1035,10 @@ textarea {
 
     .lbtnlink {
         font-size: 16px;
+    }
+
+    .headerinfo {
+        padding: 0px 20px;
     }
 
     /*banner*/
