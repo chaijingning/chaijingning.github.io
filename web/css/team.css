@@ -298,10 +298,6 @@
     .values-text h2 {
         font-size: 30px;
     }
-
-    .subtext p {
-        margin-left: 20px;
-    }
 }
 
 @media (max-width: 500px) {
