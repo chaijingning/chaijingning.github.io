@@ -267,36 +267,47 @@ body {
 
 @media screen and (max-width: 500px) {
 
-    .card h3,
-    .word h3,
-    .nut h3 {
-        font-size: 24px;
-        margin-left: 20px;
-        margin-right: 0;
-        text-align: left;
-    }
 
-    .card div {
-        width: 90%;
-    }
-
-    .tags {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
-    }
-
-    .search-bar {
-        flex-direction: column;
+    body {
         width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
+    * {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    /* 2️⃣ 桌面残留 margin 的真正凶手 */
     .blog-grid {
-        margin-right: 70px;
+        display: block;
+        width: 100%;
+        padding: 16px;
+    }
+
+    /* 3️⃣ 卡片绝对不能撑宽 */
+    .card {
+        width: 100%;
+        margin: 0 0 20px 0;
+        padding: 16px;
+    }
+
+    /* 4️⃣ 你原本的 50% 在手机一定炸 */
+    .card div {
+        width: 100% !important;
     }
 
     .side {
-        margin-left: 30px;
-        margin-right: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+        margin-left: -120px;
+        margin-right: 60px;
+        justify-items: center;
     }
 
 }
