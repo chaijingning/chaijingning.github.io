@@ -237,6 +237,7 @@ body {
     .blog-grid {
         margin-right: 0;
         grid-template-columns: 1fr;
+        width: 80%;
     }
 
     .side {
@@ -257,6 +258,12 @@ body {
         font-size: 24px;
         margin-right: 10px;
         margin-left: 30px;
+    }
+
+    .card {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
     }
 
     .pet-card p {
@@ -288,5 +295,17 @@ body {
     .search-bar {
         flex-direction: column;
         width: 100%;
+    }
+
+    .popular {
+        width: 80%;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .pets {
+        width: 80%;
+        justify-content: center;
+        align-self: center;
     }
 }
