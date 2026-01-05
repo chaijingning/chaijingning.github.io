@@ -205,7 +205,12 @@ body {
         }
 
         h1 {
-            font-size: 14px;
+            font-size: 10px;
         }
     }
+
+    p {
+        text-align: center;
+    }
+
 }
